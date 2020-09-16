@@ -1,0 +1,336 @@
+archetype (adl_version=1.4; uid=a638d5cb-d3ce-4c94-86d5-ca2605bbe46c)
+	openEHR-EHR-OBSERVATION.duke_activity_status_index_dasi.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2020-03-19">
+		["name"] = <"Alan Fish">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"alan@freshehr.com">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record the calculation of the Dukes Activity Status Index (DASI) with a relevant Metabolic Equivalents (MET).">
+			use = <"Used to record the calculation of the Dukes Activity Status Index (DASI) with a relevant Metabolic Equivalents (MET).">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"https://www.mdcalc.com/duke-activity-status-index-dasi">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"369af0916059453284ff4b812b9a61e6">
+		["build_uid"] = <"95880c83-6142-3982-9c82-5bfee289e25c">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Duke_Activity_Status_Index_DASI
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {0..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0017] occurrences matches {0..1} matches {    -- Take care of self
+										value matches {
+											1|[local::at0018],
+											2|[local::at0019]
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Walk indoors
+										value matches {
+											1|[local::at0009],
+											2|[local::at0010]
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {    -- Walk 1-2 blocks on level ground
+										value matches {
+											1|[local::at0012],
+											2|[local::at0013]
+										}
+									}
+									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Climb stairs
+										value matches {
+											1|[local::at0015],
+											2|[local::at0016]
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Run a short distance
+										value matches {
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0020] occurrences matches {0..1} matches {    -- Light housework
+										value matches {
+											1|[local::at0021],
+											2|[local::at0022]
+										}
+									}
+									ELEMENT[at0023] occurrences matches {0..1} matches {    -- Moderate housework
+										value matches {
+											1|[local::at0024],
+											2|[local::at0025]
+										}
+									}
+									ELEMENT[at0026] occurrences matches {0..1} matches {    -- Heavy housework
+										value matches {
+											1|[local::at0027],
+											2|[local::at0028]
+										}
+									}
+									ELEMENT[at0029] occurrences matches {0..1} matches {    -- Yardwork
+										value matches {
+											1|[local::at0030],
+											2|[local::at0031]
+										}
+									}
+									ELEMENT[at0032] occurrences matches {0..1} matches {    -- Sexual relations
+										value matches {
+											1|[local::at0033],
+											2|[local::at0034]
+										}
+									}
+									ELEMENT[at0038] occurrences matches {0..1} matches {    -- Moderate activities
+										value matches {
+											1|[local::at0039],
+											2|[local::at0040]
+										}
+									}
+									ELEMENT[at0041] occurrences matches {0..1} matches {    -- Strenuous sports
+										value matches {
+											1|[local::at0042],
+											2|[local::at0043]
+										}
+									}
+									ELEMENT[at0044] occurrences matches {0..1} matches {    -- DASI Score Total
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|0..58|}
+											}
+										}
+									}
+									ELEMENT[at0045] occurrences matches {0..1} matches {    -- MET Score Total
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|0..9|}
+											}
+										}
+									}
+									ELEMENT[at0046] occurrences matches {0..1} matches {    -- VO2 Peak Total
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|0..140|}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Duke_Activity_Status_Index_DASI">
+					description = <"Duke_Activity_Status_Index_DASI">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Run a short distance">
+					description = <"Used to record the answer to 'Is the patient able to run a short distance'?">
+				>
+				["at0006"] = <
+					text = <"Yes">
+					description = <"The patient is able to run a short distance.">
+				>
+				["at0007"] = <
+					text = <"No">
+					description = <"The patient is unable to run a short distance.">
+				>
+				["at0008"] = <
+					text = <"Walk indoors">
+					description = <"Used to record the answer to 'Is the patient able to walk indoors'?">
+				>
+				["at0009"] = <
+					text = <"Yes">
+					description = <"The patient is able to walk indoors.">
+				>
+				["at0010"] = <
+					text = <"No">
+					description = <"The patient is unable to walk indoors.">
+				>
+				["at0011"] = <
+					text = <"Walk 1-2 blocks on level ground">
+					description = <"Used to record the answer to 'Is the patient able to walk 1-2 blocks on level ground'?">
+				>
+				["at0012"] = <
+					text = <"Yes">
+					description = <"The patient is able to walk 1-2 blocks on level ground.">
+				>
+				["at0013"] = <
+					text = <"No">
+					description = <"The patient is unable to walk 1-2 blocks on level ground.">
+				>
+				["at0014"] = <
+					text = <"Climb stairs">
+					description = <"Used to record the answer to 'Is the patient able to climb a flight of stairs or walk up a hill'?">
+				>
+				["at0015"] = <
+					text = <"Yes">
+					description = <"The patient is able to climb a flight of stairs or walk up a hill.">
+				>
+				["at0016"] = <
+					text = <"No">
+					description = <"The patient is unable to climb a flight of stairs or walk up a hill.">
+				>
+				["at0017"] = <
+					text = <"Take care of self">
+					description = <"Used to record the answer to 'Is the patient able to Take care of self
+e.g. eating, dressing, bathing, using the toilet'.">
+				>
+				["at0018"] = <
+					text = <"Yes">
+					description = <"The patient is able to take care of their self.">
+				>
+				["at0019"] = <
+					text = <"No">
+					description = <"The patient is unable to take care of their self.">
+				>
+				["at0020"] = <
+					text = <"Light housework">
+					description = <"Used to record the answer to 'Is the patient able to do light work around the house
+e.g. dusting, washing dishes'?">
+				>
+				["at0021"] = <
+					text = <"Yes">
+					description = <"The patient is able to do light work around the house.">
+				>
+				["at0022"] = <
+					text = <"No">
+					description = <"The patient is unable to do light work around the house.">
+				>
+				["at0023"] = <
+					text = <"Moderate housework">
+					description = <"Used to record the answer to 'Is the patient able to do moderate work around the house
+e.g. vacuuming, sweeping floors, carrying in groceries'?">
+				>
+				["at0024"] = <
+					text = <"Yes">
+					description = <"The patient is able to do moderate work around the house.">
+				>
+				["at0025"] = <
+					text = <"No">
+					description = <"The patient is unable to do moderate work around the house.">
+				>
+				["at0026"] = <
+					text = <"Heavy housework">
+					description = <"Used to record the answer to 'Is the patient able to do heavy work around the house
+e.g. scrubbing floors, lifting or moving heavy furniture'?">
+				>
+				["at0027"] = <
+					text = <"Yes">
+					description = <"The patient is able to take care of their self.">
+				>
+				["at0028"] = <
+					text = <"No">
+					description = <"The patient is unable to take care of their self.">
+				>
+				["at0029"] = <
+					text = <"Yardwork">
+					description = <"Used to record the answer to 'Is the patient able to do yardwork
+e.g. raking leaves, weeding, pushing a power mower'?">
+				>
+				["at0030"] = <
+					text = <"Yes">
+					description = <"The patient is able to do yardwork.">
+				>
+				["at0031"] = <
+					text = <"No">
+					description = <"The patient is unable to do yardwork.">
+				>
+				["at0032"] = <
+					text = <"Sexual relations">
+					description = <"Used to record the answer to 'Is the patient able to have sexual relations'.">
+				>
+				["at0033"] = <
+					text = <"Yes">
+					description = <"The patient is able to have sexual relations.">
+				>
+				["at0034"] = <
+					text = <"No">
+					description = <"The patient is unable to have sexual relations.">
+				>
+				["at0038"] = <
+					text = <"Moderate activities">
+					description = <"Used to record the answer to 'Is the patient able to participate in moderate recreational activities
+e.g. golf, bowling, dancing, doubles tennis, throwing a baseball or football'?">
+				>
+				["at0039"] = <
+					text = <"Yes">
+					description = <"The patient is able to participate in moderate recreational activities.">
+				>
+				["at0040"] = <
+					text = <"No">
+					description = <"The patient is unable to participate in moderate recreational activities.">
+				>
+				["at0041"] = <
+					text = <"Strenuous sports">
+					description = <"Used to record the answer to 'Is the patient able to participate in strenuous sports
+e.g. swimming, singles tennis, football, basketball, skiing'?">
+				>
+				["at0042"] = <
+					text = <"Yes">
+					description = <"The patient is able to participate in strenuous sports.">
+				>
+				["at0043"] = <
+					text = <"No">
+					description = <"The patient is unable to participate in strenuous sports.">
+				>
+				["at0044"] = <
+					text = <"DASI Score Total">
+					description = <"Total value of Dukes Activity Status questions">
+				>
+				["at0045"] = <
+					text = <"MET Score Total">
+					description = <"Total value of Metabolic Equivalents.">
+					comment = <"METs (metabolic equivalents) = VO2 peak / 3.5">
+				>
+				["at0046"] = <
+					text = <"VO2 Peak Total">
+					description = <"Calculation of VO2 peak score based the calculation VO2 peak (mL/kg) = 0.43 × DASI + 9.6
+">
+					comment = <"VO2 peak is maximal oxygen consumption (gold standard measurement is by exercise stress testing).
+">
+				>
+			>
+		>
+	>

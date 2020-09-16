@@ -1,0 +1,84 @@
+archetype (adl_version=1.4; uid=56565933-f7de-489c-a3ab-0e107b70f4ad)
+	openEHR-EHR-CLUSTER.household_covid.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2020-03-12">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record additional household details for Covid-19 screening">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"3336e877b9ceea078007f023c152e730">
+		["build_uid"] = <"8a3231b8-c6bd-317b-9df1-7580ff5a115f">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Household details
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Number of people in your bedroom
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Are there other ill people in your house?
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0003,    -- Yes
+							at0004,    -- No
+							at0005]    -- Unknown
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Household details">
+					description = <"household details for Covid">
+				>
+				["at0001"] = <
+					text = <"Number of people in your bedroom">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"Are there other ill people in your house?">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Yes">
+					description = <"Yes">
+				>
+				["at0004"] = <
+					text = <"No">
+					description = <"No">
+				>
+				["at0005"] = <
+					text = <"Unknown">
+					description = <"Unknown">
+				>
+			>
+		>
+	>

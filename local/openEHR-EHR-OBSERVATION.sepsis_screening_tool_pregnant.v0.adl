@@ -1,0 +1,460 @@
+archetype (adl_version=1.4; uid=4498b840-e155-4441-8153-0dfaed9970b0)
+	openEHR-EHR-OBSERVATION.sepsis_screening_tool_pregnant.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2020-03-27">
+		["name"] = <"Alan Fish">
+		["organisation"] = <"FreshEHR">
+		["email"] = <"alan.fish@feshehr.com">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Sepsis screening tool if pregnant or up to 6 weeks post pregnancy to be used for both telephone triage and in in acute setting.">
+			keywords = <"sepsis, secreening, trust, red, amber, flag, acute, telephone, assessment, pregnant, post, pregnancy", ...>
+			use = <"To determine risk factors and level while screening for sepsis if pregnant or up to 6 weeks post pregnancy.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"https://sepsistrust.org/wp-content/uploads/2019/10/Sepsis-Telephone-Triage-Pregnant-v4.2.pdf
+https://sepsistrust.org/wp-content/uploads/2020/01/Sepsis-Acute-Pregnant-Version-1.4.pdf
+">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"e6e1693a7a0a05a7b80b6c0a51269992">
+		["build_uid"] = <"f830ead6-d3a4-33df-ab03-7f1d2a2905c2">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Sepsis screening tool if pregnant
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {0..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0006] occurrences matches {0..*} matches {    -- Risk factors for sepsis
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0008,    -- Impaired immunity (e.g diabetes, steroids, chemotherapy)
+													at0009,    -- Recent trauma / surgery / invasive procedure
+													at0010]    -- Indwelling lines / IVDU / broken skin
+												}
+											}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..*} matches {    -- Likely source of infection
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0012,    -- Respiratory
+													at0013,    -- Breast abscess
+													at0014,    -- Urine
+													at0015,    -- Abdominal pain / distension
+													at0026,    -- Infected caesarean / perineal wound
+													at0027]    -- Chorioamnionitis / endometritis
+												}
+											}
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..*} matches {    -- Red flag (telephone)
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0108,    -- Objective evidence of new or altered mental state
+													at0111,    -- Unable to catch breath / difficult to speak
+													at0112,    -- Very fast breathing / ‘pauses’ in breathing
+													at0113,    -- Skin that’s very pale, mottled, ashen or blue
+													at0114,    -- Rash that doesn’t fade when pressed firmly
+													at0148,    -- Unable to stand / collapsed
+													at0149]    -- Not passed urine in last 18 hours
+												}
+											}
+										}
+									}
+									ELEMENT[at0058] occurrences matches {0..*} matches {    -- Red flag (acute)
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0160,    -- Objective evidence of new or altered mental state
+													at0161,    -- Systolic BP ≤ 90 mmHg (or drop of >40 from normal)
+													at0162,    -- Heart rate ≥ 130 per minute
+													at0163,    -- Respiratory rate ≥ 25 per minute
+													at0164,    -- Needs O2 to keep SpO2 ≥ 92%
+													at0165,    -- Non-blanching rash / mottled / ashen / cyanotic
+													at0166,    -- Lactate ≥ 2 mmol/l*
+													at0167]    -- Not passed urine in 18 hours (<0.5ml/kg/hr if catheterised)
+												}
+											}
+										}
+									}
+									ELEMENT[at0021] occurrences matches {0..*} matches {    -- Amber flag (telephone)
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0150,    -- Behavioural / mental status change
+													at0151,    -- Acute deterioration in functional ability
+													at0152,    -- Patient reports breathing is harder work
+													at0153,    -- Has had invasive procedure in last 6 weeks (e.g. CS, forceps delivery, ERPC, cerclage, CVs, miscarriage, termination)
+													at0154,    -- Temperature < 36°C
+													at0155,    -- Has diabetes or gestational diabetes
+													at0156,    -- Close contact with GAS
+													at0157,    -- Prolonged rupture of membranes
+													at0158,    -- Bleeding / wound infection
+													at0159]    -- Offensive vaginal discharge
+												}
+											}
+										}
+									}
+									ELEMENT[at0083] occurrences matches {0..*} matches {    -- Amber flag (acute)
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0168,    -- Acute deterioration in functional ability
+													at0169,    -- Respiratory rate 21-24
+													at0170,    -- Heart rate 100-129 or new dysrhythmia
+													at0171,    -- Systolic BP 91-100 mmHg
+													at0172,    -- Has had invasive procedure in last 6 weeks (e.g. CS, forceps delivery, ERPC, cerclage, CVs, miscarriage, termination)
+													at0173,    -- Temperature < 36°C
+													at0174,    -- Has diabetes or gestational diabetes
+													at0175,    -- Close contact with GAS
+													at0176,    -- Prolonged rupture of membranes
+													at0177,    -- Bleeding / wound infection
+													at0178,    -- Offensive vaginal discharge
+													at0179,    -- Non-reassuring CTG / fetal tachycardia >160
+													at0180]    -- Behavioural / mental status change
+												}
+											}
+										}
+									}
+									ELEMENT[at0036] occurrences matches {0..*} matches {    -- 999 Flag
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0142,    -- Is breathing very fast
+													at0143,    -- Has a ‘fit’ or convulsion
+													at0144,    -- Looks mottled, bluish or pale
+													at0145,    -- Has a rash that does not fade when you press it
+													at0146,    -- Is very lethargic or difficult to wake
+													at0147]    -- Feels abnormally cold to touch
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0004] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Sepsis screening tool if pregnant">
+					description = <"Sepsis screening tool if pregnant or up to 6 weeks post pregnancy based on the paper forms developed by The UK Sepsis Trust.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Extension">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"Risk factors for sepsis">
+					description = <"Used to record details of suspicion of any serious illness from the sepsis screening tool.">
+					comment = <"Q1: ARE THERE CLUES THAT THE PATIENT MAY BE SERIOUSLY ILL?">
+				>
+				["at0008"] = <
+					text = <"Impaired immunity (e.g diabetes, steroids, chemotherapy)">
+					description = <"Patient has impaired immunity.">
+				>
+				["at0009"] = <
+					text = <"Recent trauma / surgery / invasive procedure">
+					description = <"Patient has had recent trauma, surgery or an invasive procedure.">
+				>
+				["at0010"] = <
+					text = <"Indwelling lines / IVDU / broken skin">
+					description = <"Patient has indwelling lines, IVDU or broken skin.">
+				>
+				["at0011"] = <
+					text = <"Likely source of infection">
+					description = <"Used to record details of source of any infection from the sepsis screening tool.">
+					comment = <"Q2: COULD THIS BE DUE TO AN INFECTION?">
+				>
+				["at0012"] = <
+					text = <"Respiratory">
+					description = <"The likely source of infection is respiratory.">
+				>
+				["at0013"] = <
+					text = <"Breast abscess">
+					description = <"The likely source of infection is breast abscess.">
+				>
+				["at0014"] = <
+					text = <"Urine">
+					description = <"The likely source of infection is urine.">
+				>
+				["at0015"] = <
+					text = <"Abdominal pain / distension">
+					description = <"The likely source of infection is abdominal pain / distension.">
+				>
+				["at0016"] = <
+					text = <"Red flag (telephone)">
+					description = <"Used to record details of any red flag indicators from the sepsis screening tool.">
+					comment = <"Q3: ANY RED FLAG PRESENT?">
+				>
+				["at0021"] = <
+					text = <"Amber flag (telephone)">
+					description = <"Used to record details of any amber flag indicators from the sepsis screening tool.">
+					comment = <"Q4: ANY AMBER FLAG PRESENT?">
+				>
+				["at0026"] = <
+					text = <"Infected caesarean / perineal wound">
+					description = <"The likely source of infection is infected caesarean / perineal wound .">
+				>
+				["at0027"] = <
+					text = <"Chorioamnionitis / endometritis">
+					description = <"The likely source of infection is chorioamnionitis / endometritis.">
+				>
+				["at0036"] = <
+					text = <"999 Flag">
+					description = <"*">
+				>
+				["at0058"] = <
+					text = <"Red flag (acute)">
+					description = <"Used to record details of any red flag indicators from the sepsis screening tool.">
+					comment = <"Q3: ANY RED FLAG PRESENT?">
+				>
+				["at0083"] = <
+					text = <"Amber flag (acute)">
+					description = <"Used to record details of any amber flag indicators from the sepsis screening tool.">
+					comment = <"Q4: ANY AMBER FLAG PRESENT?">
+				>
+				["at0108"] = <
+					text = <"Objective evidence of new or altered mental state">
+					description = <"Objective evidence of new or altered mental state">
+				>
+				["at0111"] = <
+					text = <"Unable to catch breath / difficult to speak">
+					description = <"Unable to catch breath / difficult to speak">
+				>
+				["at0112"] = <
+					text = <"Very fast breathing / ‘pauses’ in breathing">
+					description = <"Very fast breathing / ‘pauses’ in breathing">
+				>
+				["at0113"] = <
+					text = <"Skin that’s very pale, mottled, ashen or blue">
+					description = <"Skin that’s very pale, mottled, ashen or blue">
+				>
+				["at0114"] = <
+					text = <"Rash that doesn’t fade when pressed firmly">
+					description = <"Rash that doesn’t fade when pressed firmly">
+				>
+				["at0142"] = <
+					text = <"Is breathing very fast">
+					description = <"Is breathing very fast">
+				>
+				["at0143"] = <
+					text = <"Has a ‘fit’ or convulsion">
+					description = <"Has a ‘fit’ or convulsion">
+				>
+				["at0144"] = <
+					text = <"Looks mottled, bluish or pale">
+					description = <"Looks mottled, bluish or pale">
+				>
+				["at0145"] = <
+					text = <"Has a rash that does not fade when you press it">
+					description = <"Has a rash that does not fade when you press it">
+				>
+				["at0146"] = <
+					text = <"Is very lethargic or difficult to wake">
+					description = <"Is very lethargic or difficult to wake">
+				>
+				["at0147"] = <
+					text = <"Feels abnormally cold to touch">
+					description = <"Feels abnormally cold to touch">
+				>
+				["at0148"] = <
+					text = <"Unable to stand / collapsed">
+					description = <"Unable to stand / collapsed">
+				>
+				["at0149"] = <
+					text = <"Not passed urine in last 18 hours">
+					description = <"Not passed urine in last 18 hours">
+				>
+				["at0150"] = <
+					text = <"Behavioural / mental status change">
+					description = <"Behavioural / mental status change">
+				>
+				["at0151"] = <
+					text = <"Acute deterioration in functional ability">
+					description = <"Acute deterioration in functional ability">
+				>
+				["at0152"] = <
+					text = <"Patient reports breathing is harder work">
+					description = <"Patient reports breathing is harder work">
+				>
+				["at0153"] = <
+					text = <"Has had invasive procedure in last 6 weeks (e.g. CS, forceps delivery, ERPC, cerclage, CVs, miscarriage, termination)">
+					description = <"Has had invasive procedure in last 6 weeks (e.g. CS, forceps delivery, ERPC, cerclage, CVs, miscarriage, termination)">
+				>
+				["at0154"] = <
+					text = <"Temperature < 36°C">
+					description = <"Temperature < 36°C">
+				>
+				["at0155"] = <
+					text = <"Has diabetes or gestational diabetes">
+					description = <"Has diabetes or gestational diabetes">
+				>
+				["at0156"] = <
+					text = <"Close contact with GAS">
+					description = <"Close contact with GAS">
+				>
+				["at0157"] = <
+					text = <"Prolonged rupture of membranes">
+					description = <"Prolonged rupture of membranes">
+				>
+				["at0158"] = <
+					text = <"Bleeding / wound infection">
+					description = <"Bleeding / wound infection">
+				>
+				["at0159"] = <
+					text = <"Offensive vaginal discharge">
+					description = <"Offensive vaginal discharge">
+				>
+				["at0160"] = <
+					text = <"Objective evidence of new or altered mental state">
+					description = <"Objective evidence of new or altered mental state">
+				>
+				["at0161"] = <
+					text = <"Systolic BP ≤ 90 mmHg (or drop of >40 from normal)">
+					description = <"Systolic BP ≤ 90 mmHg (or drop of >40 from normal)">
+				>
+				["at0162"] = <
+					text = <"Heart rate ≥ 130 per minute">
+					description = <"Heart rate ≥ 130 per minute">
+				>
+				["at0163"] = <
+					text = <"Respiratory rate ≥ 25 per minute">
+					description = <"Respiratory rate ≥ 25 per minute">
+				>
+				["at0164"] = <
+					text = <"Needs O2 to keep SpO2 ≥ 92%">
+					description = <"Needs O2 to keep SpO2 ≥ 92%">
+				>
+				["at0165"] = <
+					text = <"Non-blanching rash / mottled / ashen / cyanotic">
+					description = <"Non-blanching rash / mottled / ashen / cyanotic">
+				>
+				["at0166"] = <
+					text = <"Lactate ≥ 2 mmol/l*">
+					description = <"Lactate ≥ 2 mmol/l*">
+				>
+				["at0167"] = <
+					text = <"Not passed urine in 18 hours (<0.5ml/kg/hr if catheterised)">
+					description = <"Not passed urine in 18 hours (<0.5ml/kg/hr if catheterised)">
+				>
+				["at0168"] = <
+					text = <"Acute deterioration in functional ability">
+					description = <"Acute deterioration in functional ability">
+				>
+				["at0169"] = <
+					text = <"Respiratory rate 21-24">
+					description = <"Respiratory rate 21-24">
+				>
+				["at0170"] = <
+					text = <"Heart rate 100-129 or new dysrhythmia">
+					description = <"Heart rate 100-129 or new dysrhythmia">
+				>
+				["at0171"] = <
+					text = <"Systolic BP 91-100 mmHg">
+					description = <"Systolic BP 91-100 mmHg">
+				>
+				["at0172"] = <
+					text = <"Has had invasive procedure in last 6 weeks (e.g. CS, forceps delivery, ERPC, cerclage, CVs, miscarriage, termination)">
+					description = <"Has had invasive procedure in last 6 weeks (e.g. CS, forceps delivery, ERPC, cerclage, CVs, miscarriage, termination)">
+				>
+				["at0173"] = <
+					text = <"Temperature < 36°C">
+					description = <"Temperature < 36°C">
+				>
+				["at0174"] = <
+					text = <"Has diabetes or gestational diabetes">
+					description = <"Has diabetes or gestational diabetes">
+				>
+				["at0175"] = <
+					text = <"Close contact with GAS">
+					description = <"Close contact with GAS">
+				>
+				["at0176"] = <
+					text = <"Prolonged rupture of membranes">
+					description = <"Prolonged rupture of membranes">
+				>
+				["at0177"] = <
+					text = <"Bleeding / wound infection">
+					description = <"Bleeding / wound infection">
+				>
+				["at0178"] = <
+					text = <"Offensive vaginal discharge">
+					description = <"Offensive vaginal discharge">
+				>
+				["at0179"] = <
+					text = <"Non-reassuring CTG / fetal tachycardia >160">
+					description = <"Non-reassuring CTG / fetal tachycardia >160">
+				>
+				["at0180"] = <
+					text = <"Behavioural / mental status change">
+					description = <"Behavioural / mental status change">
+				>
+			>
+		>
+	>

@@ -1,0 +1,478 @@
+archetype (adl_version=1.4; uid=c455f423-be4f-4f71-9015-1eaf4c591230)
+	openEHR-EHR-OBSERVATION.sepsis_screening_tool_age_5to11.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2020-03-27">
+		["name"] = <"Alan Fish">
+		["organisation"] = <"FreshEHR">
+		["email"] = <"alan.fish@feshehr.com">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Sepsis screening tool for ages 5 to 11 to be used for both telephone triage and in in acute setting.">
+			keywords = <"sepsis, secreening, trust, red, amber, flag, acute, telephone, assessment, pediatric", ...>
+			use = <"To determine risk factors and level while screening for sepsis in ages 5 to 11.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"https://sepsistrust.org/wp-content/uploads/2019/10/Sepsis-Telephone-Triage-5-11-v2.2.pdf
+https://sepsistrust.org/wp-content/uploads/2020/02/Sepsis-Acute-5-11-Version-1.3.pdf">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"8f30fcefdd4197b4f0cb053c46962aab">
+		["build_uid"] = <"f830ead6-d3a4-33df-ab03-7f1d2a2905c2">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Sepsis screening tool for ages 5 to 11
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {0..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0098] occurrences matches {0..*} matches {    -- Initial indicators
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0103,    -- Abnormal temperature
+													at0104,    -- Appears to be breathing more quickly or slowly than normal
+													at0105,    -- Altered mental state – include sleepy, irritable, drowsy or floppy
+													at0106,    -- Abnormally pale / bluish skin or abnormally cold hands or feet
+													at0107]    -- Reduced wet nappies or reduced urine output
+												}
+											}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..*} matches {    -- Risk factors for sepsis
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0008,    -- Impaired immunity (e.g diabetes, steroids, chemotherapy)
+													at0009,    -- Recent trauma / surgery / invasive procedure
+													at0010]    -- Indwelling lines / IVDU / broken skin
+												}
+											}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..*} matches {    -- Likely source of infection
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0012,    -- Respiratory
+													at0013,    -- Brain
+													at0014,    -- Urine
+													at0015,    -- Surgical
+													at0026,    -- Skin / joint/ wound
+													at0027]    -- Indwelling device
+												}
+											}
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..*} matches {    -- Red flag (telephone)
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0108,    -- Objective evidence of new or altered mental state
+													at0109,    -- Doesn’t wake when roused / won’t stay awake
+													at0110,    -- Not doing / interested in anything at all
+													at0111,    -- Unable to catch breath / difficult to speak
+													at0112,    -- Very fast breathing / ‘pauses’ in breathing
+													at0113,    -- Skin that’s very pale, mottled, ashen or blue
+													at0114,    -- Rash that doesn’t fade when pressed firmly
+													at0115]    -- Temperature <36°C (check 3 times in 10 min)
+												}
+											}
+										}
+									}
+									ELEMENT[at0058] occurrences matches {0..*} matches {    -- Red flag (acute)
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0116,    -- Objective evidence of new or altered mental state
+													at0117,    -- Doesn’t wake when roused / won’t stay awake
+													at0118,    -- Looks very unwell to healthcare professional
+													at0119,    -- Severe tachypnoea (see chart)
+													at0120,    -- Severe tachycardia (see chart)
+													at0121,    -- Bradycardia (<60 bpm)
+													at0122,    -- SpO2 < 90% on air or increased O2
+													at0123,    -- requirements
+													at0124]    -- Non-blanching rash / mottled / ashen / cyanotic
+												}
+											}
+										}
+									}
+									ELEMENT[at0021] occurrences matches {0..*} matches {    -- Amber flag (telephone)
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0125,    -- Behaving abnormally / not wanting to play
+													at0126,    -- Parental concern
+													at0127,    -- Having to work hard to breathe
+													at0128,    -- Reduced urine output
+													at0129,    -- Leg pain
+													at0130]    -- Cold feet or hands
+												}
+											}
+										}
+									}
+									ELEMENT[at0083] occurrences matches {0..*} matches {    -- Amber flag (acute)
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0131,    -- Behaving abnormally / not wanting to play
+													at0132,    -- Parental or carer concern
+													at0133,    -- Moderate tachypnoea (see chart)
+													at0134,    -- Moderate tachycardia (see chart)
+													at0135,    -- SpO2 < 92% on air or increased O2
+													at0136,    -- requirement
+													at0137,    -- Capillary refill time ≥ 3 seconds
+													at0138,    -- Reduced urine output (<1ml/kg/h if catheterised)
+													at0139,    -- Leg pain
+													at0140,    -- Temperature <36°C
+													at0141]    -- Immunocompromised
+												}
+											}
+										}
+									}
+									ELEMENT[at0036] occurrences matches {0..*} matches {    -- 999 Flag
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0142,    -- Is breathing very fast
+													at0143,    -- Has a ‘fit’ or convulsion
+													at0144,    -- Looks mottled, bluish or pale
+													at0145,    -- Has a rash that does not fade when you press it
+													at0146,    -- Is very lethargic or difficult to wake
+													at0147]    -- Feels abnormally cold to touch
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0004] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Sepsis screening tool for ages 5 to 11">
+					description = <"Sepsis screening tool for ages 5 to 11 plus based on the paper forms developed by The UK Sepsis Trust.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Extension">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"Risk factors for sepsis">
+					description = <"Used to record details of suspicion of any serious illness from the sepsis screening tool.">
+					comment = <"Q1: ARE THERE CLUES THAT THE PATIENT MAY BE SERIOUSLY ILL?">
+				>
+				["at0008"] = <
+					text = <"Impaired immunity (e.g diabetes, steroids, chemotherapy)">
+					description = <"Patient has impaired immunity.">
+				>
+				["at0009"] = <
+					text = <"Recent trauma / surgery / invasive procedure">
+					description = <"Patient has had recent trauma, surgery or an invasive procedure.">
+				>
+				["at0010"] = <
+					text = <"Indwelling lines / IVDU / broken skin">
+					description = <"Patient has indwelling lines, IVDU or broken skin.">
+				>
+				["at0011"] = <
+					text = <"Likely source of infection">
+					description = <"Used to record details of source of any infection from the sepsis screening tool.">
+					comment = <"Q2: COULD THIS BE DUE TO AN INFECTION?">
+				>
+				["at0012"] = <
+					text = <"Respiratory">
+					description = <"The likely source of infection is respiratory.">
+				>
+				["at0013"] = <
+					text = <"Brain">
+					description = <"The likely source of infection is brain.">
+				>
+				["at0014"] = <
+					text = <"Urine">
+					description = <"The likely source of infection is urine.">
+				>
+				["at0015"] = <
+					text = <"Surgical">
+					description = <"The likely source of infection is surgical.">
+				>
+				["at0016"] = <
+					text = <"Red flag (telephone)">
+					description = <"Used to record details of any red flag indicators from the sepsis screening tool.">
+					comment = <"Q3: ANY RED FLAG PRESENT?">
+				>
+				["at0021"] = <
+					text = <"Amber flag (telephone)">
+					description = <"Used to record details of any amber flag indicators from the sepsis screening tool.">
+					comment = <"Q4: ANY AMBER FLAG PRESENT?">
+				>
+				["at0026"] = <
+					text = <"Skin / joint/ wound">
+					description = <"The likely source of infection is skin, joint or wound.">
+				>
+				["at0027"] = <
+					text = <"Indwelling device">
+					description = <"The likely source of infection is an indwelling device.">
+				>
+				["at0036"] = <
+					text = <"999 Flag">
+					description = <"*">
+				>
+				["at0058"] = <
+					text = <"Red flag (acute)">
+					description = <"Used to record details of any red flag indicators from the sepsis screening tool.">
+					comment = <"Q3: ANY RED FLAG PRESENT?">
+				>
+				["at0083"] = <
+					text = <"Amber flag (acute)">
+					description = <"Used to record details of any amber flag indicators from the sepsis screening tool.">
+					comment = <"Q4: ANY AMBER FLAG PRESENT?">
+				>
+				["at0098"] = <
+					text = <"Initial indicators">
+					description = <"Used to record details of suspicion of any serious illness from the sepsis screening tool.">
+					comment = <"Q1: ARE THERE CLUES THAT THE PATIENT MAY BE SERIOUSLY ILL?">
+				>
+				["at0103"] = <
+					text = <"Abnormal temperature">
+					description = <"Abnormal temperature">
+				>
+				["at0104"] = <
+					text = <"Appears to be breathing more quickly or slowly than normal">
+					description = <"Appears to be breathing more quickly or slowly than normal">
+				>
+				["at0105"] = <
+					text = <"Altered mental state – include sleepy, irritable, drowsy or floppy">
+					description = <"Altered mental state – include sleepy, irritable, drowsy or floppy">
+				>
+				["at0106"] = <
+					text = <"Abnormally pale / bluish skin or abnormally cold hands or feet">
+					description = <"Abnormally pale / bluish skin or abnormally cold hands or feet">
+				>
+				["at0107"] = <
+					text = <"Reduced wet nappies or reduced urine output">
+					description = <"Reduced wet nappies or reduced urine output">
+				>
+				["at0108"] = <
+					text = <"Objective evidence of new or altered mental state">
+					description = <"Objective evidence of new or altered mental state">
+				>
+				["at0109"] = <
+					text = <"Doesn’t wake when roused / won’t stay awake">
+					description = <"Doesn’t wake when roused / won’t stay awake">
+				>
+				["at0110"] = <
+					text = <"Not doing / interested in anything at all">
+					description = <"Not doing / interested in anything at all">
+				>
+				["at0111"] = <
+					text = <"Unable to catch breath / difficult to speak">
+					description = <"Unable to catch breath / difficult to speak">
+				>
+				["at0112"] = <
+					text = <"Very fast breathing / ‘pauses’ in breathing">
+					description = <"Very fast breathing / ‘pauses’ in breathing">
+				>
+				["at0113"] = <
+					text = <"Skin that’s very pale, mottled, ashen or blue">
+					description = <"Skin that’s very pale, mottled, ashen or blue">
+				>
+				["at0114"] = <
+					text = <"Rash that doesn’t fade when pressed firmly">
+					description = <"Rash that doesn’t fade when pressed firmly">
+				>
+				["at0115"] = <
+					text = <"Temperature <36°C (check 3 times in 10 min)">
+					description = <"Temperature <36°C (check 3 times in 10 min)">
+				>
+				["at0116"] = <
+					text = <"Objective evidence of new or altered mental state">
+					description = <"Objective evidence of new or altered mental state">
+				>
+				["at0117"] = <
+					text = <"Doesn’t wake when roused / won’t stay awake">
+					description = <"Doesn’t wake when roused / won’t stay awake">
+				>
+				["at0118"] = <
+					text = <"Looks very unwell to healthcare professional">
+					description = <"Looks very unwell to healthcare professional">
+				>
+				["at0119"] = <
+					text = <"Severe tachypnoea (see chart)">
+					description = <"Severe tachypnoea (see chart)">
+				>
+				["at0120"] = <
+					text = <"Severe tachycardia (see chart)">
+					description = <"Severe tachycardia (see chart)">
+				>
+				["at0121"] = <
+					text = <"Bradycardia (<60 bpm)">
+					description = <"Bradycardia (<60 bpm)">
+				>
+				["at0122"] = <
+					text = <"SpO2 < 90% on air or increased O2">
+					description = <"SpO2 < 90% on air or increased O2">
+				>
+				["at0123"] = <
+					text = <"requirements">
+					description = <"requirements">
+				>
+				["at0124"] = <
+					text = <"Non-blanching rash / mottled / ashen / cyanotic">
+					description = <"Non-blanching rash / mottled / ashen / cyanotic">
+				>
+				["at0125"] = <
+					text = <"Behaving abnormally / not wanting to play">
+					description = <"Behaving abnormally / not wanting to play">
+				>
+				["at0126"] = <
+					text = <"Parental concern">
+					description = <"Parental concern">
+				>
+				["at0127"] = <
+					text = <"Having to work hard to breathe">
+					description = <"Having to work hard to breathe">
+				>
+				["at0128"] = <
+					text = <"Reduced urine output">
+					description = <"Reduced urine output">
+				>
+				["at0129"] = <
+					text = <"Leg pain">
+					description = <"Leg pain">
+				>
+				["at0130"] = <
+					text = <"Cold feet or hands">
+					description = <"Cold feet or hands">
+				>
+				["at0131"] = <
+					text = <"Behaving abnormally / not wanting to play">
+					description = <"Behaving abnormally / not wanting to play">
+				>
+				["at0132"] = <
+					text = <"Parental or carer concern">
+					description = <"Parental or carer concern">
+				>
+				["at0133"] = <
+					text = <"Moderate tachypnoea (see chart)">
+					description = <"Moderate tachypnoea (see chart)">
+				>
+				["at0134"] = <
+					text = <"Moderate tachycardia (see chart)">
+					description = <"Moderate tachycardia (see chart)">
+				>
+				["at0135"] = <
+					text = <"SpO2 < 92% on air or increased O2">
+					description = <"SpO2 < 92% on air or increased O2">
+				>
+				["at0136"] = <
+					text = <"requirement">
+					description = <"requirement">
+				>
+				["at0137"] = <
+					text = <"Capillary refill time ≥ 3 seconds">
+					description = <"Capillary refill time ≥ 3 seconds">
+				>
+				["at0138"] = <
+					text = <"Reduced urine output (<1ml/kg/h if catheterised)">
+					description = <"Reduced urine output (<1ml/kg/h if catheterised)">
+				>
+				["at0139"] = <
+					text = <"Leg pain">
+					description = <"Leg pain">
+				>
+				["at0140"] = <
+					text = <"Temperature <36°C">
+					description = <"Temperature <36°C">
+				>
+				["at0141"] = <
+					text = <"Immunocompromised">
+					description = <"Immunocompromised">
+				>
+				["at0142"] = <
+					text = <"Is breathing very fast">
+					description = <"Is breathing very fast">
+				>
+				["at0143"] = <
+					text = <"Has a ‘fit’ or convulsion">
+					description = <"Has a ‘fit’ or convulsion">
+				>
+				["at0144"] = <
+					text = <"Looks mottled, bluish or pale">
+					description = <"Looks mottled, bluish or pale">
+				>
+				["at0145"] = <
+					text = <"Has a rash that does not fade when you press it">
+					description = <"Has a rash that does not fade when you press it">
+				>
+				["at0146"] = <
+					text = <"Is very lethargic or difficult to wake">
+					description = <"Is very lethargic or difficult to wake">
+				>
+				["at0147"] = <
+					text = <"Feels abnormally cold to touch">
+					description = <"Feels abnormally cold to touch">
+				>
+			>
+		>
+	>

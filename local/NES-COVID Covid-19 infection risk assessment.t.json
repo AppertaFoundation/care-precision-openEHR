@@ -1,0 +1,2178 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "2acdfde3-dedf-4980-ae48-5f52e5e35a6c",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2020-03-28"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "MD5-CAM-1.0.1" : "b63612560a1728361cbe1eabb88f4d4d"
+    },
+    "details" : {
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "fi" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fi"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ar-sy" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ar-sy"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "it" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "it"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-EVALUATION.health_risk-covid.v0",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-EVALUATION.covid19_infection_risk_assessment.v0"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "EVALUATION",
+    "nodeId" : "at0000.1.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "data",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0001",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0016.0.8",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0013.1.7",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "defaultValue" : {
+                      "defining_code" : {
+                        "code_string" : "at0.18",
+                        "@type" : "CODE_PHRASE"
+                      },
+                      "@type" : "DV_CODED_TEXT"
+                    },
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "ac0.0.2" ],
+                        "selectedTerminologies" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0014.0.8",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0029.0.8",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0028.0.8",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_BOOLEAN",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_BOOLEAN",
+                        "rmTypeName" : "Boolean",
+                        "occurrences" : "1..1",
+                        "constraint" : [ true ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0012.0.8",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0030.0.8",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0016.0.6",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0013.1.6",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "defaultValue" : {
+                      "defining_code" : {
+                        "code_string" : "at0.14",
+                        "@type" : "CODE_PHRASE"
+                      },
+                      "@type" : "DV_CODED_TEXT"
+                    },
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "ac0.0.9" ],
+                        "selectedTerminologies" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0014.0.6",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0029.0.6",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0028.0.6",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_BOOLEAN",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_BOOLEAN",
+                        "rmTypeName" : "Boolean",
+                        "occurrences" : "1..1",
+                        "constraint" : [ true ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0012.0.6",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0030.0.6",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_ARCHETYPE_ROOT",
+                "rmTypeName" : "CLUSTER",
+                "occurrences" : "0..*",
+                "nodeId" : "at0027.1.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ],
+                "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-outbreak_exposure-001.v0",
+                "referenceType" : "archetypeOverlay"
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0016.0.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0013.1.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "defaultValue" : {
+                      "defining_code" : {
+                        "code_string" : "at0.9",
+                        "@type" : "CODE_PHRASE"
+                      },
+                      "@type" : "DV_CODED_TEXT"
+                    },
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "ac0.0.8" ],
+                        "selectedTerminologies" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0014.0.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0029.0.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0028.0.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_BOOLEAN",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_BOOLEAN",
+                        "rmTypeName" : "Boolean",
+                        "occurrences" : "1..1",
+                        "constraint" : [ true ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0012.0.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0030.0.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0016.0.9",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0013.1.8",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "defaultValue" : {
+                      "defining_code" : {
+                        "code_string" : "at0.19",
+                        "@type" : "CODE_PHRASE"
+                      },
+                      "@type" : "DV_CODED_TEXT"
+                    },
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "ac0.0.7" ],
+                        "selectedTerminologies" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0014.0.9",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0029.0.9",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0028.0.9",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_BOOLEAN",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_BOOLEAN",
+                        "rmTypeName" : "Boolean",
+                        "occurrences" : "1..1",
+                        "constraint" : [ true ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0012.0.9",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0030.0.9",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0016.0.10",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0013.1.9",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "defaultValue" : {
+                      "defining_code" : {
+                        "code_string" : "at0.20",
+                        "@type" : "CODE_PHRASE"
+                      },
+                      "@type" : "DV_CODED_TEXT"
+                    },
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "ac0.0.6" ],
+                        "selectedTerminologies" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0014.0.10",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0029.0.10",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0028.0.10",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_BOOLEAN",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_BOOLEAN",
+                        "rmTypeName" : "Boolean",
+                        "occurrences" : "1..1",
+                        "constraint" : [ true ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0012.0.10",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0030.0.10",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0016.0.2",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0013.1.2",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "CODE_PHRASE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "at0.10" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0014.0.2",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0029.0.2",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0028.0.2",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_BOOLEAN",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_BOOLEAN",
+                        "rmTypeName" : "Boolean",
+                        "occurrences" : "1..1",
+                        "constraint" : [ true ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0012.0.2",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0030.0.2",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0016.0.5",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0013.1.5",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "CODE_PHRASE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "at0.13" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0014.0.5",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0029.0.5",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0028.0.5",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_BOOLEAN",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_BOOLEAN",
+                        "rmTypeName" : "Boolean",
+                        "occurrences" : "1..1",
+                        "constraint" : [ true ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0012.0.5",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0030.0.5",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0016.0.3",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0013.1.3",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "CODE_PHRASE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "at0.11" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0014.0.3",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0029.0.3",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0028.0.3",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_BOOLEAN",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_BOOLEAN",
+                        "rmTypeName" : "Boolean",
+                        "occurrences" : "1..1",
+                        "constraint" : [ true ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0012.0.3",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0030.0.3",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0016.0.4",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0013.1.4",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "CODE_PHRASE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "at0.12" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0014.0.4",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0029.0.4",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0028.0.4",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_BOOLEAN",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_BOOLEAN",
+                        "rmTypeName" : "Boolean",
+                        "occurrences" : "1..1",
+                        "constraint" : [ true ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0012.0.4",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0030.0.4",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "nodeId" : "at0016.0.7",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0014.0.7",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0029.0.7",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0028.0.7",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_BOOLEAN",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_BOOLEAN",
+                        "rmTypeName" : "Boolean",
+                        "occurrences" : "1..1",
+                        "constraint" : [ true ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0012.0.7",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0030.0.7",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0020.0.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "CODE_PHRASE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "at0021", "at0022" ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0023.0.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0004.0.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0015.0.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "protocol",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0010",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0024.0.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0025.0.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000.1",
+    "termDefinitions" : {
+      "ar-sy" : {
+        "at0016.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "at0016.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.2",
+          "text" : "Contact with suspected pneumonia",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "at0016.0.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.3",
+          "text" : "Contact with birds",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "at0016.0.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.4",
+          "text" : "Contact with Avian flu",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "at0016.0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.5",
+          "text" : "Contact with severe resp disease",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "at0016.0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.6",
+          "text" : "Potential locality exposure",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "at0016.0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.7",
+          "text" : "Other",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "at0016.0.8" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case (2)",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "ac0.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.2",
+          "description" : "*"
+        },
+        "at0016.0.9" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case (3)",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "at0016.0.10" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case (4)",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "ac0.0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.6",
+          "description" : "*"
+        },
+        "ac0.0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.7",
+          "description" : "*"
+        },
+        "ac0.0.8" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.8",
+          "description" : "*"
+        },
+        "ac0.0.9" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.9",
+          "description" : "*"
+        }
+      },
+      "de" : {
+        "at0016.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "at0016.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.2",
+          "text" : "Contact with suspected pneumonia",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "at0016.0.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.3",
+          "text" : "Contact with birds",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "at0016.0.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.4",
+          "text" : "Contact with Avian flu",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "at0016.0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.5",
+          "text" : "Contact with severe resp disease",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "at0016.0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.6",
+          "text" : "Potential locality exposure",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "at0016.0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.7",
+          "text" : "Other",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "at0016.0.8" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case (2)",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "ac0.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.2",
+          "description" : "*"
+        },
+        "at0016.0.9" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case (3)",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "at0016.0.10" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case (4)",
+          "description" : "*Details about each possible risk factor.(en)"
+        },
+        "ac0.0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.6",
+          "description" : "*"
+        },
+        "ac0.0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.7",
+          "description" : "*"
+        },
+        "ac0.0.8" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.8",
+          "description" : "*"
+        },
+        "ac0.0.9" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.9",
+          "description" : "*"
+        }
+      },
+      "en" : {
+        "at0016.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case",
+          "description" : "Details about each possible risk factor."
+        },
+        "at0016.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.2",
+          "text" : "Contact with suspected pneumonia",
+          "description" : "Details about each possible risk factor."
+        },
+        "at0016.0.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.3",
+          "text" : "Contact with birds in China",
+          "description" : "Details about each possible risk factor."
+        },
+        "at0016.0.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.4",
+          "text" : "Contact with Avian flu",
+          "description" : "Details about each possible risk factor."
+        },
+        "at0016.0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.5",
+          "text" : "Contact with severe resp disease",
+          "description" : "Details about each possible risk factor."
+        },
+        "at0016.0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.6",
+          "text" : "Potential locality exposure",
+          "description" : "Details about each possible risk factor."
+        },
+        "at0016.0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.7",
+          "text" : "Other",
+          "description" : "Details about each possible risk factor."
+        },
+        "at0016.0.8" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.8",
+          "text" : "Needs admission for resp.disease",
+          "description" : "Details about each possible risk factor."
+        },
+        "ac0.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.2",
+          "description" : "*"
+        },
+        "at0016.0.9" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.9",
+          "text" : "Other household members unwell",
+          "description" : "Details about each possible risk factor."
+        },
+        "at0016.0.10" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.10",
+          "text" : "Other household members travel exposure",
+          "description" : "Details about each possible risk factor."
+        },
+        "ac0.0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.6",
+          "description" : "*"
+        },
+        "ac0.0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.7",
+          "description" : "*"
+        },
+        "ac0.0.8" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.8",
+          "description" : "*"
+        },
+        "ac0.0.9" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.9",
+          "description" : "*"
+        }
+      },
+      "es-ar" : {
+        "at0016.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case",
+          "description" : "Detalles acerca de cada factor de riesgo posible."
+        },
+        "at0016.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.2",
+          "text" : "Contact with suspected pneumonia",
+          "description" : "Detalles acerca de cada factor de riesgo posible."
+        },
+        "at0016.0.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.3",
+          "text" : "Contact with birds",
+          "description" : "Detalles acerca de cada factor de riesgo posible."
+        },
+        "at0016.0.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.4",
+          "text" : "Contact with Avian flu",
+          "description" : "Detalles acerca de cada factor de riesgo posible."
+        },
+        "at0016.0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.5",
+          "text" : "Contact with severe resp disease",
+          "description" : "Detalles acerca de cada factor de riesgo posible."
+        },
+        "at0016.0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.6",
+          "text" : "Potential locality exposure",
+          "description" : "Detalles acerca de cada factor de riesgo posible."
+        },
+        "at0016.0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.7",
+          "text" : "Other",
+          "description" : "Detalles acerca de cada factor de riesgo posible."
+        },
+        "at0016.0.8" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case (2)",
+          "description" : "Detalles acerca de cada factor de riesgo posible."
+        },
+        "ac0.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.2",
+          "description" : "*"
+        },
+        "at0016.0.9" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case (3)",
+          "description" : "Detalles acerca de cada factor de riesgo posible."
+        },
+        "at0016.0.10" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case (4)",
+          "description" : "Detalles acerca de cada factor de riesgo posible."
+        },
+        "ac0.0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.6",
+          "description" : "*"
+        },
+        "ac0.0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.7",
+          "description" : "*"
+        },
+        "ac0.0.8" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.8",
+          "description" : "*"
+        },
+        "ac0.0.9" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.9",
+          "description" : "*"
+        }
+      },
+      "sv" : {
+        "at0016.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case",
+          "description" : "Detaljer om varje möjlig riskfaktor."
+        },
+        "at0016.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.2",
+          "text" : "Contact with suspected pneumonia",
+          "description" : "Detaljer om varje möjlig riskfaktor."
+        },
+        "at0016.0.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.3",
+          "text" : "Contact with birds",
+          "description" : "Detaljer om varje möjlig riskfaktor."
+        },
+        "at0016.0.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.4",
+          "text" : "Contact with Avian flu",
+          "description" : "Detaljer om varje möjlig riskfaktor."
+        },
+        "at0016.0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.5",
+          "text" : "Contact with severe resp disease",
+          "description" : "Detaljer om varje möjlig riskfaktor."
+        },
+        "at0016.0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.6",
+          "text" : "Potential locality exposure",
+          "description" : "Detaljer om varje möjlig riskfaktor."
+        },
+        "at0016.0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.7",
+          "text" : "Other",
+          "description" : "Detaljer om varje möjlig riskfaktor."
+        },
+        "at0016.0.8" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case (2)",
+          "description" : "Detaljer om varje möjlig riskfaktor."
+        },
+        "ac0.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.2",
+          "description" : "*"
+        },
+        "at0016.0.9" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case (3)",
+          "description" : "Detaljer om varje möjlig riskfaktor."
+        },
+        "at0016.0.10" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case (4)",
+          "description" : "Detaljer om varje möjlig riskfaktor."
+        },
+        "ac0.0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.6",
+          "description" : "*"
+        },
+        "ac0.0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.7",
+          "description" : "*"
+        },
+        "ac0.0.8" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.8",
+          "description" : "*"
+        },
+        "ac0.0.9" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.9",
+          "description" : "*"
+        }
+      },
+      "nb" : {
+        "at0016.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case",
+          "description" : "Details about each possible risk factor."
+        },
+        "at0016.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.2",
+          "text" : "Contact with suspected pneumonia",
+          "description" : "Details about each possible risk factor."
+        },
+        "at0016.0.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.3",
+          "text" : "Contact with birds",
+          "description" : "Details about each possible risk factor."
+        },
+        "at0016.0.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.4",
+          "text" : "Contact with Avian flu",
+          "description" : "Details about each possible risk factor."
+        },
+        "at0016.0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.5",
+          "text" : "Contact with severe resp disease",
+          "description" : "Details about each possible risk factor."
+        },
+        "at0016.0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.6",
+          "text" : "Potential locality exposure",
+          "description" : "Details about each possible risk factor."
+        },
+        "at0016.0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.7",
+          "text" : "Other",
+          "description" : "Details about each possible risk factor."
+        },
+        "at0016.0.8" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case (2)",
+          "description" : "Details about each possible risk factor."
+        },
+        "ac0.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.2",
+          "description" : "*"
+        },
+        "at0016.0.9" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case (3)",
+          "description" : "Details about each possible risk factor."
+        },
+        "at0016.0.10" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Contact with confirmed case (4)",
+          "description" : "Details about each possible risk factor."
+        },
+        "ac0.0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.6",
+          "description" : "*"
+        },
+        "ac0.0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.7",
+          "description" : "*"
+        },
+        "ac0.0.8" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.8",
+          "description" : "*"
+        },
+        "ac0.0.9" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.0.9",
+          "description" : "*"
+        }
+      },
+      "fi" : {
+        "ac0.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.2",
+          "description" : "*"
+        },
+        "ac0.0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.6",
+          "description" : "*"
+        },
+        "ac0.0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.7",
+          "description" : "*"
+        },
+        "ac0.0.8" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.8",
+          "description" : "*"
+        },
+        "ac0.0.9" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.9",
+          "description" : "*"
+        }
+      },
+      "it" : {
+        "ac0.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.2",
+          "description" : "*"
+        },
+        "ac0.0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.6",
+          "description" : "*"
+        },
+        "ac0.0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.7",
+          "description" : "*"
+        },
+        "ac0.0.8" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.8",
+          "description" : "*"
+        },
+        "ac0.0.9" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.9",
+          "description" : "*"
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : {
+      "ac0.0.1" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.1",
+        "members" : [ "at0.18" ]
+      },
+      "ac0.0.2" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.2",
+        "members" : [ "at0.18" ]
+      },
+      "ac0.0.3" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.3",
+        "members" : [ "at0.9", "at0.19" ]
+      },
+      "ac0.0.4" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.4",
+        "members" : [ "at0.19" ]
+      },
+      "ac0.0.5" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.5",
+        "members" : [ "at0.20" ]
+      },
+      "ac0.0.6" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.6",
+        "members" : [ "at0.20" ]
+      },
+      "ac0.0.7" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.7",
+        "members" : [ "at0.19" ]
+      },
+      "ac0.0.8" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.8",
+        "members" : [ "at0.9" ]
+      },
+      "ac0.0.9" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.9",
+        "members" : [ "at0.14" ]
+      }
+    }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "c87816de-3f0e-3be7-9952-9c146c8fd020",
+  "rmName" : "openehr",
+  "rmRelease" : "1.0.3",
+  "generated" : true,
+  "templateId" : "NDS_COVID Infection risk assessment",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "8f7e97c0-ddd0-41e6-a435-46c459a72460",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : { },
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ "location, outbreak, infection," ],
+          "use" : "To record details of potential exposure to a potentially harmful agent, relating to a specific location, typically an outbreak of infectious disease.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.outbreak_exposure.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-outbreak_exposure-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0007.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "name",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0026", "at0027", "at0028" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0021.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0024.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_ORDINAL",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0022.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0023.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Location visited",
+            "description" : "Details of potential exposure to a potentially harmful agent, relating to a specific location, typically an outbreak of infectious disease."
+          }
+        },
+        "fi" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Sijaintiperusteinen altistuminen",
+            "description" : "*Details of potential exposure to a potentially harmful agent, relating to a specific location, typically an outbreak of infectious disease.(en)"
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "Puhkeamisen sijainti",
+            "description" : "*"
+          },
+          "at0021.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021.1",
+            "text" : "Sijainnin tunniste",
+            "description" : "*"
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Riskiluokka",
+            "description" : "*"
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Alueelle saapumispäivämäärä",
+            "description" : "*"
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "Alueelta poistumispäivämäärä",
+            "description" : "*"
+          }
+        },
+        "it" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Esposizione basata sulla localizzazione",
+            "description" : "Dettagli riguardanti la potenziale esposizione ad un agente potenzialmente dannoso in relazione ad un luogo specifico, tipicamente un focolaio di una malattia infettiva."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "Sede del focolaio",
+            "description" : "*"
+          },
+          "at0021.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021.1",
+            "text" : "Identificativo del luogo",
+            "description" : "*"
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Categoria di rischio",
+            "description" : "*"
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Data di ingresso nel luogo",
+            "description" : "*"
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "Data di uscita dal luogo",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "2abdcb81-beb7-485b-ace8-5aa228f8e121",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fi"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "it"
+      },
+      "author" : {
+        "name" : "Cecilia Mascia",
+        "organisation" : "CRS4 - Center for advanced studies, research and development in Sardinia, Pula (Cagliari), Italy",
+        "email" : "cecilia.mascia@crs4.it"
+      },
+      "otherDetails" : { }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ar-sy"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fi"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "it"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}

@@ -1,0 +1,724 @@
+{
+  "modelVersion" : 1,
+  "sources" : [ {
+    "sourceType" : "repository",
+    "id" : "open-ereact",
+    "user" : "freshehr",
+    "repositoryId" : "open-ereact"
+  } ],
+  "entries" : [ {
+    "path" : "EREACT - Fluids.t.json",
+    "type" : "template",
+    "id" : "EREACT - Fluids",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-08-19T14:10:01.130Z"
+  }, {
+    "path" : "local/COVID-19 Problem#002fDiagnosis.t.json",
+    "type" : "template",
+    "id" : "COVID-19 Problem/Diagnosis",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.blood_pressure.v2.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.blood_pressure.v2",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/NES-COVID Symptoms.t.json",
+    "type" : "template",
+    "id" : "NDS_COVID Symptoms",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.dwelling.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.dwelling.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.respiration.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.respiration.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/open_eREACT-Assessment.t.json",
+    "type" : "template",
+    "id" : "open_eREACT-Assessment",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-08-13T12:59:08.828Z"
+  }, {
+    "path" : "local/openEHR-EHR-ADMIN_ENTRY.covid__outcomes.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-ADMIN_ENTRY.covid__outcomes.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/NDS_COVID - procedure summary.t.json",
+    "type" : "template",
+    "id" : "NDS_COVID - procedure summary",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.body_temperature.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.body_temperature.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.advance_care_directive.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.advance_care_directive.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.procedure_screening.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.procedure_screening.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-SECTION.adhoc.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-SECTION.adhoc.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-17T14:51:31.915Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.laboratory_test_result.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.laboratory_test_result.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/CHESS -ICU Covid-19 case report.v0.t.json",
+    "type" : "template",
+    "id" : "CHESS -ICU Covid-19 case report.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.fluid_input.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.fluid_input.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-08-19T12:13:54.898Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.condition_screening.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.condition_screening.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/NES_COVID Anticipatory Care Plan.t.json",
+    "type" : "template",
+    "id" : "NDS_COVID Anticipatory Care Plan",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.living_arrangement.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.living_arrangement.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.news2.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.news2.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.sepsis_screening_tool_age_5to11.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.sepsis_screening_tool_age_5to11.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.fluid_balance.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.fluid_balance.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-08-19T12:13:55.230Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.travel_event.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.travel_event.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.legal_directive.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.legal_directive.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.news2_uk_rcp.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.news2_uk_rcp.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.employment_covid.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.employment_covid.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.news2.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.news2.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-07-16T10:10:35.704Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.organisation_cc.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.organisation_cc.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.laboratory_test_analyte.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.laboratory_test_analyte.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/DHI - Care home Possible COVID-19 assessment.v0.t.json",
+    "type" : "template",
+    "id" : "DHI - Care home Possible COVID-19 assessment.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.pulse_oximetry.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.pulse_oximetry.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.overcrowding_screening.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.overcrowding_screening.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.height.v2.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.height.v2",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-09-07T14:09:10.085Z"
+  }, {
+    "path" : "local/open_eREACT-Care.t.json",
+    "type" : "template",
+    "id" : "open_eREACT-Care",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-09-16T19:29:28.206Z"
+  }, {
+    "path" : "local/SBOURG_COVID_19 tracking.v0.1.t.json",
+    "type" : "template",
+    "id" : "SBOURG_COVID_19 tracking.v0.1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.sepsis_screening_tool_under5.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.sepsis_screening_tool_under5.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:59:08Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.recommendation.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.recommendation.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.problem_diagnosis.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.problem_diagnosis.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.cpr_decision_uk.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.cpr_decision_uk.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.exam.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.exam.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.duke_activity_status_index_dasi.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.duke_activity_status_index_dasi.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T15:11:32Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.health_risk.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.health_risk.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.outbreak_exposure.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.outbreak_exposure.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.respiration.v2.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.respiration.v2",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.housing_summary.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.housing_summary.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.procedure_summary_covid.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.procedure_summary_covid.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.person_anonymised_parent.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.person_anonymised_parent.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/NES  Covid19 Data Dictionary.v0.1.t.json",
+    "type" : "template",
+    "id" : "NDS Covid-19 Data Dictionary.v0.1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-ADMIN_ENTRY.capacity_respect.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-ADMIN_ENTRY.capacity_respect.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/NES_COVID Travel trip history.t.json",
+    "type" : "template",
+    "id" : "NDS_COVID Travel trip history",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.health_risk-covid.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.health_risk-covid.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.covid_infection_outcome.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.covid_infection_outcome.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.body_weight.v2.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.body_weight.v2",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-09-07T14:09:09.725Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.care_preference_uk.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.care_preference_uk.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.pregnancy_bf_status.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.pregnancy_bf_status.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/NES_COVID Significant comorbidities.t.json",
+    "type" : "template",
+    "id" : "NDS_COVID Significant comorbidities",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-ADMIN_ENTRY.admission.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-ADMIN_ENTRY.admission.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/NES-COVID Covid-19 infection risk assessment.t.json",
+    "type" : "template",
+    "id" : "NDS_COVID Infection risk assessment",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.problem_qualifier.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.problem_qualifier.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/NES_COVID CPR decision.t.json",
+    "type" : "template",
+    "id" : "NDS_COVID CPR decision",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-INSTRUCTION.service_request.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-INSTRUCTION.service_request.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.inspired_oxygen.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.inspired_oxygen.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.clinical_synopsis.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.clinical_synopsis.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/NDS_Care Home Assessment.t.json",
+    "type" : "template",
+    "id" : "NDS_Care Home Assessment",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-09-16T12:56:58.275Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.glasgow_coma_scale.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.glasgow_coma_scale.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-ACTION.procedure.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-ACTION.procedure.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/NEWS2.t.json",
+    "type" : "template",
+    "id" : "NEWS2",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-07-16T09:07:07.666Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.travel_history.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.travel_history.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.medication_summary.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.medication_summary.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/NDS_COVID Capacity to Consent.t.json",
+    "type" : "template",
+    "id" : "NDS_COVID Capacity to Consent",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.clinical_frailty_scale.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.clinical_frailty_scale.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-07-16T08:45:59.734Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.symptom_sign-cvid.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.symptom_sign-cvid.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/NES_COVID Current level of independence.t.json",
+    "type" : "template",
+    "id" : "NDS_COVID Current level of independence",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.housing_record.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.housing_record.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.occupation_summary.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.occupation_summary.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.reason_for_encounter.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.reason_for_encounter.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.sepsis_screening_tool.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.sepsis_screening_tool.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-09-10T12:19:00.908Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.capillary_refill_time.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.capillary_refill_time.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-COMPOSITION.encounter.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-COMPOSITION.encounter.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.exam.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.exam.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/DHI - Covid.t.json",
+    "type" : "template",
+    "id" : "DHI - Covid",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-08-19T14:13:31.474Z"
+  }, {
+    "path" : "local/DHIS- Suspected Covid-19 Assessment.v0.1.t.json",
+    "type" : "template",
+    "id" : "DHIS - Suspected Covid-19 Assessment Data Dictionary.v0.1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.specimen.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.specimen.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.symptom_sign_screening.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.symptom_sign_screening.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-09-10T12:42:10.888Z"
+  }, {
+    "path" : "local/NES_COVID Recommendation.t.json",
+    "type" : "template",
+    "id" : "NES_COVID Recommendation",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.pregnancy_summary.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.pregnancy_summary.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-ADMIN_ENTRY.inpatient_admission_uk.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-ADMIN_ENTRY.inpatient_admission_uk.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.xds_metadata.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.xds_metadata.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/TEMP - NEWS2.t.json",
+    "type" : "template",
+    "id" : "TEMP - NEWS2",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/NES_COVID Living arrangements.t.json",
+    "type" : "template",
+    "id" : "NDS_COVID Living arrangements",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.symptom_sign.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.symptom_sign.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.exposure_assessment.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.exposure_assessment.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/Suspected Covid-19 Assessment.v0.1.t.json",
+    "type" : "template",
+    "id" : "Suspected Covid-19 Assessment.v0.1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.acvpu.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.acvpu.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.sepsis_screening_tool_pregnant.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.sepsis_screening_tool_pregnant.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/COVID_ADMIN Health-related occupation.t.json",
+    "type" : "template",
+    "id" : "NDS_COVID Health-related occupation",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.denwis.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.denwis.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-07-16T09:01:50.170Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.story.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.story.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/DHIS - Suspected Covid-19 Assessment Data Dictionary.v0.1.t.json",
+    "type" : "template",
+    "id" : "DHIS - Suspected Covid-19 Assessment Data Dictionary.v0.1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-COMPOSITION.report.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-COMPOSITION.report.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/NES_COVID Significant medications.t.json",
+    "type" : "template",
+    "id" : "NDS_COVID Significant medications",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.address_cc.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.address_cc.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-ADMIN_ENTRY.covid_19_admission.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-ADMIN_ENTRY.covid_19_admission.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.pulse.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.pulse.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-ACTION.service.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-ACTION.service.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-Confirmed Covid-19 infection report.v0.t.json",
+    "type" : "template",
+    "id" : "Confirmed Covid-19 case report.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.pulse.v2.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.pulse.v2",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.imaging_exam_result.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.imaging_exam_result.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.household_covid.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.household_covid.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.clinical_frailty_scale.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.clinical_frailty_scale.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.fluid_output.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.fluid_output.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-08-19T12:13:54.402Z"
+  }, {
+    "path" : "local/TEMP - Risk factors.t.json",
+    "type" : "template",
+    "id" : "TEMP - Risk factors",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/NES_COVID Assessment.t.json",
+    "type" : "template",
+    "id" : "NDS_COVID Vitals",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.ventilation_modes.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.ventilation_modes.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-CLUSTER.occupation_record.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.occupation_record.v1",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-EVALUATION.comorbidity_summary_covid.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.comorbidity_summary_covid.v0",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/NES Sepsis screening.t.json",
+    "type" : "template",
+    "id" : "NDS Sepsis screening",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/NES_COVID Service request.t.json",
+    "type" : "template",
+    "id" : "NDS_COVID service requests",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  }, {
+    "path" : "local/openEHR-EHR-OBSERVATION.body_temperature.v2.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-OBSERVATION.body_temperature.v2",
+    "sourceId" : "open-ereact",
+    "lastModified" : "2020-04-02T14:12:20Z"
+  } ]
+}

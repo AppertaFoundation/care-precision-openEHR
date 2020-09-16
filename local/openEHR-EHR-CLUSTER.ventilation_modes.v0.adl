@@ -1,0 +1,498 @@
+archetype (adl_version=1.4; uid=0d5386a4-525b-4bfd-94cf-951d809e3f67)
+	openEHR-EHR-CLUSTER.ventilation_modes.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2020-03-24">
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"ian@freshehr.com">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"1fe637e94cd2169b33622e0ca948ba15">
+		["build_uid"] = <"ce2d7379-e0c3-39f8-bc44-7e853a5198b5">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Ventilation mode
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] matches {    -- Compund mode
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- CMV-VC IMV-PC\PS S/T-PS/VC CSV-PS
+							at0003,    -- CMV-PC IMV-vtPC\PS S/T-PS/PC(q) CSV-vtPS
+							at0004,    -- CMV-vtPC SIMV-VC\PS S/T-PS/vtPC CSV-ES
+							at0005,    -- A/C-VC SIMV-PC\PS CPAP1
+							at0006,    -- A/C-PC SIMV-vtPC\PS
+							at0007]    -- A/C-vtPC
+						}
+					}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {1..*} matches {    -- Ventilator  mode setting
+				value matches {
+					DV_QUANTITY matches {*}
+				}
+				name matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0009,    -- Set rate
+							at0010,    -- I:E Ratio
+							at0011,    -- Inspiratory time fraction
+							at0012,    -- BAP (set PEEP)
+							at0013,    -- Tidal volume
+							at0014,    -- Minute volume
+							at0015,    -- Pressure limits
+							at0016,    -- Expiratory time
+							at0017,    -- FiO2
+							at0018,    -- High-airway-pressure relief limit
+							at0019]    -- High-airway-pressure termination limit
+						}
+					}
+				}
+			}
+			ELEMENT[at0020] occurrences matches {1..*} matches {    -- Ventilation pattern
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0021,    -- intermittent mandatory ventilation IMV
+							at0022,    -- synchronized intermittent mandatory ventilation SIM
+							at0023,    -- spontaneous/timed ventilation S/T
+							at0024,    -- continuous spontaneous ventilation CSV
+							at0025]    -- continuous positive airway pressure CPAP
+						}
+					}
+				}
+			}
+			ELEMENT[at0026] occurrences matches {0..*} matches {    -- Mode adjunct
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0027,    -- ACAP
+							at0028,    -- ACAP (high)
+							at0029]    -- ACAP (low)
+						}
+					}
+				}
+			}
+			CLUSTER[at0030] occurrences matches {0..*} matches {    -- Patient trigger
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0031] matches {    -- Trigger type
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0034,    -- flow
+									at0035,    -- pressure
+									at0036,    -- electromyogram
+									at0037,    -- neural
+									at0038,    -- complex computed
+									at0039,    -- chest-wall motion
+									at0040]    -- transthoracic impedance.
+								}
+							}
+						}
+					}
+					ELEMENT[at0032] occurrences matches {0..1} matches {    -- Flow trigger
+						value matches {
+							C_DV_QUANTITY <
+								
+								list = <
+									["1"] = <
+										units = <"l/m">
+										magnitude = <|0.0..1.0|>
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0033] occurrences matches {0..1} matches {    -- Pressure trigger
+						value matches {
+							C_DV_QUANTITY <
+								
+								list = <
+									["1"] = <
+										units = <"cm[H2O]">
+									>
+								>
+							>
+						}
+					}
+				}
+			}
+			CLUSTER[at0041] occurrences matches {0..3} matches {    -- Inflation
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0042] occurrences matches {0..3} matches {    -- Inflation type
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0048,    -- VC  volume-control
+									at0049,    -- PC  pressure-control
+									at0050,    -- PC(q)   flow-terminated pressure-control
+									at0051,    -- PS  pressure-support Support
+									at0052,    -- ES  effort-support Support
+									at0053,    -- ES[q+v] effort-support based on changes in lung volume and airway flow
+									at0054,    -- vtPC    volume-targeted pressure-control
+									at0055,    -- vtPS    volume-targeted pressure-support
+									at0056]    -- PC-VC   pressure-control switching unidirectionally to volume-control
+								}
+							}
+						}
+					}
+					ELEMENT[at0044] occurrences matches {0..1} matches {    -- Category
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0045,    -- Assured
+									at0046,    -- Supported
+									at0047]    -- Second Supported
+								}
+							}
+						}
+					}
+					ELEMENT[at0057] occurrences matches {0..1} matches {    -- setValue
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+						name matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0058,    -- Inspiratory pressure
+									at0059,    -- Δ Inspiratory pressure
+									at0060,    -- Inspiratory flow
+									at0061,    -- Target volume
+									at0062,    -- Rise time
+									at0064,    -- High-pressure termination limit
+									at0065,    -- Bias flow
+									at0066,    -- Support/airway flow and/or Support/airway pressure
+									at0068,    -- Termination time
+									at0069,    -- Termination flow
+									at0070,    -- Termination pressure
+									at0071,    -- Termination volume
+									at0072,    -- Termination EMG
+									at0073]    -- Termination set % peak flow
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Ventilation mode">
+					description = <"ventilation_modes">
+				>
+				["at0001"] = <
+					text = <"Compund mode">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"CMV-VC IMV-PC\\PS S/T-PS/VC CSV-PS">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"CMV-PC IMV-vtPC\\PS S/T-PS/PC(q) CSV-vtPS">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"CMV-vtPC SIMV-VC\\PS S/T-PS/vtPC CSV-ES">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"A/C-VC SIMV-PC\\PS CPAP1">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"A/C-PC SIMV-vtPC\\PS">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"A/C-vtPC">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"Ventilator  mode setting">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Set rate">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"I:E Ratio">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"Inspiratory time fraction">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"BAP (set PEEP)">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"Tidal volume">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"Minute volume">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"Pressure limits">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"Expiratory time">
+					description = <"*">
+				>
+				["at0017"] = <
+					text = <"FiO2">
+					description = <"*">
+				>
+				["at0018"] = <
+					text = <"High-airway-pressure relief limit">
+					description = <"*">
+				>
+				["at0019"] = <
+					text = <"High-airway-pressure termination limit">
+					description = <"*">
+				>
+				["at0020"] = <
+					text = <"Ventilation pattern">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"intermittent mandatory ventilation IMV">
+					description = <"*">
+				>
+				["at0022"] = <
+					text = <"synchronized intermittent mandatory ventilation SIM">
+					description = <"*">
+				>
+				["at0023"] = <
+					text = <"spontaneous/timed ventilation S/T">
+					description = <"*">
+				>
+				["at0024"] = <
+					text = <"continuous spontaneous ventilation CSV">
+					description = <"*">
+				>
+				["at0025"] = <
+					text = <"continuous positive airway pressure CPAP">
+					description = <"*">
+				>
+				["at0026"] = <
+					text = <"Mode adjunct">
+					description = <"*">
+				>
+				["at0027"] = <
+					text = <"ACAP">
+					description = <"*">
+				>
+				["at0028"] = <
+					text = <"ACAP (high)">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"ACAP (low)">
+					description = <"*">
+				>
+				["at0030"] = <
+					text = <"Patient trigger">
+					description = <"*">
+				>
+				["at0031"] = <
+					text = <"Trigger type">
+					description = <"*">
+				>
+				["at0032"] = <
+					text = <"Flow trigger">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"Pressure trigger">
+					description = <"*">
+				>
+				["at0034"] = <
+					text = <"flow">
+					description = <"*">
+				>
+				["at0035"] = <
+					text = <"pressure">
+					description = <"*">
+				>
+				["at0036"] = <
+					text = <"electromyogram">
+					description = <"*">
+				>
+				["at0037"] = <
+					text = <"neural">
+					description = <"*">
+				>
+				["at0038"] = <
+					text = <"complex computed">
+					description = <"*">
+				>
+				["at0039"] = <
+					text = <"chest-wall motion">
+					description = <"*">
+				>
+				["at0040"] = <
+					text = <"transthoracic impedance.">
+					description = <"*">
+				>
+				["at0041"] = <
+					text = <"Inflation">
+					description = <"*">
+				>
+				["at0042"] = <
+					text = <"Inflation type">
+					description = <"*">
+				>
+				["at0044"] = <
+					text = <"Category">
+					description = <"*">
+				>
+				["at0045"] = <
+					text = <"Assured">
+					description = <"*">
+				>
+				["at0046"] = <
+					text = <"Supported">
+					description = <"*">
+				>
+				["at0047"] = <
+					text = <"Second Supported">
+					description = <"*">
+				>
+				["at0048"] = <
+					text = <"VC  volume-control">
+					description = <"*">
+				>
+				["at0049"] = <
+					text = <"PC  pressure-control">
+					description = <"*">
+				>
+				["at0050"] = <
+					text = <"PC(q)   flow-terminated pressure-control">
+					description = <"*">
+				>
+				["at0051"] = <
+					text = <"PS  pressure-support Support">
+					description = <"*">
+				>
+				["at0052"] = <
+					text = <"ES  effort-support Support">
+					description = <"*">
+				>
+				["at0053"] = <
+					text = <"ES[q+v] effort-support based on changes in lung volume and airway flow">
+					description = <"*">
+				>
+				["at0054"] = <
+					text = <"vtPC    volume-targeted pressure-control">
+					description = <"*">
+				>
+				["at0055"] = <
+					text = <"vtPS    volume-targeted pressure-support">
+					description = <"*">
+				>
+				["at0056"] = <
+					text = <"PC-VC   pressure-control switching unidirectionally to volume-control">
+					description = <"*">
+				>
+				["at0057"] = <
+					text = <"setValue">
+					description = <"*">
+				>
+				["at0058"] = <
+					text = <"Inspiratory pressure">
+					description = <"*">
+				>
+				["at0059"] = <
+					text = <"Δ Inspiratory pressure">
+					description = <"*">
+				>
+				["at0060"] = <
+					text = <"Inspiratory flow">
+					description = <"*">
+				>
+				["at0061"] = <
+					text = <"Target volume">
+					description = <"*">
+				>
+				["at0062"] = <
+					text = <"Rise time">
+					description = <"*">
+				>
+				["at0064"] = <
+					text = <"High-pressure termination limit">
+					description = <"*">
+				>
+				["at0065"] = <
+					text = <"Bias flow">
+					description = <"*">
+				>
+				["at0066"] = <
+					text = <"Support/airway flow and/or Support/airway pressure">
+					description = <"*">
+				>
+				["at0068"] = <
+					text = <"Termination time">
+					description = <"*">
+				>
+				["at0069"] = <
+					text = <"Termination flow">
+					description = <"*">
+				>
+				["at0070"] = <
+					text = <"Termination pressure">
+					description = <"*">
+				>
+				["at0071"] = <
+					text = <"Termination volume">
+					description = <"*">
+				>
+				["at0072"] = <
+					text = <"Termination EMG">
+					description = <"*">
+				>
+				["at0073"] = <
+					text = <"Termination set % peak flow">
+					description = <"*">
+				>
+			>
+		>
+	>

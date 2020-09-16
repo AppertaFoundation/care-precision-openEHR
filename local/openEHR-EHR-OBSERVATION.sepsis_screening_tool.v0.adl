@@ -1,0 +1,445 @@
+archetype (adl_version=1.4; uid=362ae425-a4ca-424e-a6b7-5cdf9137f128)
+	openEHR-EHR-OBSERVATION.sepsis_screening_tool.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2020-03-27">
+		["name"] = <"Alan Fish">
+		["organisation"] = <"FreshEHR">
+		["email"] = <"alan.fish@freshehr.com">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Sepsis screening tool for ages 12 plus to be used for both telephone triage and in in acute setting.">
+			keywords = <"sepsis, secreening, trust, red, amber, flag, acute, telephone, assessment", ...>
+			use = <"To determine risk factors and level while screening for sepsis age 12 plus.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"https://sepsistrust.org/wp-content/uploads/2019/10/Sepsis-Telephone-Triage-12-v1.2.pdf
+https://sepsistrust.org/wp-content/uploads/2020/01/Sepsis-Acute-12-1.3.pdf">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"6732b364948ac86ee958e9d28c3b969e">
+		["build_uid"] = <"f830ead6-d3a4-33df-ab03-7f1d2a2905c2">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Sepsis Screening Tool for ages 12 plus
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {0..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0006] occurrences matches {0..*} matches {    -- Risk factors for sepsis
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0007,    -- Age over 75
+													at0008,    -- Impaired immunity (e.g diabetes, steroids, chemotherapy)
+													at0009,    -- Recent trauma / surgery / invasive procedure
+													at0010]    -- Indwelling lines / IVDU / broken skin
+												}
+											}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..*} matches {    -- Likely source of infection
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0012,    -- Respiratory
+													at0013,    -- Brain
+													at0014,    -- Urine
+													at0015,    -- Surgical
+													at0026,    -- Skin / joint/ wound
+													at0027]    -- Indwelling device
+												}
+											}
+											DV_TEXT matches {*}
+										}
+									}
+									CLUSTER[at0098] occurrences matches {0..1} matches {    -- Out of hours/ telephone
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0021] occurrences matches {0..*} matches {    -- Amber flag
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0022,    -- Behavioural change / reduced activity
+															at0023,    -- Immunosuppressed
+															at0024,    -- Breathing harder work than normal
+															at0025,    -- Reduced urine output
+															at0033,    -- Temperature <36°C
+															at0034]    -- Signs of wound infection
+														}
+													}
+												}
+											}
+											ELEMENT[at0016] occurrences matches {0..*} matches {    -- Red flag
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0017,    -- Objective evidence of new or altered mental state
+															at0018,    -- Unable to stand / collapsed
+															at0019,    -- Unable to catch breath / barely able to speak
+															at0020,    -- Very fast breathing
+															at0030,    -- Skin that is very pale, mottled , ashen or blue
+															at0031,    -- Rash that doesn’t fade when pressed firmly
+															at0032,    -- Recent chemotherapy
+															at0035]    -- Under 17 and immunity impaired
+														}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0099] occurrences matches {0..1} matches {    -- Pre-hospital
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0058] occurrences matches {0..*} matches {    -- Red flag
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0074,    -- Objective evidence of new or altered mental state
+															at0075,    -- Systolic BP ≤ 90 mmHg (or drop of >40 from normal)
+															at0076,    -- Heart rate ≥ 130 per minute
+															at0077,    -- Respiratory rate ≥ 25 per minute
+															at0078,    -- Needs O2 to keep SpO2 ≥ 92% (88% in COPD)
+															at0079,    -- Non-blanching rash / mottled / ashen / cyanotic
+															at0080,    -- Lactate ≥ 2 mmol/l
+															at0081,    -- Recent chemotherapy
+															at0082]    -- Not passed urine in 18 hours (<0.5ml/kg/hr if catheterised)
+														}
+													}
+												}
+											}
+											ELEMENT[at0083] occurrences matches {0..*} matches {    -- Amber flag
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0090,    -- Relatives concerned about mental status REQUIRED:
+															at0091,    -- Acute deterioration in functional ability
+															at0092,    -- Trauma / surgery / procedure in last 8 weeks
+															at0093,    -- Respiratory rate 21-24
+															at0094,    -- Systolic BP 91-100 mmHg
+															at0095,    -- Heart rate 91-130 or new dysrhythmia
+															at0096,    -- Temperature <36°C
+															at0097]    -- Clinical signs of wound infection
+														}
+													}
+												}
+											}
+										}
+									}
+									ELEMENT[at0036] occurrences matches {0..*} matches {    -- 999 Flag
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0037,    -- Slurred speech or confusion
+													at0038,    -- Extreme shivering or muscle pain
+													at0039,    -- Passing no urine (in a day)
+													at0040,    -- Severe breathlessness
+													at0041,    -- ‘I feel I might die’
+													at0042]    -- Skin mottled, ashen, blue or very pale
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0004] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Sepsis Screening Tool for ages 12 plus">
+					description = <"Sepsis screening tool for ages 12 plus based on the paper forms developed by The UK Sepsis Trust.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Extension">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"Risk factors for sepsis">
+					description = <"Used to record details of suspicion of any serious illness from the sepsis screening tool.">
+					comment = <"Q1: ARE THERE CLUES THAT THE PATIENT MAY BE SERIOUSLY ILL?">
+				>
+				["at0007"] = <
+					text = <"Age over 75">
+					description = <"Patient is over 75.">
+				>
+				["at0008"] = <
+					text = <"Impaired immunity (e.g diabetes, steroids, chemotherapy)">
+					description = <"Patient has impaired immunity.">
+				>
+				["at0009"] = <
+					text = <"Recent trauma / surgery / invasive procedure">
+					description = <"Patient has had recent trauma, surgery or an invasive procedure.">
+				>
+				["at0010"] = <
+					text = <"Indwelling lines / IVDU / broken skin">
+					description = <"Patient has indwelling lines, IVDU or broken skin.">
+				>
+				["at0011"] = <
+					text = <"Likely source of infection">
+					description = <"Used to record details of source of any infection from the sepsis screening tool.">
+					comment = <"Q2: COULD THIS BE DUE TO AN INFECTION?">
+				>
+				["at0012"] = <
+					text = <"Respiratory">
+					description = <"The likely source of infection is respiratory.">
+				>
+				["at0013"] = <
+					text = <"Brain">
+					description = <"The likely source of infection is brain.">
+				>
+				["at0014"] = <
+					text = <"Urine">
+					description = <"The likely source of infection is urine.">
+				>
+				["at0015"] = <
+					text = <"Surgical">
+					description = <"The likely source of infection is surgical.">
+				>
+				["at0016"] = <
+					text = <"Red flag">
+					description = <"Used to record details of any red flag indicators from the sepsis screening tool.">
+					comment = <"Q3: ANY RED FLAG PRESENT?">
+				>
+				["at0017"] = <
+					text = <"Objective evidence of new or altered mental state">
+					description = <"There is objective evidence of new or altered mental state.">
+				>
+				["at0018"] = <
+					text = <"Unable to stand / collapsed">
+					description = <"The patient is unable to stand or has collapsed.">
+				>
+				["at0019"] = <
+					text = <"Unable to catch breath / barely able to speak">
+					description = <"The patient is unable to catch their breath and is barely able to speak.">
+				>
+				["at0020"] = <
+					text = <"Very fast breathing">
+					description = <"The patient has very fast breathing.">
+				>
+				["at0021"] = <
+					text = <"Amber flag">
+					description = <"Used to record details of any amber flag indicators from the sepsis screening tool.">
+					comment = <"Q4: ANY AMBER FLAG PRESENT?">
+				>
+				["at0022"] = <
+					text = <"Behavioural change / reduced activity">
+					description = <"The patient has behavioral changes or reduced activity.">
+				>
+				["at0023"] = <
+					text = <"Immunosuppressed">
+					description = <"The patient is immunosuppressed.">
+				>
+				["at0024"] = <
+					text = <"Breathing harder work than normal">
+					description = <"The patient is finding it harder to breath than normal.">
+				>
+				["at0025"] = <
+					text = <"Reduced urine output">
+					description = <"The patient has reduced urine output.">
+				>
+				["at0026"] = <
+					text = <"Skin / joint/ wound">
+					description = <"The likely source of infection is skin, joint or wound.">
+				>
+				["at0027"] = <
+					text = <"Indwelling device">
+					description = <"The likely source of infection is an indwelling device.">
+				>
+				["at0030"] = <
+					text = <"Skin that is very pale, mottled , ashen or blue">
+					description = <"The patient has skin that is very pale, mottled , ashen or blue.">
+				>
+				["at0031"] = <
+					text = <"Rash that doesn’t fade when pressed firmly">
+					description = <"The patient has a rash that doesn’t fade when pressed firmly.">
+				>
+				["at0032"] = <
+					text = <"Recent chemotherapy">
+					description = <"The patient has had recent chemotherapy.">
+				>
+				["at0033"] = <
+					text = <"Temperature <36°C">
+					description = <"The patient has a temperature below 36 degrees Celsius.">
+				>
+				["at0034"] = <
+					text = <"Signs of wound infection">
+					description = <"The patient has signs of a wound infection.">
+				>
+				["at0035"] = <
+					text = <"Under 17 and immunity impaired">
+					description = <"The patient is under 17 and has impaired immunity.">
+				>
+				["at0036"] = <
+					text = <"999 Flag">
+					description = <"*">
+				>
+				["at0037"] = <
+					text = <"Slurred speech or confusion">
+					description = <"The patient has slurred speech or confusion.">
+				>
+				["at0038"] = <
+					text = <"Extreme shivering or muscle pain">
+					description = <"The patient has extreme shivering or muscle pain.">
+				>
+				["at0039"] = <
+					text = <"Passing no urine (in a day)">
+					description = <"The patient is passing no urine (in a day).">
+				>
+				["at0040"] = <
+					text = <"Severe breathlessness">
+					description = <"The patient has severe breathlessness.">
+				>
+				["at0041"] = <
+					text = <"‘I feel I might die’">
+					description = <"The patient stated ‘I feel I might die’.">
+				>
+				["at0042"] = <
+					text = <"Skin mottled, ashen, blue or very pale">
+					description = <"The patient has skin which is mottled, ashen, blue or very pale.">
+				>
+				["at0058"] = <
+					text = <"Red flag">
+					description = <"Used to record details of any red flag indicators from the sepsis screening tool.">
+					comment = <"Q3: ANY RED FLAG PRESENT?">
+				>
+				["at0074"] = <
+					text = <"Objective evidence of new or altered mental state">
+					description = <"Objective evidence of new or altered mental state">
+				>
+				["at0075"] = <
+					text = <"Systolic BP ≤ 90 mmHg (or drop of >40 from normal)">
+					description = <"Systolic BP ≤ 90 mmHg (or drop of >40 from normal)">
+				>
+				["at0076"] = <
+					text = <"Heart rate ≥ 130 per minute">
+					description = <"Heart rate ≥ 130 per minute">
+				>
+				["at0077"] = <
+					text = <"Respiratory rate ≥ 25 per minute">
+					description = <"Respiratory rate ≥ 25 per minute">
+				>
+				["at0078"] = <
+					text = <"Needs O2 to keep SpO2 ≥ 92% (88% in COPD)">
+					description = <"Needs O2 to keep SpO2 ≥ 92% (88% in COPD)">
+				>
+				["at0079"] = <
+					text = <"Non-blanching rash / mottled / ashen / cyanotic">
+					description = <"Non-blanching rash / mottled / ashen / cyanotic">
+				>
+				["at0080"] = <
+					text = <"Lactate ≥ 2 mmol/l">
+					description = <"Lactate ≥ 2 mmol/l">
+				>
+				["at0081"] = <
+					text = <"Recent chemotherapy">
+					description = <"Recent chemotherapy">
+				>
+				["at0082"] = <
+					text = <"Not passed urine in 18 hours (<0.5ml/kg/hr if catheterised)">
+					description = <"Not passed urine in 18 hours (<0.5ml/kg/hr if catheterised)">
+				>
+				["at0083"] = <
+					text = <"Amber flag">
+					description = <"Used to record details of any amber flag indicators from the sepsis screening tool.">
+					comment = <"Q4: ANY AMBER FLAG PRESENT?">
+				>
+				["at0090"] = <
+					text = <"Relatives concerned about mental status REQUIRED:">
+					description = <"Relatives concerned about mental status REQUIRED:">
+				>
+				["at0091"] = <
+					text = <"Acute deterioration in functional ability">
+					description = <"Acute deterioration in functional ability">
+				>
+				["at0092"] = <
+					text = <"Trauma / surgery / procedure in last 8 weeks">
+					description = <"Trauma / surgery / procedure in last 8 weeks">
+				>
+				["at0093"] = <
+					text = <"Respiratory rate 21-24">
+					description = <"Respiratory rate 21-24">
+				>
+				["at0094"] = <
+					text = <"Systolic BP 91-100 mmHg">
+					description = <"Systolic BP 91-100 mmHg">
+				>
+				["at0095"] = <
+					text = <"Heart rate 91-130 or new dysrhythmia">
+					description = <"Heart rate 91-130 or new dysrhythmia">
+				>
+				["at0096"] = <
+					text = <"Temperature <36°C">
+					description = <"Temperature <36°C">
+				>
+				["at0097"] = <
+					text = <"Clinical signs of wound infection">
+					description = <"Clinical signs of wound infection">
+				>
+				["at0098"] = <
+					text = <"Out of hours/ telephone">
+					description = <"">
+				>
+				["at0099"] = <
+					text = <"Pre-hospital">
+					description = <"Flags for Pre-Hospital Care / Ambulance services.">
+				>
+			>
+		>
+	>
