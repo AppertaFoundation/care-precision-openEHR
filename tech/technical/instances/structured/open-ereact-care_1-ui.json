@@ -1,0 +1,341 @@
+{
+    "template_id": "open_eREACT-Care",
+    "start_time": "2020-09-07T21:04:10.789Z",
+    "setting": [
+        {
+            "code": "237",
+            "value": "nursing home care",
+            "terminology": "openehr"
+        }
+    ],
+    "healthcare_facility": "Glen Carse Care Home",
+    "composer": {
+        "name": "Dr Joyce Brown"
+    },
+
+    "situation": {
+        "soft_signs": [
+            "Just not themselves",
+            "Loss of appetite"
+        ],
+        "notes": "Has refused all meals today"
+    },
+    "background": {
+        "height": {
+            "magnitude": 170.3,
+            "unit": "cm"
+        },
+        "weight": {
+            "magnitude": 170.3,
+            "unit": "kg"
+        },
+        "frailty": [
+            {
+                "code": "at0098",
+                "value": "Mildly frail"
+            }
+        ],
+        "past_history": "Angina and Diabetes",
+        "medication": "Insulin",
+        "allergies": "No known allergies"
+    },
+
+    
+    "assessment": {
+        "denwis": {
+            "q1_breathing": {
+                "code": "at0037",
+                "value": "No change in circulation",
+                "ordinal": 0
+            },
+            "breathing_indicator": [
+                {
+                    "code": "at0098",
+                    "value": "Coldness"
+                }
+            ],
+            "q2_circulation": {
+                "code": "at0037",
+                "value": "No change in circulation",
+                "ordinal": 0
+            },
+            "circulation_indicator": [
+                {
+                    "code": "at0098",
+                    "value": "Coldness"
+                }
+            ],
+            "q3_temperature": {
+                "code": "at0042",
+                "value": "No change in temperature",
+                "ordinal": 0
+            },
+            "temperature_indicator": [
+                {
+                    "code": "at0100",
+                    "value": "Rigors"
+                }
+            ],
+            "q4_mentation": {
+                "code": "at0045",
+                "value": "Change in mentation",
+                "ordinal": 1
+            },
+            "mentation_indicator": [
+                {
+                    "code": "at0101",
+                    "value": "Lethargic"
+                }
+            ],
+            "q5_agitation": {
+                "code": "at0048",
+                "value": "No agitation",
+                "ordinal": 0
+            },
+            "agitation_indicator": [
+                {
+                    "code": "at0104",
+                    "value": "Anxious"
+                }
+            ],
+            "q6_pain": {
+                "code": "at0052",
+                "value": "Change in pain",
+                "ordinal": 1
+            },
+            "pain_indicator": [
+                {
+                    "code": "at0107",
+                    "value": "Increasing or consisting pain"
+                }
+            ],
+            "q7_trajectory": {
+                "code": "at0055",
+                "value": "Change in trajectory",
+                "ordinal": 1
+            },
+            "trajectory_indicator": [
+                {
+                    "code": "at0108",
+                    "value": "No progress"
+                }
+            ],
+            "q8_patient_subjective": {
+                "code": "at0057",
+                "value": "No subjective patient indicator",
+                "ordinal": 0
+            },
+            "patient_indicator": [
+                {
+                    "code": "at0110",
+                    "value": "Not feeling well"
+                }
+            ],
+            "q9_nurse_subjective": {
+                "code": "at0061",
+                "value": "Nurse subjective indicator",
+                "ordinal": 1
+            },
+            "nurse_subjective_indicator": [
+                {
+                    "code": "at0112",
+                    "value": "Change in behaviour"
+                }
+            ],
+            "q_10_other_comment": "Just off her food",
+            "total_score": 3
+        },
+        "sepsis_screening": {
+            "risk_factors_for_sepsis": [
+                {
+                    "code": "at0009",
+                    "value": "Recent trauma / surgery / invasive procedure"
+                }
+            ],
+            "likely_source_of_infection": [
+                {
+                    "code": "at0027",
+                    "value": "Indwelling device"
+                }
+            ],
+            "out_of_hours_telephone" : {
+                "red_flag": [
+                    {
+                        "code": "at0020",
+                        "value": "Very fast breathing"
+                    }
+                ],
+                "amber_flag": [
+                    {
+                        "code": "at0023",
+                        "value": "Immunosuppressed"
+                    },
+                    {
+                        "code": "at0034",
+                        "value": "Sings of wound infection"
+                    },
+
+                ]
+            },
+            "pre_hospital" : {
+                "red_flag": [
+                    {
+                        "code": "at0080",
+                        "value": "Lactate ≥ 2 mmol/l"
+                    }
+                ],
+                "amber_flag": [
+                    {
+                        "code": "at0093",
+                        "value": "Respiratory rate 21-24"
+                    }
+                ]
+            }
+    
+
+    
+
+        },
+        "covid": {
+            "covid_symptoms": {
+                "date_of_onset_of_first_symptoms": "2020-09-21T15:53:38.150Z",
+                "specific_symptom_sign": [{
+                            "|code": "386661006",
+                        "|value": "Fever",
+                        "|terminology": "SNOMED CT"                         
+                    },
+                    { 
+                        "|code": "62315008",
+                        "|value": "Diarrhea",
+                        "|terminology": "SNOMED CT"
+                    }
+                ]
+            },
+            "covid-19_exposure": {                 
+                "care_setting_has_confirmed_covid-19": {
+                    "|code": "at0.14",
+                    "|value": "Potential contact exposure based on location",
+                    "|terminology": "local"            
+                },
+                "contact_with_suspected_confirmed_covid-19": {
+                    "|code": "at0.9",
+                    "|value": "Contact with confirmed Covid-19 case",
+                    "|terminology": "local"
+                }
+            },
+            "covid_notes": "Visiting son tested positive"      
+        },
+        "news2": {
+            "temperature": {
+                "magnitude": 90.7,
+                "unit": "°C"
+            },
+            "pulse": {
+                "magnitude": 110,
+                "unit": "/min"
+            },
+            "respirations": {
+                "magnitude": 26,
+                "unit": "/min"
+            },
+            "spo2": 91.0,
+            "acvpu": {
+                "code": "at0015",
+                "value": "Confusion"
+            },
+            "systolic": {
+                "magnitude": 98,
+                "unit": "/min"
+            },
+            "diastolic": {
+                "magnitude": 58,
+                "unit": "/min"
+            },
+
+            "news2_score": {
+                "respiration_rate": {
+                    "code": "at0020",
+                    "value": "21-24",
+                    "ordinal": 2
+                },
+                "spo_scale_1": {
+                    "code": "at0031",
+                    "value": "94-95",
+                    "ordinal": 1
+                },
+                "air_or_oxygen": {
+                    "code": "at0036",
+                    "value": "Air",
+                    "ordinal": 0
+                },
+                "systolic_blood_pressure": {
+                    "code": "at0017",
+                    "value": "≤90",
+                    "ordinal": 3
+                },
+                "pulse": {
+                    "code": "at0013",
+                    "value": "51-90",
+                    "ordinal": 0
+                },
+                "consciousness": {
+                    "code": "at0024",
+                    "value": "Alert",
+                    "ordinal": 0
+                },
+                "temperature": {
+                    "code": "at0023",
+                    "value": "35.1-36.0",
+                    "ordinal": 1
+                },
+                "total_score": 14,
+                "clinical_risk_category": {
+                    "code": "at0059",
+                    "value": "Medium"
+                }
+            }
+        }
+    },
+    "response": {
+        "recommendation": "Suspected Covid-19 - needs to be isolated, contact public health",
+        "service_request": [
+            {
+                "service_name": {
+                    "code": "170499009",
+                    "value": "Isolation of infection contact",
+                    "terminology": "SNOMED-CT"
+                },
+                "reason_for_request": {
+                    "code": "840546002",
+                    "value": "Exposure to 2019 novel coronavirus",
+                    "terminology": "SNOMED-CT"
+                },
+                "reason_for_isolation": "Contact",
+                "date_isolation_due_to_start": "2020-08-25T13:19:30.700Z",
+                "date_isolation_due_to_end": "2020-09-14T13:19:30.700Z"
+            }
+        ],
+        "narrative": "Isolation of infection contact"
+    },
+    "service": [
+        {
+            "ism_transition": {
+                "current_state": {
+                    "code": "526",
+                    "value": "planned",
+                    "terminology": "openehr"
+                },
+                "careflow_step": {
+                    "code": "at0002",
+                    "value": "Service planned",
+                    "terminology": "local"
+                }
+            },
+            "service_name": {
+                "code": "170499009",
+                "value": "Isolation of infection contact",
+                "terminology": "SNOMED-CT"
+            }
+        }
+    ]
+}

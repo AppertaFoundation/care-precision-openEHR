@@ -1,0 +1,1 @@
+select c/context/start_time/value as start_time, c/name/value as name, c/uid/value as uid from EHR e [ehr_id/value='3e674739-950c-4b8a-976b-5aef21c618c5'] contains COMPOSITION c WHERE c/archetype_details/template_id/value = 'DHI - Urology_PROMs-v0'

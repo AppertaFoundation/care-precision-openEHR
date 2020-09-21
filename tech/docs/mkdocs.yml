@@ -1,0 +1,74 @@
+site_name: openEHR CDR API for client-side developers (Jamaica MoHW)
+docs_dir: mkdocs
+nav:
+    - Overview: 'README.md'
+    - Introduction to openEHR:
+        - 'intro/INT1-overview-openehr.md'
+        - 'intro/INT2-overview-rest-apis.md'
+        - 'intro/INT3-archetypes-template.md'
+        - 'intro/INT4-reference-model.md'
+    - Using Postman:
+        - 'postman/PM1-postman-getting-ready.md'
+        - 'postman/PM2-navigate-postman.md'
+        - 'postman/PM3-using-postman.md'
+    - Prostate Cancer pathway docs:
+        - 'dhis/DHIS1-cancer-pathway.md'
+        - 'dhis/DHIS2-retrieving-an-ehrId.md' 
+        - 'dhis/DHIS3-querying-ndp-respect.md' 
+        - 'dhis/DHIS4-retrieving-ndp-respect.md' 
+        - 'dhis/DHIS5-querying-proms-data.md' 
+        - 'dhis/DHIS6-committing-proms-data.md' 
+        - 'dhis/DHIS7-retrieving-proms-data.md'
+        - 'dhis/DHIS8-updating-proms-data.md'
+        - 'dhis/DHIS9-composition-constraints.md'
+        - 'dhis/DHIS10-openehr-datatypes.md'
+        - 'dhis/DHIS11-openehr-rm-attributes.md'  
+    - Better Ehrscape API:
+        - 'cdr/ehrscape/ECDR1-authentication.md'
+        - 'cdr/ehrscape/ECDR2-openehr-templates.md'
+        - 'cdr/ehrscape/ECDR3-committing-a-composition.md'
+        - 'cdr/ehrscape/ECDR4-retrieving-a-composition.md'
+        - 'cdr/ehrscape/ECDR5-retrieving-an-ehrId.md'
+        - 'cdr/ehrscape/ECDR6-updating-a-composition.md'
+    - openEHR REST API:
+        - 'cdr/openehr/OCDR1-authentication.md'
+        - 'cdr/openehr/OCDR2-openehr-templates.md'
+        - 'cdr/openehr/OCDR3-committing-a-composition.md'
+        - 'cdr/openehr/OCDR4-retrieving-a-composition.md'
+        - 'cdr/openehr/OCDR5-retrieving-an-ehrId.md'
+    
+plugins:
+    - search
+    - macros                  
+theme:
+  name: material
+  logo: images/j-mohw.png
+  favicon: images/j-mohw.png
+  palette:
+    primary: blue grey
+    accent: teal 
+markdown_extensions:
+  - toc:
+      toc_depth : "1-1"
+  - admonition
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde 
+  - codehilite
+extra:    
+    name: 'Jamaica MoHW'
+    cdr:
+      authToken: 'Basic YTgxZjQ3YzYtYTc1Ny00ZTM0LWI2NDQtM2NjYzYyYjRhMDFjOiQyYSQxMCQ2MTlraQ=='
+      ehrscapeBaseUrl: 'https://cdr.code4health.org/rest/v1'
+      openehrBaseUrl: 'Basic NGNjZTVhMDctYmU0ZC00MzE4LWE5NGYtM2I4NDAxODUzYTIwOiQyYSQxMCQ2MTlraQ=='
+      queryString: 'SELECT ... FROM ... CONTAINS ... WHERE'
+      postmanLink: 'https://app.getpostman.com/run-collection/eb1056a44f7c2fe3ddfb#?env%5Bmohw-jamaica%5D=W3sia2V5Ijoib3BlbkVockV4cGxvcmVyIiwidmFsdWUiOiJodHRwczovL2Nkci5jb2RlNGhlYWx0aC5vcmcvc3R1ZGlvIiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJDRFJOYW1lIiwidmFsdWUiOiJlaHJzY2FwZS5jb20iLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6ImRvbWFpblN1ZmZpeCIsInZhbHVlIjoiY29kZTRoZWFsdGgub3JnIiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJTZXNzaW9uSGVhZGVyIiwidmFsdWUiOiJFaHItU2Vzc2lvbi1kaXNhYmxlZCIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoiVXNlcm5hbWUiLCJ2YWx1ZSI6IjRjY2U1YTA3LWJlNGQtNDMxOC1hOTRmLTNiODQwMTg1M2EyMCIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoiUGFzc3dvcmQiLCJ2YWx1ZSI6IiQyYSQxMCQ2MTlraSIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoiQXV0aG9yaXphdGlvbiIsInZhbHVlIjoiQmFzaWMgTkdOalpUVmhNRGN0WW1VMFpDMDBNekU0TFdFNU5HWXRNMkk0TkRBeE9EVXpZVEl3T2lReVlTUXhNQ1EyTVRscmFRPT0iLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6ImFjY291bnROYW1lIiwidmFsdWUiOiJtb2gtamFtYWljYSIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoiY29tbWl0dGVyTmFtZSIsInZhbHVlIjoiRHIgTmVsc29uIiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJwYXRpZW50TmFtZSIsInZhbHVlIjoiSXZvciBDb3giLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6InN1YmplY3RJZCIsInZhbHVlIjoiOTk5OTk5OTAwMCIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoibmhzTnVtYmVyIiwidmFsdWUiOiI5OTk5OTk5MDAwIiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJzdWJqZWN0TmFtZXNwYWNlIiwidmFsdWUiOiJ1ay5uaHMubmhzX251bWJlciIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoiZWhySWQiLCJ2YWx1ZSI6IjVkZDAzYmM5LTQ0MTktNDk4MS04Nzk4LWZmNGRkYThlZTlkZSIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoicGFydHlJZCIsInZhbHVlIjoiNDEzNDgwIiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJ0ZW1wbGF0ZUlkIiwidmFsdWUiOiJWaXRhbCBTaWducyBFbmNvdW50ZXIgKENvbXBvc2l0aW9uKSIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoiY29tcG9zaXRpb25JZCIsInZhbHVlIjoibi9hIiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJlaHJzY2FwZUJhc2VVcmwiLCJ2YWx1ZSI6IiIsImVuYWJsZWQiOnRydWV9LHsia2V5Ijoib3BlbmVockJhc2VVcmwiLCJ2YWx1ZSI6IiIsImVuYWJsZWQiOnRydWV9XQ=='

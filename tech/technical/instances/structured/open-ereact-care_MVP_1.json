@@ -1,0 +1,124 @@
+{
+    "template_id": "open_eREACT-Care",
+    "start_time": "2020-09-07T21:04:10.789Z",
+    "setting": [
+        {
+            "code": "237",
+            "value": "nursing home care",
+            "terminology": "openehr"
+        }
+    ],
+    "healthcare_facility": "Glen Carse Care Home",
+    "composer": {
+        "name": "Dr Joyce Brown"
+    },
+
+    "situation": {
+        "soft_signs": [
+            "Just not themselves",
+            "Loss of appetite"
+        ],
+        "notes": "Has refused all meals today"
+    },
+    "background": {
+        "height": {
+            "magnitude": 170.3,
+            "unit": "cm"
+        },
+        "weight": {
+            "magnitude": 170.3,
+            "unit": "kg"
+        },
+        "frailty": [
+            {
+                "code": "at0098",
+                "value": "Mildly frail"
+            }
+        ],
+        "past_history": "Angina and Diabetes",
+        "medication": "Insulin",
+        "allergies": "No known allergies"
+    },
+  
+    "assessment": {
+        "news2": {
+            "temperature": {
+                "magnitude": 90.7,
+                "unit": "°C"
+            },
+            "pulse": {
+                "magnitude": 110,
+                "unit": "/min"
+            },
+            "respirations": {
+                "magnitude": 26,
+                "unit": "/min"
+            },
+           "spo2": 91.0,
+            "acvpu": {
+                "code": "at0015",
+                "value": "Confusion"
+            },
+            "systolic": {
+                "magnitude": 98,
+                "unit": "/min"
+            },
+            "diastolic": {
+                "magnitude": 58,
+                "unit": "/min"
+            },
+
+            "news2_score": {
+                "respiration_rate": {
+                    "code": "at0020",
+                    "value": "21-24",
+                    "ordinal": 2
+                },
+                "spo_scale_1": {
+                    "code": "at0031",
+                    "value": "94-95",
+                    "ordinal": 1
+                },
+                "air_or_oxygen": {
+                    "code": "at0036",
+                    "value": "Air",
+                    "ordinal": 0
+                },
+                "systolic_blood_pressure": {
+                    "code": "at0017",
+                    "value": "≤90",
+                    "ordinal": 3
+                },
+                "pulse": {
+                    "code": "at0013",
+                    "value": "51-90",
+                    "ordinal": 0
+                },
+                "consciousness": {
+                    "code": "at0024",
+                    "value": "Alert",
+                    "ordinal": 0
+                },
+                "temperature": {
+                    "code": "at0023",
+                    "value": "35.1-36.0",
+                    "ordinal": 1
+                },
+                "total_score": 14,
+                "clinical_risk_category": {
+                    "code": "at0059",
+                    "value": "Medium"
+                },
+                "inspired_oxygen":  {
+                    "flow_rate":
+                        {
+                            "|magnitude": 23.5,
+                            "|unit": "l/min"
+                        },
+                    "method_of_oxygen_delivery": "Room air"
+                }
+            }
+        }
+    }
+
+}
