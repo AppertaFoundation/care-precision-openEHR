@@ -236,7 +236,15 @@
                 "|magnitude": 90.7,
                 "|unit": "°C"
             },
-            "SpO2": 91.0,
+            "spO2": 91.0,
+            "inspired_oxygen":  {
+                "flow_rate":
+                    {
+                        "|magnitude": 23.5,
+                        "|unit": "l/min"
+                    },
+                "method_of_oxygen_delivery": "Mask"
+            },
             "pulse": 110,
             "respirations": 34.4,
             "acvpu": {
@@ -245,6 +253,11 @@
             },
             "systolic": 98,
             "diastolic": 58,
+
+```
+
+```json
+
             "news2_score": {
                 "respiration_rate": {
                     "|code": "at0020",
