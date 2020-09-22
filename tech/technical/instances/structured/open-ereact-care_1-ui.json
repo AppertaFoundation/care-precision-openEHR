@@ -292,6 +292,14 @@
                 "clinical_risk_category": {
                     "code": "at0059",
                     "value": "Medium"
+                },
+                "inspired_oxygen":  {
+                    "flow_rate":
+                        {
+                            "|magnitude": 23.5,
+                            "|unit": "l/min"
+                        },
+                    "method_of_oxygen_delivery": "Room air"
                 }
             }
         }
