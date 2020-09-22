@@ -55,6 +55,14 @@
                 "unit": "/min"
             },
            "spo2": 91.0,
+           "inspired_oxygen":  {
+            "flow_rate":
+                {
+                    "|magnitude": 23.5,
+                    "|unit": "l/min"
+                },
+            "method_of_oxygen_delivery": "Room air"
+        },
             "acvpu": {
                 "code": "at0015",
                 "value": "Confusion"

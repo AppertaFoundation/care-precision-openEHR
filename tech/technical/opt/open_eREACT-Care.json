@@ -29,7 +29,7 @@
         "id" : "start_time",
         "name" : "Start_time",
         "rmType" : "DV_DATE_TIME",
-        "min" : 1,
+        "min" : 0,
         "max" : 1,
         "aqlPath" : "/context/start_time",
         "inputs" : [ {
@@ -40,7 +40,7 @@
         "id" : "setting",
         "name" : "Setting",
         "rmType" : "DV_CODED_TEXT",
-        "min" : 1,
+        "min" : 0,
         "max" : 1,
         "aqlPath" : "/context/setting",
         "inputs" : [ {
@@ -154,7 +154,7 @@
           "id" : "time",
           "name" : "Time",
           "rmType" : "DV_DATE_TIME",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Situation']/items[openEHR-EHR-OBSERVATION.story.v1]/data[at0001]/events[at0002]/time",
           "inputs" : [ {
@@ -165,7 +165,7 @@
           "id" : "language",
           "name" : "Language",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Situation']/items[openEHR-EHR-OBSERVATION.story.v1]/language",
           "inContext" : true
@@ -173,7 +173,7 @@
           "id" : "encoding",
           "name" : "Encoding",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Situation']/items[openEHR-EHR-OBSERVATION.story.v1]/encoding",
           "inContext" : true
@@ -181,7 +181,7 @@
           "id" : "subject",
           "name" : "Subject",
           "rmType" : "PARTY_PROXY",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Situation']/items[openEHR-EHR-OBSERVATION.story.v1]/subject",
           "inContext" : true
@@ -272,7 +272,7 @@
           "id" : "time",
           "name" : "Time",
           "rmType" : "DV_DATE_TIME",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-OBSERVATION.height.v2,'Height']/data[at0001]/events[at0002]/time",
           "inputs" : [ {
@@ -283,7 +283,7 @@
           "id" : "language",
           "name" : "Language",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-OBSERVATION.height.v2,'Height']/language",
           "inContext" : true
@@ -291,7 +291,7 @@
           "id" : "encoding",
           "name" : "Encoding",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-OBSERVATION.height.v2,'Height']/encoding",
           "inContext" : true
@@ -299,7 +299,7 @@
           "id" : "subject",
           "name" : "Subject",
           "rmType" : "PARTY_PROXY",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-OBSERVATION.height.v2,'Height']/subject",
           "inContext" : true
@@ -371,7 +371,7 @@
           "id" : "time",
           "name" : "Time",
           "rmType" : "DV_DATE_TIME",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-OBSERVATION.body_weight.v2,'Weight']/data[at0002]/events[at0003]/time",
           "inputs" : [ {
@@ -382,7 +382,7 @@
           "id" : "language",
           "name" : "Language",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-OBSERVATION.body_weight.v2,'Weight']/language",
           "inContext" : true
@@ -390,7 +390,7 @@
           "id" : "encoding",
           "name" : "Encoding",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-OBSERVATION.body_weight.v2,'Weight']/encoding",
           "inContext" : true
@@ -398,7 +398,7 @@
           "id" : "subject",
           "name" : "Subject",
           "rmType" : "PARTY_PROXY",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-OBSERVATION.body_weight.v2,'Weight']/subject",
           "inContext" : true
@@ -540,7 +540,7 @@
           "id" : "time",
           "name" : "Time",
           "rmType" : "DV_DATE_TIME",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-OBSERVATION.clinical_frailty_scale.v1,'Frailty']/data[at0001]/events[at0002]/time",
           "inputs" : [ {
@@ -551,7 +551,7 @@
           "id" : "language",
           "name" : "Language",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-OBSERVATION.clinical_frailty_scale.v1,'Frailty']/language",
           "inContext" : true
@@ -559,7 +559,7 @@
           "id" : "encoding",
           "name" : "Encoding",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-OBSERVATION.clinical_frailty_scale.v1,'Frailty']/encoding",
           "inContext" : true
@@ -567,7 +567,7 @@
           "id" : "subject",
           "name" : "Subject",
           "rmType" : "PARTY_PROXY",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-OBSERVATION.clinical_frailty_scale.v1,'Frailty']/subject",
           "inContext" : true
@@ -615,7 +615,7 @@
           "id" : "language",
           "name" : "Language",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-EVALUATION.clinical_synopsis.v1,'Past history']/language",
           "inContext" : true
@@ -623,7 +623,7 @@
           "id" : "encoding",
           "name" : "Encoding",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-EVALUATION.clinical_synopsis.v1,'Past history']/encoding",
           "inContext" : true
@@ -631,7 +631,7 @@
           "id" : "subject",
           "name" : "Subject",
           "rmType" : "PARTY_PROXY",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-EVALUATION.clinical_synopsis.v1,'Past history']/subject",
           "inContext" : true
@@ -673,7 +673,7 @@
           "id" : "language",
           "name" : "Language",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-EVALUATION.clinical_synopsis.v1,'Medication']/language",
           "inContext" : true
@@ -681,7 +681,7 @@
           "id" : "encoding",
           "name" : "Encoding",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-EVALUATION.clinical_synopsis.v1,'Medication']/encoding",
           "inContext" : true
@@ -689,7 +689,7 @@
           "id" : "subject",
           "name" : "Subject",
           "rmType" : "PARTY_PROXY",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-EVALUATION.clinical_synopsis.v1,'Medication']/subject",
           "inContext" : true
@@ -731,7 +731,7 @@
           "id" : "language",
           "name" : "Language",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-EVALUATION.clinical_synopsis.v1,'Allergies']/language",
           "inContext" : true
@@ -739,7 +739,7 @@
           "id" : "encoding",
           "name" : "Encoding",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-EVALUATION.clinical_synopsis.v1,'Allergies']/encoding",
           "inContext" : true
@@ -747,7 +747,7 @@
           "id" : "subject",
           "name" : "Subject",
           "rmType" : "PARTY_PROXY",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Background']/items[openEHR-EHR-EVALUATION.clinical_synopsis.v1,'Allergies']/subject",
           "inContext" : true
@@ -1579,7 +1579,7 @@
           "id" : "time",
           "name" : "Time",
           "rmType" : "DV_DATE_TIME",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-OBSERVATION.denwis.v0]/data[at0001]/events[at0002]/time",
           "inputs" : [ {
@@ -1590,7 +1590,7 @@
           "id" : "language",
           "name" : "Language",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-OBSERVATION.denwis.v0]/language",
           "inContext" : true
@@ -1598,7 +1598,7 @@
           "id" : "encoding",
           "name" : "Encoding",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-OBSERVATION.denwis.v0]/encoding",
           "inContext" : true
@@ -1606,7 +1606,7 @@
           "id" : "subject",
           "name" : "Subject",
           "rmType" : "PARTY_PROXY",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-OBSERVATION.denwis.v0]/subject",
           "inContext" : true
@@ -1782,202 +1782,406 @@
               "type" : "TEXT"
             } ]
           }, {
-            "id" : "red_flag_acute",
-            "name" : "Red flag (acute)",
-            "localizedName" : "Red flag (acute)",
-            "rmType" : "DV_CODED_TEXT",
-            "nodeId" : "at0058",
+            "id" : "out_of_hours_telephone",
+            "name" : "Out of hours/ telephone",
+            "localizedName" : "Out of hours/ telephone",
+            "rmType" : "CLUSTER",
+            "nodeId" : "at0098",
             "min" : 0,
-            "max" : -1,
+            "max" : 1,
             "localizedNames" : {
-              "en" : "Red flag (acute)"
+              "en" : "Out of hours/ telephone"
             },
             "localizedDescriptions" : {
-              "en" : "Used to record details of any red flag indicators from the sepsis screening tool."
+              "en" : ""
             },
-            "annotations" : {
-              "comment" : "Q3: ANY RED FLAG PRESENT?"
-            },
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Sepsis']/items[openEHR-EHR-OBSERVATION.sepsis_screening_tool.v0,'Sepsis screening']/data[at0001]/events[at0002]/data[at0003]/items[at0058]/value",
-            "inputs" : [ {
-              "suffix" : "code",
-              "type" : "CODED_TEXT",
-              "list" : [ {
-                "value" : "at0074",
-                "label" : "Objective evidence of new or altered mental state",
-                "localizedLabels" : {
-                  "en" : "Objective evidence of new or altered mental state"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Objective evidence of new or altered mental state"
-                }
-              }, {
-                "value" : "at0075",
-                "label" : "Systolic BP ≤ 90 mmHg (or drop of >40 from normal)",
-                "localizedLabels" : {
-                  "en" : "Systolic BP ≤ 90 mmHg (or drop of >40 from normal)"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Systolic BP ≤ 90 mmHg (or drop of >40 from normal)"
-                }
-              }, {
-                "value" : "at0076",
-                "label" : "Heart rate ≥ 130 per minute",
-                "localizedLabels" : {
-                  "en" : "Heart rate ≥ 130 per minute"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Heart rate ≥ 130 per minute"
-                }
-              }, {
-                "value" : "at0077",
-                "label" : "Respiratory rate ≥ 25 per minute",
-                "localizedLabels" : {
-                  "en" : "Respiratory rate ≥ 25 per minute"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Respiratory rate ≥ 25 per minute"
-                }
-              }, {
-                "value" : "at0078",
-                "label" : "Needs O2 to keep SpO2 ≥ 92% (88% in COPD)",
-                "localizedLabels" : {
-                  "en" : "Needs O2 to keep SpO2 ≥ 92% (88% in COPD)"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Needs O2 to keep SpO2 ≥ 92% (88% in COPD)"
-                }
-              }, {
-                "value" : "at0079",
-                "label" : "Non-blanching rash / mottled / ashen / cyanotic",
-                "localizedLabels" : {
-                  "en" : "Non-blanching rash / mottled / ashen / cyanotic"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Non-blanching rash / mottled / ashen / cyanotic"
-                }
-              }, {
-                "value" : "at0080",
-                "label" : "Lactate ≥ 2 mmol/l",
-                "localizedLabels" : {
-                  "en" : "Lactate ≥ 2 mmol/l"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Lactate ≥ 2 mmol/l"
-                }
-              }, {
-                "value" : "at0081",
-                "label" : "Recent chemotherapy",
-                "localizedLabels" : {
-                  "en" : "Recent chemotherapy"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Recent chemotherapy"
-                }
-              }, {
-                "value" : "at0082",
-                "label" : "Not passed urine in 18 hours (<0.5ml/kg/hr if catheterised)",
-                "localizedLabels" : {
-                  "en" : "Not passed urine in 18 hours (<0.5ml/kg/hr if catheterised)"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Not passed urine in 18 hours (<0.5ml/kg/hr if catheterised)"
-                }
+            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Sepsis']/items[openEHR-EHR-OBSERVATION.sepsis_screening_tool.v0,'Sepsis screening']/data[at0001]/events[at0002]/data[at0003]/items[at0098]",
+            "children" : [ {
+              "id" : "amber_flag",
+              "name" : "Amber flag",
+              "localizedName" : "Amber flag",
+              "rmType" : "DV_CODED_TEXT",
+              "nodeId" : "at0021",
+              "min" : 0,
+              "max" : -1,
+              "localizedNames" : {
+                "en" : "Amber flag"
+              },
+              "localizedDescriptions" : {
+                "en" : "Used to record details of any amber flag indicators from the sepsis screening tool."
+              },
+              "annotations" : {
+                "comment" : "Q4: ANY AMBER FLAG PRESENT?"
+              },
+              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Sepsis']/items[openEHR-EHR-OBSERVATION.sepsis_screening_tool.v0,'Sepsis screening']/data[at0001]/events[at0002]/data[at0003]/items[at0098]/items[at0021]/value",
+              "inputs" : [ {
+                "suffix" : "code",
+                "type" : "CODED_TEXT",
+                "list" : [ {
+                  "value" : "at0022",
+                  "label" : "Behavioural change / reduced activity",
+                  "localizedLabels" : {
+                    "en" : "Behavioural change / reduced activity"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "The patient has behavioral changes or reduced activity."
+                  }
+                }, {
+                  "value" : "at0023",
+                  "label" : "Immunosuppressed",
+                  "localizedLabels" : {
+                    "en" : "Immunosuppressed"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "The patient is immunosuppressed."
+                  }
+                }, {
+                  "value" : "at0024",
+                  "label" : "Breathing harder work than normal",
+                  "localizedLabels" : {
+                    "en" : "Breathing harder work than normal"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "The patient is finding it harder to breath than normal."
+                  }
+                }, {
+                  "value" : "at0025",
+                  "label" : "Reduced urine output",
+                  "localizedLabels" : {
+                    "en" : "Reduced urine output"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "The patient has reduced urine output."
+                  }
+                }, {
+                  "value" : "at0033",
+                  "label" : "Temperature <36°C",
+                  "localizedLabels" : {
+                    "en" : "Temperature <36°C"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "The patient has a temperature below 36 degrees Celsius."
+                  }
+                }, {
+                  "value" : "at0034",
+                  "label" : "Signs of wound infection",
+                  "localizedLabels" : {
+                    "en" : "Signs of wound infection"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "The patient has signs of a wound infection."
+                  }
+                } ]
+              } ]
+            }, {
+              "id" : "red_flag",
+              "name" : "Red flag",
+              "localizedName" : "Red flag",
+              "rmType" : "DV_CODED_TEXT",
+              "nodeId" : "at0016",
+              "min" : 0,
+              "max" : -1,
+              "localizedNames" : {
+                "en" : "Red flag"
+              },
+              "localizedDescriptions" : {
+                "en" : "Used to record details of any red flag indicators from the sepsis screening tool."
+              },
+              "annotations" : {
+                "comment" : "Q3: ANY RED FLAG PRESENT?"
+              },
+              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Sepsis']/items[openEHR-EHR-OBSERVATION.sepsis_screening_tool.v0,'Sepsis screening']/data[at0001]/events[at0002]/data[at0003]/items[at0098]/items[at0016]/value",
+              "inputs" : [ {
+                "suffix" : "code",
+                "type" : "CODED_TEXT",
+                "list" : [ {
+                  "value" : "at0017",
+                  "label" : "Objective evidence of new or altered mental state",
+                  "localizedLabels" : {
+                    "en" : "Objective evidence of new or altered mental state"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "There is objective evidence of new or altered mental state."
+                  }
+                }, {
+                  "value" : "at0018",
+                  "label" : "Unable to stand / collapsed",
+                  "localizedLabels" : {
+                    "en" : "Unable to stand / collapsed"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "The patient is unable to stand or has collapsed."
+                  }
+                }, {
+                  "value" : "at0019",
+                  "label" : "Unable to catch breath / barely able to speak",
+                  "localizedLabels" : {
+                    "en" : "Unable to catch breath / barely able to speak"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "The patient is unable to catch their breath and is barely able to speak."
+                  }
+                }, {
+                  "value" : "at0020",
+                  "label" : "Very fast breathing",
+                  "localizedLabels" : {
+                    "en" : "Very fast breathing"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "The patient has very fast breathing."
+                  }
+                }, {
+                  "value" : "at0030",
+                  "label" : "Skin that is very pale, mottled , ashen or blue",
+                  "localizedLabels" : {
+                    "en" : "Skin that is very pale, mottled , ashen or blue"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "The patient has skin that is very pale, mottled , ashen or blue."
+                  }
+                }, {
+                  "value" : "at0031",
+                  "label" : "Rash that doesn’t fade when pressed firmly",
+                  "localizedLabels" : {
+                    "en" : "Rash that doesn’t fade when pressed firmly"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "The patient has a rash that doesn’t fade when pressed firmly."
+                  }
+                }, {
+                  "value" : "at0032",
+                  "label" : "Recent chemotherapy",
+                  "localizedLabels" : {
+                    "en" : "Recent chemotherapy"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "The patient has had recent chemotherapy."
+                  }
+                }, {
+                  "value" : "at0035",
+                  "label" : "Under 17 and immunity impaired",
+                  "localizedLabels" : {
+                    "en" : "Under 17 and immunity impaired"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "The patient is under 17 and has impaired immunity."
+                  }
+                } ]
               } ]
             } ]
           }, {
-            "id" : "amber_flag_acute",
-            "name" : "Amber flag (acute)",
-            "localizedName" : "Amber flag (acute)",
-            "rmType" : "DV_CODED_TEXT",
-            "nodeId" : "at0083",
+            "id" : "pre-hospital",
+            "name" : "Pre-hospital",
+            "localizedName" : "Pre-hospital",
+            "rmType" : "CLUSTER",
+            "nodeId" : "at0099",
             "min" : 0,
-            "max" : -1,
+            "max" : 1,
             "localizedNames" : {
-              "en" : "Amber flag (acute)"
+              "en" : "Pre-hospital"
             },
             "localizedDescriptions" : {
-              "en" : "Used to record details of any amber flag indicators from the sepsis screening tool."
+              "en" : "Flags for Pre-Hospital Care / Ambulance services."
             },
-            "annotations" : {
-              "comment" : "Q4: ANY AMBER FLAG PRESENT?"
-            },
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Sepsis']/items[openEHR-EHR-OBSERVATION.sepsis_screening_tool.v0,'Sepsis screening']/data[at0001]/events[at0002]/data[at0003]/items[at0083]/value",
-            "inputs" : [ {
-              "suffix" : "code",
-              "type" : "CODED_TEXT",
-              "list" : [ {
-                "value" : "at0090",
-                "label" : "Relatives concerned about mental status REQUIRED:",
-                "localizedLabels" : {
-                  "en" : "Relatives concerned about mental status REQUIRED:"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Relatives concerned about mental status REQUIRED:"
-                }
-              }, {
-                "value" : "at0091",
-                "label" : "Acute deterioration in functional ability",
-                "localizedLabels" : {
-                  "en" : "Acute deterioration in functional ability"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Acute deterioration in functional ability"
-                }
-              }, {
-                "value" : "at0092",
-                "label" : "Trauma / surgery / procedure in last 8 weeks",
-                "localizedLabels" : {
-                  "en" : "Trauma / surgery / procedure in last 8 weeks"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Trauma / surgery / procedure in last 8 weeks"
-                }
-              }, {
-                "value" : "at0093",
-                "label" : "Respiratory rate 21-24",
-                "localizedLabels" : {
-                  "en" : "Respiratory rate 21-24"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Respiratory rate 21-24"
-                }
-              }, {
-                "value" : "at0094",
-                "label" : "Systolic BP 91-100 mmHg",
-                "localizedLabels" : {
-                  "en" : "Systolic BP 91-100 mmHg"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Systolic BP 91-100 mmHg"
-                }
-              }, {
-                "value" : "at0095",
-                "label" : "Heart rate 91-130 or new dysrhythmia",
-                "localizedLabels" : {
-                  "en" : "Heart rate 91-130 or new dysrhythmia"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Heart rate 91-130 or new dysrhythmia"
-                }
-              }, {
-                "value" : "at0096",
-                "label" : "Temperature <36°C",
-                "localizedLabels" : {
-                  "en" : "Temperature <36°C"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Temperature <36°C"
-                }
-              }, {
-                "value" : "at0097",
-                "label" : "Clinical signs of wound infection",
-                "localizedLabels" : {
-                  "en" : "Clinical signs of wound infection"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Clinical signs of wound infection"
-                }
+            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Sepsis']/items[openEHR-EHR-OBSERVATION.sepsis_screening_tool.v0,'Sepsis screening']/data[at0001]/events[at0002]/data[at0003]/items[at0099]",
+            "children" : [ {
+              "id" : "red_flag",
+              "name" : "Red flag",
+              "localizedName" : "Red flag",
+              "rmType" : "DV_CODED_TEXT",
+              "nodeId" : "at0058",
+              "min" : 0,
+              "max" : -1,
+              "localizedNames" : {
+                "en" : "Red flag"
+              },
+              "localizedDescriptions" : {
+                "en" : "Used to record details of any red flag indicators from the sepsis screening tool."
+              },
+              "annotations" : {
+                "comment" : "Q3: ANY RED FLAG PRESENT?"
+              },
+              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Sepsis']/items[openEHR-EHR-OBSERVATION.sepsis_screening_tool.v0,'Sepsis screening']/data[at0001]/events[at0002]/data[at0003]/items[at0099]/items[at0058]/value",
+              "inputs" : [ {
+                "suffix" : "code",
+                "type" : "CODED_TEXT",
+                "list" : [ {
+                  "value" : "at0074",
+                  "label" : "Objective evidence of new or altered mental state",
+                  "localizedLabels" : {
+                    "en" : "Objective evidence of new or altered mental state"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "Objective evidence of new or altered mental state"
+                  }
+                }, {
+                  "value" : "at0075",
+                  "label" : "Systolic BP ≤ 90 mmHg (or drop of >40 from normal)",
+                  "localizedLabels" : {
+                    "en" : "Systolic BP ≤ 90 mmHg (or drop of >40 from normal)"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "Systolic BP ≤ 90 mmHg (or drop of >40 from normal)"
+                  }
+                }, {
+                  "value" : "at0076",
+                  "label" : "Heart rate ≥ 130 per minute",
+                  "localizedLabels" : {
+                    "en" : "Heart rate ≥ 130 per minute"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "Heart rate ≥ 130 per minute"
+                  }
+                }, {
+                  "value" : "at0077",
+                  "label" : "Respiratory rate ≥ 25 per minute",
+                  "localizedLabels" : {
+                    "en" : "Respiratory rate ≥ 25 per minute"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "Respiratory rate ≥ 25 per minute"
+                  }
+                }, {
+                  "value" : "at0078",
+                  "label" : "Needs O2 to keep SpO2 ≥ 92% (88% in COPD)",
+                  "localizedLabels" : {
+                    "en" : "Needs O2 to keep SpO2 ≥ 92% (88% in COPD)"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "Needs O2 to keep SpO2 ≥ 92% (88% in COPD)"
+                  }
+                }, {
+                  "value" : "at0079",
+                  "label" : "Non-blanching rash / mottled / ashen / cyanotic",
+                  "localizedLabels" : {
+                    "en" : "Non-blanching rash / mottled / ashen / cyanotic"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "Non-blanching rash / mottled / ashen / cyanotic"
+                  }
+                }, {
+                  "value" : "at0080",
+                  "label" : "Lactate ≥ 2 mmol/l",
+                  "localizedLabels" : {
+                    "en" : "Lactate ≥ 2 mmol/l"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "Lactate ≥ 2 mmol/l"
+                  }
+                }, {
+                  "value" : "at0081",
+                  "label" : "Recent chemotherapy",
+                  "localizedLabels" : {
+                    "en" : "Recent chemotherapy"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "Recent chemotherapy"
+                  }
+                }, {
+                  "value" : "at0082",
+                  "label" : "Not passed urine in 18 hours (<0.5ml/kg/hr if catheterised)",
+                  "localizedLabels" : {
+                    "en" : "Not passed urine in 18 hours (<0.5ml/kg/hr if catheterised)"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "Not passed urine in 18 hours (<0.5ml/kg/hr if catheterised)"
+                  }
+                } ]
+              } ]
+            }, {
+              "id" : "amber_flag",
+              "name" : "Amber flag",
+              "localizedName" : "Amber flag",
+              "rmType" : "DV_CODED_TEXT",
+              "nodeId" : "at0083",
+              "min" : 0,
+              "max" : -1,
+              "localizedNames" : {
+                "en" : "Amber flag"
+              },
+              "localizedDescriptions" : {
+                "en" : "Used to record details of any amber flag indicators from the sepsis screening tool."
+              },
+              "annotations" : {
+                "comment" : "Q4: ANY AMBER FLAG PRESENT?"
+              },
+              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Sepsis']/items[openEHR-EHR-OBSERVATION.sepsis_screening_tool.v0,'Sepsis screening']/data[at0001]/events[at0002]/data[at0003]/items[at0099]/items[at0083]/value",
+              "inputs" : [ {
+                "suffix" : "code",
+                "type" : "CODED_TEXT",
+                "list" : [ {
+                  "value" : "at0090",
+                  "label" : "Relatives concerned about mental status REQUIRED:",
+                  "localizedLabels" : {
+                    "en" : "Relatives concerned about mental status REQUIRED:"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "Relatives concerned about mental status REQUIRED:"
+                  }
+                }, {
+                  "value" : "at0091",
+                  "label" : "Acute deterioration in functional ability",
+                  "localizedLabels" : {
+                    "en" : "Acute deterioration in functional ability"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "Acute deterioration in functional ability"
+                  }
+                }, {
+                  "value" : "at0092",
+                  "label" : "Trauma / surgery / procedure in last 8 weeks",
+                  "localizedLabels" : {
+                    "en" : "Trauma / surgery / procedure in last 8 weeks"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "Trauma / surgery / procedure in last 8 weeks"
+                  }
+                }, {
+                  "value" : "at0093",
+                  "label" : "Respiratory rate 21-24",
+                  "localizedLabels" : {
+                    "en" : "Respiratory rate 21-24"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "Respiratory rate 21-24"
+                  }
+                }, {
+                  "value" : "at0094",
+                  "label" : "Systolic BP 91-100 mmHg",
+                  "localizedLabels" : {
+                    "en" : "Systolic BP 91-100 mmHg"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "Systolic BP 91-100 mmHg"
+                  }
+                }, {
+                  "value" : "at0095",
+                  "label" : "Heart rate 91-130 or new dysrhythmia",
+                  "localizedLabels" : {
+                    "en" : "Heart rate 91-130 or new dysrhythmia"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "Heart rate 91-130 or new dysrhythmia"
+                  }
+                }, {
+                  "value" : "at0096",
+                  "label" : "Temperature <36°C",
+                  "localizedLabels" : {
+                    "en" : "Temperature <36°C"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "Temperature <36°C"
+                  }
+                }, {
+                  "value" : "at0097",
+                  "label" : "Clinical signs of wound infection",
+                  "localizedLabels" : {
+                    "en" : "Clinical signs of wound infection"
+                  },
+                  "localizedDescriptions" : {
+                    "en" : "Clinical signs of wound infection"
+                  }
+                } ]
               } ]
             } ]
           }, {
@@ -2058,7 +2262,7 @@
             "id" : "time",
             "name" : "Time",
             "rmType" : "DV_DATE_TIME",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Sepsis']/items[openEHR-EHR-OBSERVATION.sepsis_screening_tool.v0,'Sepsis screening']/data[at0001]/events[at0002]/time",
             "inputs" : [ {
@@ -2069,7 +2273,7 @@
             "id" : "language",
             "name" : "Language",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Sepsis']/items[openEHR-EHR-OBSERVATION.sepsis_screening_tool.v0,'Sepsis screening']/language",
             "inContext" : true
@@ -2077,7 +2281,7 @@
             "id" : "encoding",
             "name" : "Encoding",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Sepsis']/items[openEHR-EHR-OBSERVATION.sepsis_screening_tool.v0,'Sepsis screening']/encoding",
             "inContext" : true
@@ -2085,7 +2289,7 @@
             "id" : "subject",
             "name" : "Subject",
             "rmType" : "PARTY_PROXY",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Sepsis']/items[openEHR-EHR-OBSERVATION.sepsis_screening_tool.v0,'Sepsis screening']/subject",
             "inContext" : true
@@ -2111,366 +2315,67 @@
           "name" : "Covid symptoms",
           "localizedName" : "Covid symptoms",
           "rmType" : "OBSERVATION",
-          "nodeId" : "openEHR-EHR-OBSERVATION.story.v1",
+          "nodeId" : "openEHR-EHR-OBSERVATION.symptom_sign_screening.v0",
           "min" : 0,
           "max" : 1,
           "localizedNames" : {
             "en" : "Covid symptoms"
           },
           "localizedDescriptions" : {
-            "en" : "The subjective clinical history of the subject of care as recorded directly by the subject, or reported to a clinician by the subject or a carer."
+            "en" : "An individual- or self-reported questionnaire screening for symptoms and signs."
           },
-          "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']",
+          "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.symptom_sign_screening.v0,'Covid symptoms']",
           "children" : [ {
-            "id" : "story",
-            "name" : "Story",
-            "localizedName" : "Story",
-            "rmType" : "DV_TEXT",
-            "nodeId" : "at0004",
+            "id" : "date_of_onset_of_first_symptoms",
+            "name" : "Date of onset of first symptoms",
+            "localizedName" : "Date of onset of first symptoms",
+            "rmType" : "DV_DATE_TIME",
+            "nodeId" : "at0029",
             "min" : 0,
             "max" : 1,
             "localizedNames" : {
-              "en" : "Story"
+              "en" : "Date of onset of first symptoms"
             },
             "localizedDescriptions" : {
-              "en" : "Narrative description of the story or clinical history for the subject of care."
+              "en" : "The date/time when any symptoms or signs were first noticed."
             },
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value",
+            "annotations" : {
+              "comment" : "Partial dates are allowed."
+            },
+            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.symptom_sign_screening.v0,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[at0029,'Date of onset of first symptoms']/value",
             "inputs" : [ {
-              "type" : "TEXT"
+              "type" : "DATETIME"
             } ]
           }, {
-            "id" : "first_symptoms",
-            "name" : "First symptoms",
-            "localizedName" : "First symptoms",
+            "id" : "specific_symptom_sign",
+            "name" : "Specific symptom/sign",
+            "localizedName" : "Specific symptom/sign",
             "rmType" : "CLUSTER",
-            "nodeId" : "openEHR-EHR-CLUSTER.symptom_sign-cvid.v0",
-            "min" : 0,
-            "max" : 1,
-            "localizedNames" : {
-              "en" : "First symptoms"
-            },
-            "localizedDescriptions" : {
-              "en" : "Symptoms known to be indicators of suspected Covid-19 infection"
-            },
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'First symptoms']",
-            "children" : [ {
-              "id" : "symptom_sign_name",
-              "name" : "Symptom/Sign name",
-              "localizedName" : "Symptom/Sign name",
-              "rmType" : "DV_CODED_TEXT",
-              "nodeId" : "at0001.1",
-              "min" : 1,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Symptom/Sign name"
-              },
-              "localizedDescriptions" : {
-                "en" : "The name of the reported symptom or sign."
-              },
-              "annotations" : {
-                "comment" : "Symptom name should be coded with a terminology, where possible."
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'First symptoms']/items[at0001.1]/value",
-              "inputs" : [ {
-                "suffix" : "code",
-                "type" : "CODED_TEXT",
-                "list" : [ {
-                  "value" : "315642008",
-                  "label" : "Influenza-like symptoms",
-                  "localizedLabels" : {
-                    "en" : ""
-                  }
-                } ],
-                "defaultValue" : "315642008",
-                "terminology" : "SNOMED-CT"
-              } ],
-              "termBindings" : {
-                "SNOMED-CT" : {
-                  "value" : "[SNOMED-CT::418799008]",
-                  "terminologyId" : "SNOMED-CT"
-                }
-              }
-            }, {
-              "id" : "date_of_onset_of_first_symptoms",
-              "name" : "Date of onset of first symptoms",
-              "localizedName" : "Date of onset of first symptoms",
-              "rmType" : "DV_DATE_TIME",
-              "nodeId" : "at0152",
-              "min" : 0,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Date of onset of first symptoms"
-              },
-              "localizedDescriptions" : {
-                "en" : "The onset for this episode of the symptom or sign."
-              },
-              "annotations" : {
-                "comment" : "While partial dates are permitted, the exact date and time of onset can be recorded, if appropriate. If this symptom or sign is experienced for the first time or is a re-occurrence, this date is used to represent the onset of this episode. If this symptom or sign is ongoing, this data element may be redundant if it has been recorded previously."
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'First symptoms']/items[at0152,'Date of onset of first symptoms']/value",
-              "inputs" : [ {
-                "type" : "DATETIME"
-              } ]
-            }, {
-              "id" : "duration",
-              "name" : "Duration",
-              "localizedName" : "Duration",
-              "rmType" : "DV_DURATION",
-              "nodeId" : "at0028",
-              "min" : 0,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Duration"
-              },
-              "localizedDescriptions" : {
-                "en" : "The duration of this episode of the symptom or sign since onset."
-              },
-              "annotations" : {
-                "comment" : "If 'Date/time of onset' and 'Date/time of resolution' are used in systems, this data element may be calculated, or alternatively, be considered redundant in this scenario."
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'First symptoms']/items[at0028]/value",
-              "inputs" : [ {
-                "suffix" : "year",
-                "type" : "INTEGER",
-                "validation" : {
-                  "range" : {
-                    "minOp" : ">=",
-                    "min" : 0
-                  }
-                },
-                "defaultValue" : 0
-              }, {
-                "suffix" : "month",
-                "type" : "INTEGER",
-                "validation" : {
-                  "range" : {
-                    "minOp" : ">=",
-                    "min" : 0
-                  }
-                },
-                "defaultValue" : 0
-              }, {
-                "suffix" : "day",
-                "type" : "INTEGER",
-                "validation" : {
-                  "range" : {
-                    "minOp" : ">=",
-                    "min" : 0
-                  }
-                },
-                "defaultValue" : 0
-              }, {
-                "suffix" : "week",
-                "type" : "INTEGER",
-                "validation" : {
-                  "range" : {
-                    "minOp" : ">=",
-                    "min" : 0
-                  }
-                },
-                "defaultValue" : 0
-              }, {
-                "suffix" : "hour",
-                "type" : "INTEGER",
-                "validation" : {
-                  "range" : {
-                    "minOp" : ">=",
-                    "min" : 0
-                  }
-                },
-                "defaultValue" : 0
-              }, {
-                "suffix" : "minute",
-                "type" : "INTEGER",
-                "validation" : {
-                  "range" : {
-                    "minOp" : ">=",
-                    "min" : 0
-                  }
-                },
-                "defaultValue" : 0
-              }, {
-                "suffix" : "second",
-                "type" : "INTEGER",
-                "validation" : {
-                  "range" : {
-                    "minOp" : ">=",
-                    "min" : 0
-                  }
-                },
-                "defaultValue" : 0
-              } ],
-              "termBindings" : {
-                "SNOMED-CT" : {
-                  "value" : "[SNOMED-CT::162442009]",
-                  "terminologyId" : "SNOMED-CT"
-                }
-              }
-            }, {
-              "id" : "trend",
-              "name" : "Trend",
-              "localizedName" : "Trend",
-              "rmType" : "DV_CODED_TEXT",
-              "nodeId" : "at0180",
-              "min" : 0,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Trend"
-              },
-              "localizedDescriptions" : {
-                "en" : "Description progression of the symptom or sign at the time of reporting."
-              },
-              "annotations" : {
-                "comment" : "Occurrences of this data element are set to 0..* to allow multiple types of progression to be separated out in a template if desired - for example, severity or frequency."
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'First symptoms']/items[at0180,'Trend']/value",
-              "inputs" : [ {
-                "suffix" : "code",
-                "type" : "CODED_TEXT",
-                "list" : [ {
-                  "value" : "at0183",
-                  "label" : "Worsening",
-                  "localizedLabels" : {
-                    "en" : "Worsening"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The severity of the symptom or sign has worsened overall during this episode."
-                  }
-                }, {
-                  "value" : "at0182",
-                  "label" : "Unchanged",
-                  "localizedLabels" : {
-                    "en" : "Unchanged"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The severity of the symptom or sign has not changed overall during this episode."
-                  }
-                }, {
-                  "value" : "at0181",
-                  "label" : "Improving",
-                  "localizedLabels" : {
-                    "en" : "Improving"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The severity of the symptom or sign has improved overall during this episode."
-                  }
-                } ]
-              } ]
-            }, {
-              "id" : "impact",
-              "name" : "Impact",
-              "localizedName" : "Impact",
-              "rmType" : "DV_TEXT",
-              "nodeId" : "at0155",
-              "min" : 0,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Impact"
-              },
-              "localizedDescriptions" : {
-                "en" : "Description of the impact of this symptom or sign."
-              },
-              "annotations" : {
-                "comment" : "Assessment of impact could consider the severity, duration and frequency of the symptom as well as the type of impact including, but not limited to, functional, social and emotional impact. Occurrences of this data element are set to 0..* to allow multiple types of impact to be separated out in a template if desired. Examples for functional impact from hearing loss may include: 'Difficulty Hearing in Quiet Environment'; 'Difficulty Hearing the TV or Radio'; 'Difficulty Hearing Group Conversation'; and 'Difficulty Hearing on Phone'."
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'First symptoms']/items[at0155]/value",
-              "inputs" : [ {
-                "type" : "TEXT",
-                "list" : [ {
-                  "value" : "Normal",
-                  "label" : "Normal"
-                }, {
-                  "value" : "Reduced",
-                  "label" : "Reduced"
-                }, {
-                  "value" : "Severely impaired",
-                  "label" : "Severely impaired"
-                } ],
-                "listOpen" : false
-              } ]
-            }, {
-              "id" : "presence",
-              "name" : "Presence",
-              "localizedName" : "Presence",
-              "rmType" : "DV_CODED_TEXT",
-              "nodeId" : "at0.1",
-              "min" : 0,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Presence"
-              },
-              "localizedDescriptions" : {
-                "en" : "Is the symptom present or not?"
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'First symptoms']/items[at0.1]/value",
-              "inputs" : [ {
-                "suffix" : "code",
-                "type" : "CODED_TEXT",
-                "list" : [ {
-                  "value" : "at0.2",
-                  "label" : "Present",
-                  "localizedLabels" : {
-                    "en" : "Present"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The symptom is present."
-                  }
-                }, {
-                  "value" : "at0.3",
-                  "label" : "Absent",
-                  "localizedLabels" : {
-                    "en" : "Absent"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The symptom is absent."
-                  }
-                }, {
-                  "value" : "at0.4",
-                  "label" : "Unknown",
-                  "localizedLabels" : {
-                    "en" : "Unknown"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "It is not known if the symptom is present."
-                  }
-                } ],
-                "defaultValue" : "at0.2"
-              } ]
-            } ]
-          }, {
-            "id" : "key_covid_symptom",
-            "name" : "Key Covid symptom",
-            "localizedName" : "Key Covid symptom",
-            "rmType" : "CLUSTER",
-            "nodeId" : "openEHR-EHR-CLUSTER.symptom_sign-cvid.v0",
+            "nodeId" : "at0022",
             "min" : 0,
             "max" : -1,
             "localizedNames" : {
-              "en" : "Key Covid symptom"
+              "en" : "Specific symptom/sign"
             },
             "localizedDescriptions" : {
-              "en" : "Symptoms known to be indicators of suspected Covid-19 infection"
+              "en" : "Grouping of data elements related to screening for a single symptom or sign."
             },
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'Key Covid symptom']",
+            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.symptom_sign_screening.v0,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[at0022]",
             "children" : [ {
-              "id" : "symptom_sign_name",
-              "name" : "Symptom/Sign name",
-              "localizedName" : "Symptom/Sign name",
+              "id" : "symptom_or_sign_name",
+              "name" : "Symptom or sign name",
+              "localizedName" : "Symptom or sign name",
               "rmType" : "DV_CODED_TEXT",
-              "nodeId" : "at0001.1",
+              "nodeId" : "at0004",
               "min" : 1,
               "max" : 1,
               "localizedNames" : {
-                "en" : "Symptom/Sign name"
+                "en" : "Symptom or sign name"
               },
               "localizedDescriptions" : {
-                "en" : "The name of the reported symptom or sign."
+                "en" : "Name of the symptom or sign being screened."
               },
-              "annotations" : {
-                "comment" : "Symptom name should be coded with a terminology, where possible."
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'Key Covid symptom']/items[at0001.1]/value",
+              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.symptom_sign_screening.v0,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[at0022]/items[at0004]/value",
               "inputs" : [ {
                 "suffix" : "code",
                 "type" : "CODED_TEXT",
@@ -2487,8 +2392,56 @@
                     "en" : ""
                   }
                 }, {
+                  "value" : "84229001",
+                  "label" : "Fatigue/malaise",
+                  "localizedLabels" : {
+                    "en" : ""
+                  }
+                }, {
+                  "value" : "272028008",
+                  "label" : "Anosmia (loss of taste/smell)",
+                  "localizedLabels" : {
+                    "en" : ""
+                  }
+                }, {
                   "value" : "162397003",
                   "label" : "Sore throat",
+                  "localizedLabels" : {
+                    "en" : ""
+                  }
+                }, {
+                  "value" : "57676002",
+                  "label" : "Joint pain",
+                  "localizedLabels" : {
+                    "en" : ""
+                  }
+                }, {
+                  "value" : "29857009",
+                  "label" : "Chest pain",
+                  "localizedLabels" : {
+                    "en" : ""
+                  }
+                }, {
+                  "value" : "3006004",
+                  "label" : "Altered consciousness",
+                  "localizedLabels" : {
+                    "en" : ""
+                  }
+                }, {
+                  "value" : "267036007",
+                  "label" : "Shortness of breath",
+                  "localizedLabels" : {
+                    "en" : ""
+                  }
+                }, {
+                  "value" : "21522001",
+                  "label" : "Abdominal pain",
+                  "localizedLabels" : {
+                    "en" : ""
+                  }
+                }, {
+                  "value" : "62315008",
+                  "label" : "Diarrhea",
                   "localizedLabels" : {
                     "en" : ""
                   }
@@ -2505,238 +2458,20 @@
                     "en" : ""
                   }
                 }, {
-                  "value" : "68962001",
-                  "label" : "Muscle aches",
+                  "value" : "91175000",
+                  "label" : "Seizures",
                   "localizedLabels" : {
                     "en" : ""
                   }
                 }, {
-                  "value" : "57676002",
-                  "label" : "Joint pain",
+                  "value" : "25064002",
+                  "label" : "Headache",
                   "localizedLabels" : {
                     "en" : ""
                   }
                 }, {
-                  "value" : "84229001",
-                  "label" : "Fatigue/malaise",
-                  "localizedLabels" : {
-                    "en" : ""
-                  }
-                }, {
-                  "value" : "272028008",
-                  "label" : "Anosmia (loss of taste/smell)",
-                  "localizedLabels" : {
-                    "en" : ""
-                  }
-                } ],
-                "terminology" : "SNOMED-CT"
-              } ],
-              "termBindings" : {
-                "SNOMED-CT" : {
-                  "value" : "[SNOMED-CT::418799008]",
-                  "terminologyId" : "SNOMED-CT"
-                }
-              }
-            }, {
-              "id" : "presence",
-              "name" : "Presence",
-              "localizedName" : "Presence",
-              "rmType" : "DV_CODED_TEXT",
-              "nodeId" : "at0.1",
-              "min" : 0,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Presence"
-              },
-              "localizedDescriptions" : {
-                "en" : "Is the symptom present or not?"
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'Key Covid symptom']/items[at0.1,'Presence']/value",
-              "inputs" : [ {
-                "suffix" : "code",
-                "type" : "CODED_TEXT",
-                "list" : [ {
-                  "value" : "at0.2",
-                  "label" : "Present",
-                  "localizedLabels" : {
-                    "en" : "Present"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The symptom is present."
-                  }
-                }, {
-                  "value" : "at0.3",
-                  "label" : "Absent",
-                  "localizedLabels" : {
-                    "en" : "Absent"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The symptom is absent."
-                  }
-                }, {
-                  "value" : "at0.4",
-                  "label" : "Unknown",
-                  "localizedLabels" : {
-                    "en" : "Unknown"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "It is not known if the symptom is present."
-                  }
-                } ]
-              } ]
-            } ]
-          }, {
-            "id" : "chest_symptom",
-            "name" : "Chest symptom",
-            "localizedName" : "Chest symptom",
-            "rmType" : "CLUSTER",
-            "nodeId" : "openEHR-EHR-CLUSTER.symptom_sign-cvid.v0",
-            "min" : 0,
-            "max" : -1,
-            "localizedNames" : {
-              "en" : "Chest symptom"
-            },
-            "localizedDescriptions" : {
-              "en" : "Symptoms known to be indicators of suspected Covid-19 infection"
-            },
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'Chest symptom']",
-            "children" : [ {
-              "id" : "symptom_sign_name",
-              "name" : "Symptom/Sign name",
-              "localizedName" : "Symptom/Sign name",
-              "rmType" : "DV_CODED_TEXT",
-              "nodeId" : "at0001.1",
-              "min" : 1,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Symptom/Sign name"
-              },
-              "localizedDescriptions" : {
-                "en" : "The name of the reported symptom or sign."
-              },
-              "annotations" : {
-                "comment" : "Symptom name should be coded with a terminology, where possible.",
-                "snomed_map" : "161920001 | Respiratory symptom (finding) |"
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'Chest symptom']/items[at0001.1]/value",
-              "inputs" : [ {
-                "suffix" : "code",
-                "type" : "CODED_TEXT",
-                "list" : [ {
-                  "value" : "29857009",
-                  "label" : "Chest pain",
-                  "localizedLabels" : {
-                    "en" : ""
-                  }
-                }, {
-                  "value" : "267036007",
-                  "label" : "Shortness of breath",
-                  "localizedLabels" : {
-                    "en" : ""
-                  }
-                } ],
-                "terminology" : "SNOMED-CT"
-              } ],
-              "termBindings" : {
-                "SNOMED-CT" : {
-                  "value" : "[SNOMED-CT::418799008]",
-                  "terminologyId" : "SNOMED-CT"
-                }
-              }
-            }, {
-              "id" : "presence",
-              "name" : "Presence",
-              "localizedName" : "Presence",
-              "rmType" : "DV_CODED_TEXT",
-              "nodeId" : "at0.1",
-              "min" : 0,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Presence"
-              },
-              "localizedDescriptions" : {
-                "en" : "Is the symptom present or not?"
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'Chest symptom']/items[at0.1,'Presence']/value",
-              "inputs" : [ {
-                "suffix" : "code",
-                "type" : "CODED_TEXT",
-                "list" : [ {
-                  "value" : "at0.2",
-                  "label" : "Present",
-                  "localizedLabels" : {
-                    "en" : "Present"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The symptom is present."
-                  }
-                }, {
-                  "value" : "at0.3",
-                  "label" : "Absent",
-                  "localizedLabels" : {
-                    "en" : "Absent"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The symptom is absent."
-                  }
-                }, {
-                  "value" : "at0.4",
-                  "label" : "Unknown",
-                  "localizedLabels" : {
-                    "en" : "Unknown"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "It is not known if the symptom is present."
-                  }
-                } ]
-              } ]
-            } ]
-          }, {
-            "id" : "abdomen_symptom",
-            "name" : "Abdomen symptom",
-            "localizedName" : "Abdomen symptom",
-            "rmType" : "CLUSTER",
-            "nodeId" : "openEHR-EHR-CLUSTER.symptom_sign-cvid.v0",
-            "min" : 0,
-            "max" : -1,
-            "localizedNames" : {
-              "en" : "Abdomen symptom"
-            },
-            "localizedDescriptions" : {
-              "en" : "Symptoms known to be indicators of suspected Covid-19 infection"
-            },
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'Abdomen symptom']",
-            "children" : [ {
-              "id" : "symptom_sign_name",
-              "name" : "Symptom/Sign name",
-              "localizedName" : "Symptom/Sign name",
-              "rmType" : "DV_CODED_TEXT",
-              "nodeId" : "at0001.1",
-              "min" : 1,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Symptom/Sign name"
-              },
-              "localizedDescriptions" : {
-                "en" : "The name of the reported symptom or sign."
-              },
-              "annotations" : {
-                "comment" : "Symptom name should be coded with a terminology, where possible.",
-                "snomed_map" : "267045008 | Gastrointestinal symptom (finding) |"
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'Abdomen symptom']/items[at0001.1]/value",
-              "inputs" : [ {
-                "suffix" : "code",
-                "type" : "CODED_TEXT",
-                "list" : [ {
-                  "value" : "21522001",
-                  "label" : "Abdominal pain",
-                  "localizedLabels" : {
-                    "en" : ""
-                  }
-                }, {
-                  "value" : "62315008",
-                  "label" : "Diarrhea",
+                  "value" : "74474003",
+                  "label" : "Bleeding",
                   "localizedLabels" : {
                     "en" : ""
                   }
@@ -2747,277 +2482,22 @@
                     "en" : ""
                   }
                 }, {
-                  "value" : "74474003",
-                  "label" : "Bleeding",
+                  "value" : "68962001",
+                  "label" : "Muscle aches",
                   "localizedLabels" : {
                     "en" : ""
                   }
                 } ],
-                "terminology" : "SNOMED-CT"
-              } ],
-              "termBindings" : {
-                "SNOMED-CT" : {
-                  "value" : "[SNOMED-CT::418799008]",
-                  "terminologyId" : "SNOMED-CT"
-                }
-              }
-            }, {
-              "id" : "presence",
-              "name" : "Presence",
-              "localizedName" : "Presence",
-              "rmType" : "DV_CODED_TEXT",
-              "nodeId" : "at0.1",
-              "min" : 0,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Presence"
-              },
-              "localizedDescriptions" : {
-                "en" : "Is the symptom present or not?"
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'Abdomen symptom']/items[at0.1,'Presence']/value",
-              "inputs" : [ {
-                "suffix" : "code",
-                "type" : "CODED_TEXT",
-                "list" : [ {
-                  "value" : "at0.2",
-                  "label" : "Present",
-                  "localizedLabels" : {
-                    "en" : "Present"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The symptom is present."
-                  }
-                }, {
-                  "value" : "at0.3",
-                  "label" : "Absent",
-                  "localizedLabels" : {
-                    "en" : "Absent"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The symptom is absent."
-                  }
-                }, {
-                  "value" : "at0.4",
-                  "label" : "Unknown",
-                  "localizedLabels" : {
-                    "en" : "Unknown"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "It is not known if the symptom is present."
-                  }
-                } ]
-              } ]
-            } ]
-          }, {
-            "id" : "neuro_symptom",
-            "name" : "Neuro symptom",
-            "localizedName" : "Neuro symptom",
-            "rmType" : "CLUSTER",
-            "nodeId" : "openEHR-EHR-CLUSTER.symptom_sign-cvid.v0",
-            "min" : 0,
-            "max" : -1,
-            "localizedNames" : {
-              "en" : "Neuro symptom"
-            },
-            "localizedDescriptions" : {
-              "en" : "Symptoms known to be indicators of suspected Covid-19 infection"
-            },
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'Neuro symptom']",
-            "children" : [ {
-              "id" : "symptom_sign_name",
-              "name" : "Symptom/Sign name",
-              "localizedName" : "Symptom/Sign name",
-              "rmType" : "DV_CODED_TEXT",
-              "nodeId" : "at0001.1",
-              "min" : 1,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Symptom/Sign name"
-              },
-              "localizedDescriptions" : {
-                "en" : "The name of the reported symptom or sign."
-              },
-              "annotations" : {
-                "comment" : "Symptom name should be coded with a terminology, where possible.",
-                "snomed_map" : "308921004 | Neurological symptom (finding) |"
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'Neuro symptom']/items[at0001.1]/value",
-              "inputs" : [ {
-                "suffix" : "code",
-                "type" : "CODED_TEXT",
-                "list" : [ {
-                  "value" : "25064002",
-                  "label" : "Headache",
-                  "localizedLabels" : {
-                    "en" : ""
-                  }
-                }, {
-                  "value" : "91175000",
-                  "label" : "Seizures",
-                  "localizedLabels" : {
-                    "en" : ""
-                  }
-                }, {
-                  "value" : "3006004",
-                  "label" : "Altered consciousness",
-                  "localizedLabels" : {
-                    "en" : ""
-                  }
-                } ],
-                "terminology" : "SNOMED-CT"
-              } ],
-              "termBindings" : {
-                "SNOMED-CT" : {
-                  "value" : "[SNOMED-CT::418799008]",
-                  "terminologyId" : "SNOMED-CT"
-                }
-              }
-            }, {
-              "id" : "presence",
-              "name" : "Presence",
-              "localizedName" : "Presence",
-              "rmType" : "DV_CODED_TEXT",
-              "nodeId" : "at0.1",
-              "min" : 0,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Presence"
-              },
-              "localizedDescriptions" : {
-                "en" : "Is the symptom present or not?"
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'Neuro symptom']/items[at0.1,'Presence']/value",
-              "inputs" : [ {
-                "suffix" : "code",
-                "type" : "CODED_TEXT",
-                "list" : [ {
-                  "value" : "at0.2",
-                  "label" : "Present",
-                  "localizedLabels" : {
-                    "en" : "Present"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The symptom is present."
-                  }
-                }, {
-                  "value" : "at0.3",
-                  "label" : "Absent",
-                  "localizedLabels" : {
-                    "en" : "Absent"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The symptom is absent."
-                  }
-                }, {
-                  "value" : "at0.4",
-                  "label" : "Unknown",
-                  "localizedLabels" : {
-                    "en" : "Unknown"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "It is not known if the symptom is present."
-                  }
-                } ]
-              } ]
-            } ]
-          }, {
-            "id" : "other_symptom",
-            "name" : "Other symptom",
-            "localizedName" : "Other symptom",
-            "rmType" : "CLUSTER",
-            "nodeId" : "openEHR-EHR-CLUSTER.symptom_sign-cvid.v0",
-            "min" : 0,
-            "max" : -1,
-            "localizedNames" : {
-              "en" : "Other symptom"
-            },
-            "localizedDescriptions" : {
-              "en" : "Symptoms known to be indicators of suspected Covid-19 infection"
-            },
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'Other symptom']",
-            "children" : [ {
-              "id" : "symptom_sign_name",
-              "name" : "Symptom/Sign name",
-              "localizedName" : "Symptom/Sign name",
-              "rmType" : "DV_TEXT",
-              "nodeId" : "at0001.1",
-              "min" : 1,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Symptom/Sign name"
-              },
-              "localizedDescriptions" : {
-                "en" : "The name of the reported symptom or sign."
-              },
-              "annotations" : {
-                "comment" : "Symptom name should be coded with a terminology, where possible."
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'Other symptom']/items[at0001.1]/value",
-              "inputs" : [ {
-                "type" : "TEXT"
-              } ],
-              "termBindings" : {
-                "SNOMED-CT" : {
-                  "value" : "[SNOMED-CT::418799008]",
-                  "terminologyId" : "SNOMED-CT"
-                }
-              }
-            }, {
-              "id" : "presence",
-              "name" : "Presence",
-              "localizedName" : "Presence",
-              "rmType" : "DV_CODED_TEXT",
-              "nodeId" : "at0.1",
-              "min" : 0,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Presence"
-              },
-              "localizedDescriptions" : {
-                "en" : "Is the symptom present or not?"
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0,'Other symptom']/items[at0.1,'Presence']/value",
-              "inputs" : [ {
-                "suffix" : "code",
-                "type" : "CODED_TEXT",
-                "list" : [ {
-                  "value" : "at0.2",
-                  "label" : "Present",
-                  "localizedLabels" : {
-                    "en" : "Present"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The symptom is present."
-                  }
-                }, {
-                  "value" : "at0.3",
-                  "label" : "Absent",
-                  "localizedLabels" : {
-                    "en" : "Absent"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The symptom is absent."
-                  }
-                }, {
-                  "value" : "at0.4",
-                  "label" : "Unknown",
-                  "localizedLabels" : {
-                    "en" : "Unknown"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "It is not known if the symptom is present."
-                  }
-                } ]
+                "terminology" : "SNOMED CT"
               } ]
             } ]
           }, {
             "id" : "time",
             "name" : "Time",
             "rmType" : "DV_DATE_TIME",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/data[at0001]/events[at0002]/time",
+            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.symptom_sign_screening.v0,'Covid symptoms']/data[at0001]/events[at0002]/time",
             "inputs" : [ {
               "type" : "DATETIME"
             } ],
@@ -3026,25 +2506,25 @@
             "id" : "language",
             "name" : "Language",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/language",
+            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.symptom_sign_screening.v0,'Covid symptoms']/language",
             "inContext" : true
           }, {
             "id" : "encoding",
             "name" : "Encoding",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/encoding",
+            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.symptom_sign_screening.v0,'Covid symptoms']/encoding",
             "inContext" : true
           }, {
             "id" : "subject",
             "name" : "Subject",
             "rmType" : "PARTY_PROXY",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.story.v1,'Covid symptoms']/subject",
+            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.symptom_sign_screening.v0,'Covid symptoms']/subject",
             "inContext" : true
           } ]
         }, {
@@ -3095,20 +2575,20 @@
               } ]
             } ]
           }, {
-            "id" : "care_home_has_suspected_confirmed_covid-19",
-            "name" : "Care home has suspected/confirmed Covid-19",
-            "localizedName" : "Care home has suspected/confirmed Covid-19",
+            "id" : "care_setting_has_confirmed_covid-19",
+            "name" : "Care setting has confirmed Covid-19",
+            "localizedName" : "Care setting has confirmed Covid-19",
             "rmType" : "CLUSTER",
             "nodeId" : "at0016",
             "min" : 0,
             "max" : 1,
             "localizedNames" : {
-              "en" : "Care home has suspected/confirmed Covid-19"
+              "en" : "Care setting has confirmed Covid-19"
             },
             "localizedDescriptions" : {
               "en" : "Details about each possible risk factor."
             },
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/data[at0001]/items[at0016,'Care home has suspected/confirmed Covid-19']",
+            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/data[at0001]/items[at0016,'Care setting has confirmed Covid-19']",
             "children" : [ {
               "id" : "risk_factor",
               "name" : "Risk factor",
@@ -3126,7 +2606,7 @@
               "annotations" : {
                 "comment" : "For example: hypertension and hypercholesterolaemia, which may be used as part of the overall assessment for cardiovascular disease; or a genetic marker. Coding of \r\n'Risk factor' with a terminology, where possible."
               },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/data[at0001]/items[at0016,'Care home has suspected/confirmed Covid-19']/items[at0013.1]/value",
+              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/data[at0001]/items[at0016,'Care setting has confirmed Covid-19']/items[at0013.1]/value",
               "inputs" : [ {
                 "suffix" : "code",
                 "type" : "CODED_TEXT",
@@ -3142,69 +2622,22 @@
                 } ],
                 "defaultValue" : "at0.14"
               } ]
-            }, {
-              "id" : "presence",
-              "name" : "Presence",
-              "localizedName" : "Presence",
-              "rmType" : "DV_CODED_TEXT",
-              "nodeId" : "at0017.1",
-              "min" : 0,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Presence"
-              },
-              "localizedDescriptions" : {
-                "en" : "Presence of the risk factor."
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/data[at0001]/items[at0016,'Care home has suspected/confirmed Covid-19']/items[at0017.1]/value",
-              "inputs" : [ {
-                "suffix" : "code",
-                "type" : "CODED_TEXT",
-                "list" : [ {
-                  "value" : "at0018",
-                  "label" : "Present",
-                  "localizedLabels" : {
-                    "en" : "Present"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The risk factor has been identified for this individual."
-                  }
-                }, {
-                  "value" : "at0019",
-                  "label" : "Absent",
-                  "localizedLabels" : {
-                    "en" : "Absent"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The risk factor has not been identified for this individual."
-                  }
-                }, {
-                  "value" : "at0.15",
-                  "label" : "Unknown",
-                  "localizedLabels" : {
-                    "en" : "Unknown"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "No information is available for this risk factor."
-                  }
-                } ]
-              } ]
             } ]
           }, {
-            "id" : "contact_with_confirmed_case",
-            "name" : "Contact with confirmed case",
-            "localizedName" : "Contact with confirmed case",
+            "id" : "contact_with_suspected_confirmed_covid-19",
+            "name" : "Contact with suspected/confirmed Covid-19",
+            "localizedName" : "Contact with suspected/confirmed Covid-19",
             "rmType" : "CLUSTER",
             "nodeId" : "at0016",
             "min" : 0,
             "max" : 1,
             "localizedNames" : {
-              "en" : "Contact with confirmed case"
+              "en" : "Contact with suspected/confirmed Covid-19"
             },
             "localizedDescriptions" : {
               "en" : "Details about each possible risk factor."
             },
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/data[at0001]/items[at0016,'Contact with confirmed case']",
+            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/data[at0001]/items[at0016,'Contact with suspected/confirmed Covid-19']",
             "children" : [ {
               "id" : "risk_factor",
               "name" : "Risk factor",
@@ -3222,7 +2655,7 @@
               "annotations" : {
                 "comment" : "For example: hypertension and hypercholesterolaemia, which may be used as part of the overall assessment for cardiovascular disease; or a genetic marker. Coding of \r\n'Risk factor' with a terminology, where possible."
               },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/data[at0001]/items[at0016,'Contact with confirmed case']/items[at0013.1]/value",
+              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/data[at0001]/items[at0016,'Contact with suspected/confirmed Covid-19']/items[at0013.1]/value",
               "inputs" : [ {
                 "suffix" : "code",
                 "type" : "CODED_TEXT",
@@ -3252,7 +2685,7 @@
               "localizedDescriptions" : {
                 "en" : "Presence of the risk factor."
               },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/data[at0001]/items[at0016,'Contact with confirmed case']/items[at0017.1]/value",
+              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/data[at0001]/items[at0016,'Contact with suspected/confirmed Covid-19']/items[at0017.1]/value",
               "inputs" : [ {
                 "suffix" : "code",
                 "type" : "CODED_TEXT",
@@ -3284,150 +2717,13 @@
                     "en" : "No information is available for this risk factor."
                   }
                 } ]
-              } ]
-            } ]
-          }, {
-            "id" : "other_residents_household_members_unwell",
-            "name" : "Other residents/household members unwell",
-            "localizedName" : "Other residents/household members unwell",
-            "rmType" : "CLUSTER",
-            "nodeId" : "at0016",
-            "min" : 0,
-            "max" : 1,
-            "localizedNames" : {
-              "en" : "Other residents/household members unwell"
-            },
-            "localizedDescriptions" : {
-              "en" : "Details about each possible risk factor."
-            },
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/data[at0001]/items[at0016,'Other residents/household members unwell']",
-            "children" : [ {
-              "id" : "risk_factor",
-              "name" : "Risk factor",
-              "localizedName" : "Risk factor",
-              "rmType" : "DV_CODED_TEXT",
-              "nodeId" : "at0013.1",
-              "min" : 1,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Risk factor"
-              },
-              "localizedDescriptions" : {
-                "en" : "Identification of the risk factor, by name."
-              },
-              "annotations" : {
-                "comment" : "For example: hypertension and hypercholesterolaemia, which may be used as part of the overall assessment for cardiovascular disease; or a genetic marker. Coding of \r\n'Risk factor' with a terminology, where possible."
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/data[at0001]/items[at0016,'Other residents/household members unwell']/items[at0013.1]/value",
-              "inputs" : [ {
-                "suffix" : "code",
-                "type" : "CODED_TEXT",
-                "list" : [ {
-                  "value" : "at0.19",
-                  "label" : "Other household members are ill",
-                  "localizedLabels" : {
-                    "en" : "Other household members are ill"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The patient is in a house with other household members who are ill"
-                  }
-                } ],
-                "defaultValue" : "at0.19"
-              } ]
-            }, {
-              "id" : "presence",
-              "name" : "Presence",
-              "localizedName" : "Presence",
-              "rmType" : "DV_CODED_TEXT",
-              "nodeId" : "at0017.1",
-              "min" : 0,
-              "max" : 1,
-              "localizedNames" : {
-                "en" : "Presence"
-              },
-              "localizedDescriptions" : {
-                "en" : "Presence of the risk factor."
-              },
-              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/data[at0001]/items[at0016,'Other residents/household members unwell']/items[at0017.1]/value",
-              "inputs" : [ {
-                "suffix" : "code",
-                "type" : "CODED_TEXT",
-                "list" : [ {
-                  "value" : "at0018",
-                  "label" : "Present",
-                  "localizedLabels" : {
-                    "en" : "Present"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The risk factor has been identified for this individual."
-                  }
-                }, {
-                  "value" : "at0019",
-                  "label" : "Absent",
-                  "localizedLabels" : {
-                    "en" : "Absent"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "The risk factor has not been identified for this individual."
-                  }
-                }, {
-                  "value" : "at0.15",
-                  "label" : "Unknown",
-                  "localizedLabels" : {
-                    "en" : "Unknown"
-                  },
-                  "localizedDescriptions" : {
-                    "en" : "No information is available for this risk factor."
-                  }
-                } ]
-              } ]
-            } ]
-          }, {
-            "id" : "risk_assessment",
-            "name" : "Risk assessment",
-            "localizedName" : "Risk assessment",
-            "rmType" : "DV_CODED_TEXT",
-            "nodeId" : "at0003.1",
-            "min" : 0,
-            "max" : 1,
-            "localizedNames" : {
-              "en" : "Risk assessment"
-            },
-            "localizedDescriptions" : {
-              "en" : "Evaluation of the health risk."
-            },
-            "annotations" : {
-              "comment" : "There may be multiple variations on the assessment of risk. The Choice data type allows for recording of the assessment as either free text or value sets (such as low, medium or hig). The proportion data type allows recording of a percentage, a ratio or a fraction. The quantity data type allows recording of a decimal number."
-            },
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/data[at0001]/items[at0003.1]/value",
-            "inputs" : [ {
-              "suffix" : "code",
-              "type" : "CODED_TEXT",
-              "list" : [ {
-                "value" : "at0.16",
-                "label" : "Low risk",
-                "localizedLabels" : {
-                  "en" : "Low risk"
-                },
-                "localizedDescriptions" : {
-                  "en" : "The risk of the a patient having a Covid-19 infection is assessed to be low."
-                }
-              }, {
-                "value" : "at0.17",
-                "label" : "High risk",
-                "localizedLabels" : {
-                  "en" : "High risk"
-                },
-                "localizedDescriptions" : {
-                  "en" : "The risk of the a patient having a Covid-19 infection is assessed to be high."
-                }
               } ]
             } ]
           }, {
             "id" : "language",
             "name" : "Language",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/language",
             "inContext" : true
@@ -3435,7 +2731,7 @@
             "id" : "encoding",
             "name" : "Encoding",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/encoding",
             "inContext" : true
@@ -3443,219 +2739,9 @@
             "id" : "subject",
             "name" : "Subject",
             "rmType" : "PARTY_PROXY",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.health_risk-covid.v0,'Covid-19 exposure']/subject",
-            "inContext" : true
-          } ]
-        }, {
-          "id" : "latest_covid-19_test",
-          "name" : "Latest Covid-19 test",
-          "localizedName" : "Latest Covid-19 test",
-          "rmType" : "OBSERVATION",
-          "nodeId" : "openEHR-EHR-OBSERVATION.laboratory_test_result.v1",
-          "min" : 0,
-          "max" : 1,
-          "localizedNames" : {
-            "en" : "Latest Covid-19 test"
-          },
-          "localizedDescriptions" : {
-            "en" : "The result, including findings and the laboratory's interpretation, of an investigation performed on specimens collected from an individual or related to that individual."
-          },
-          "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1,'Latest Covid-19 test']",
-          "children" : [ {
-            "id" : "test_name",
-            "name" : "Test name",
-            "localizedName" : "Test name",
-            "rmType" : "DV_TEXT",
-            "nodeId" : "at0005",
-            "min" : 1,
-            "max" : 1,
-            "localizedNames" : {
-              "en" : "Test name"
-            },
-            "localizedDescriptions" : {
-              "en" : "Name of the laboratory investigation performed on the specimen(s)."
-            },
-            "annotations" : {
-              "comment" : "A test result may be for a single analyte, or a group of items, including panel tests. It is strongly recommended that 'Test name' be coded with a terminology, for example LOINC or SNOMED CT. For example: 'Glucose', 'Urea and Electrolytes', 'Swab', 'Cortisol (am)', 'Potassium in perspiration' or 'Melanoma histopathology'. The name may sometimes include specimen type and patient state, for example 'Fasting blood glucose' or include other information, as 'Potassium (PNA blood gas)'."
-            },
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1,'Latest Covid-19 test']/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value",
-            "inputs" : [ {
-              "type" : "TEXT",
-              "defaultValue" : "Covid-19 test"
-            } ]
-          }, {
-            "id" : "overall_test_status",
-            "name" : "Overall test status",
-            "localizedName" : "Overall test status",
-            "rmType" : "DV_CODED_TEXT",
-            "nodeId" : "at0073",
-            "min" : 0,
-            "max" : 1,
-            "localizedNames" : {
-              "en" : "Overall test status"
-            },
-            "localizedDescriptions" : {
-              "en" : "The status of the laboratory test result as a whole."
-            },
-            "annotations" : {
-              "comment" : "The values have been specifically chosen to match those in the HL7 FHIR Diagnostic report, historically derived from HL7v2 practice. Other local codes/terms can be used via the Text 'choice'.\r\n\r\nThis element is multiple occurrence to cater for the use cases where statuses for different aspects of the result have been split into several elements."
-            },
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1,'Latest Covid-19 test']/data[at0001]/events[at0002]/data[at0003]/items[at0073]/value",
-            "inputs" : [ {
-              "suffix" : "code",
-              "type" : "CODED_TEXT",
-              "list" : [ {
-                "value" : "at0037",
-                "label" : "Partial",
-                "localizedLabels" : {
-                  "en" : "Partial"
-                },
-                "localizedDescriptions" : {
-                  "en" : "This is a partial (e.g. initial, interim or preliminary) Test Result: data in the Test Result may be incomplete or unverified."
-                }
-              }, {
-                "value" : "at0120",
-                "label" : "Preliminary",
-                "localizedLabels" : {
-                  "en" : "Preliminary"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Verified early results are available, but not all results are final. This is a sub-category of 'Partial'."
-                }
-              }, {
-                "value" : "at0038",
-                "label" : "Final",
-                "localizedLabels" : {
-                  "en" : "Final"
-                },
-                "localizedDescriptions" : {
-                  "en" : "The Test result is complete and verified by an authorised person."
-                }
-              }, {
-                "value" : "at0040",
-                "label" : "Amended",
-                "localizedLabels" : {
-                  "en" : "Amended"
-                },
-                "localizedDescriptions" : {
-                  "en" : "The result has been modified subsequent to being Final, and is complete and verified by the responsible pathologist, and result data has been changed."
-                }
-              }, {
-                "value" : "at0115",
-                "label" : "Corrected",
-                "localizedLabels" : {
-                  "en" : "Corrected"
-                },
-                "localizedDescriptions" : {
-                  "en" : "The result has been modified subsequent to being Final, and is complete and verified by the responsible pathologist. This is a sub-category of 'Amended'."
-                }
-              }, {
-                "value" : "at0119",
-                "label" : "Appended",
-                "localizedLabels" : {
-                  "en" : "Appended"
-                },
-                "localizedDescriptions" : {
-                  "en" : "Subsequent to being final, the report has been modified by adding new content. The existing content is unchanged. This is a sub-category of 'Amended'."
-                }
-              }, {
-                "value" : "at0074",
-                "label" : "Cancelled",
-                "localizedLabels" : {
-                  "en" : "Cancelled"
-                },
-                "localizedDescriptions" : {
-                  "en" : "The result is unavailable because the test was not started or not completed (also sometimes called 'aborted')."
-                }
-              }, {
-                "value" : "at0116",
-                "label" : "Entered in error",
-                "localizedLabels" : {
-                  "en" : "Entered in error"
-                },
-                "localizedDescriptions" : {
-                  "en" : "The Test Result has been withdrawn following previous Final release."
-                }
-              } ],
-              "listOpen" : true
-            }, {
-              "suffix" : "other",
-              "type" : "TEXT"
-            } ]
-          }, {
-            "id" : "test_diagnosis",
-            "name" : "Test diagnosis",
-            "localizedName" : "Test diagnosis",
-            "rmType" : "DV_TEXT",
-            "nodeId" : "at0098",
-            "min" : 0,
-            "max" : 1,
-            "localizedNames" : {
-              "en" : "Test diagnosis"
-            },
-            "localizedDescriptions" : {
-              "en" : "Single word, phrase or brief description that represents the clinical meaning and significance of the laboratory test result."
-            },
-            "annotations" : {
-              "comment" : "For example: 'Severe hepatic impairment', 'Salmonella contamination'. Coding of the diagnosis with a terminology is strongly recommended, where possible. This diagnosis should be aligned with the narrative in the 'Conclusion'."
-            },
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1,'Latest Covid-19 test']/data[at0001]/events[at0002]/data[at0003]/items[at0098]/value",
-            "inputs" : [ {
-              "type" : "TEXT",
-              "list" : [ {
-                "value" : "Positive",
-                "label" : "Positive"
-              }, {
-                "value" : "Negative",
-                "label" : "Negative"
-              }, {
-                "value" : "Awaited",
-                "label" : "Awaited"
-              }, {
-                "value" : "Unknown",
-                "label" : "Unknown"
-              }, {
-                "value" : "Not tested",
-                "label" : "Not tested"
-              } ],
-              "listOpen" : false
-            } ]
-          }, {
-            "id" : "time",
-            "name" : "Time",
-            "rmType" : "DV_DATE_TIME",
-            "min" : 1,
-            "max" : 1,
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1,'Latest Covid-19 test']/data[at0001]/events[at0002]/time",
-            "inputs" : [ {
-              "type" : "DATETIME"
-            } ],
-            "inContext" : true
-          }, {
-            "id" : "language",
-            "name" : "Language",
-            "rmType" : "CODE_PHRASE",
-            "min" : 1,
-            "max" : 1,
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1,'Latest Covid-19 test']/language",
-            "inContext" : true
-          }, {
-            "id" : "encoding",
-            "name" : "Encoding",
-            "rmType" : "CODE_PHRASE",
-            "min" : 1,
-            "max" : 1,
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1,'Latest Covid-19 test']/encoding",
-            "inContext" : true
-          }, {
-            "id" : "subject",
-            "name" : "Subject",
-            "rmType" : "PARTY_PROXY",
-            "min" : 1,
-            "max" : 1,
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-OBSERVATION.laboratory_test_result.v1,'Latest Covid-19 test']/subject",
             "inContext" : true
           } ]
         }, {
@@ -3695,7 +2781,7 @@
             "id" : "language",
             "name" : "Language",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.clinical_synopsis.v1,'Covid notes']/language",
             "inContext" : true
@@ -3703,7 +2789,7 @@
             "id" : "encoding",
             "name" : "Encoding",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.clinical_synopsis.v1,'Covid notes']/encoding",
             "inContext" : true
@@ -3711,7 +2797,7 @@
             "id" : "subject",
             "name" : "Subject",
             "rmType" : "PARTY_PROXY",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'Covid']/items[openEHR-EHR-EVALUATION.clinical_synopsis.v1,'Covid notes']/subject",
             "inContext" : true
@@ -3793,7 +2879,7 @@
             "id" : "time",
             "name" : "Time",
             "rmType" : "DV_DATE_TIME",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.body_temperature.v1,'Temperature']/data[at0002]/events[at0003]/time",
             "inputs" : [ {
@@ -3804,7 +2890,7 @@
             "id" : "language",
             "name" : "Language",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.body_temperature.v1,'Temperature']/language",
             "inContext" : true
@@ -3812,7 +2898,7 @@
             "id" : "encoding",
             "name" : "Encoding",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.body_temperature.v1,'Temperature']/encoding",
             "inContext" : true
@@ -3820,7 +2906,7 @@
             "id" : "subject",
             "name" : "Subject",
             "rmType" : "PARTY_PROXY",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.body_temperature.v1,'Temperature']/subject",
             "inContext" : true
@@ -3894,10 +2980,129 @@
               }
             }
           }, {
+            "id" : "inspired_oxygen",
+            "name" : "Inspired oxygen",
+            "localizedName" : "Inspired oxygen",
+            "rmType" : "CLUSTER",
+            "nodeId" : "openEHR-EHR-CLUSTER.inspired_oxygen.v1",
+            "min" : 0,
+            "max" : 1,
+            "dependsOn" : [ "spo" ],
+            "localizedNames" : {
+              "en" : "Inspired oxygen"
+            },
+            "localizedDescriptions" : {
+              "en" : "The amount of oxygen being delivered, or to be delivered, to the patient given as a fraction, percentage or indirectly as a flow rate."
+            },
+            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.pulse_oximetry.v1]/data[at0001]/events[at0002]/state[at0014]/items[openEHR-EHR-CLUSTER.inspired_oxygen.v1]",
+            "children" : [ {
+              "id" : "flow_rate",
+              "name" : "Flow rate",
+              "localizedName" : "Flow rate",
+              "rmType" : "DV_QUANTITY",
+              "nodeId" : "at0051",
+              "min" : 0,
+              "max" : 1,
+              "localizedNames" : {
+                "en" : "Flow rate"
+              },
+              "localizedDescriptions" : {
+                "en" : "Oxygen flow rate given to an individual."
+              },
+              "annotations" : {
+                "comment" : "For example '5 l/min'."
+              },
+              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.pulse_oximetry.v1]/data[at0001]/events[at0002]/state[at0014]/items[openEHR-EHR-CLUSTER.inspired_oxygen.v1]/items[at0051]/value",
+              "inputs" : [ {
+                "suffix" : "magnitude",
+                "type" : "DECIMAL",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 0.0,
+                    "maxOp" : "<=",
+                    "max" : 50.0
+                  },
+                  "precision" : {
+                    "minOp" : ">=",
+                    "min" : 2,
+                    "maxOp" : "<=",
+                    "max" : 2
+                  }
+                }
+              }, {
+                "suffix" : "unit",
+                "type" : "CODED_TEXT",
+                "list" : [ {
+                  "value" : "l/min",
+                  "label" : "l/min",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 0.0,
+                      "maxOp" : "<=",
+                      "max" : 50.0
+                    },
+                    "precision" : {
+                      "minOp" : ">=",
+                      "min" : 2,
+                      "maxOp" : "<=",
+                      "max" : 2
+                    }
+                  }
+                } ]
+              } ]
+            }, {
+              "id" : "method_of_oxygen_delivery",
+              "name" : "Method of oxygen delivery",
+              "localizedName" : "Method of oxygen delivery",
+              "rmType" : "DV_TEXT",
+              "nodeId" : "at0054",
+              "min" : 0,
+              "max" : -1,
+              "localizedNames" : {
+                "en" : "Method of oxygen delivery"
+              },
+              "localizedDescriptions" : {
+                "en" : "The method used to deliver the oxygen."
+              },
+              "annotations" : {
+                "comment" : "Intended to capture only simple description / terms, for example: 'nasal prongs'. The 'Oxygen delivery detail' slot may be used for more detailed or complex recording."
+              },
+              "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.pulse_oximetry.v1]/data[at0001]/events[at0002]/state[at0014]/items[openEHR-EHR-CLUSTER.inspired_oxygen.v1]/items[at0054]/value",
+              "inputs" : [ {
+                "type" : "TEXT",
+                "list" : [ {
+                  "value" : "Room air",
+                  "label" : "Room air"
+                }, {
+                  "value" : "Nasal prongs",
+                  "label" : "Nasal prongs"
+                }, {
+                  "value" : "Mask",
+                  "label" : "Mask"
+                }, {
+                  "value" : "Nebuliser",
+                  "label" : "Nebuliser"
+                }, {
+                  "value" : "NIV",
+                  "label" : "NIV"
+                } ],
+                "listOpen" : false,
+                "defaultValue" : "Room air"
+              } ],
+              "termBindings" : {
+                "SNOMED-CT" : {
+                  "value" : "[SNOMED-CT::277923006]",
+                  "terminologyId" : "SNOMED-CT"
+                }
+              }
+            } ]
+          }, {
             "id" : "time",
             "name" : "Time",
             "rmType" : "DV_DATE_TIME",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.pulse_oximetry.v1]/data[at0001]/events[at0002]/time",
             "inputs" : [ {
@@ -3908,7 +3113,7 @@
             "id" : "language",
             "name" : "Language",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.pulse_oximetry.v1]/language",
             "inContext" : true
@@ -3916,7 +3121,7 @@
             "id" : "encoding",
             "name" : "Encoding",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.pulse_oximetry.v1]/encoding",
             "inContext" : true
@@ -3924,7 +3129,7 @@
             "id" : "subject",
             "name" : "Subject",
             "rmType" : "PARTY_PROXY",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.pulse_oximetry.v1]/subject",
             "inContext" : true
@@ -4001,7 +3206,7 @@
             "id" : "time",
             "name" : "Time",
             "rmType" : "DV_DATE_TIME",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.pulse.v1,'Pulse']/data[at0002]/events[at0003]/time",
             "inputs" : [ {
@@ -4012,7 +3217,7 @@
             "id" : "language",
             "name" : "Language",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.pulse.v1,'Pulse']/language",
             "inContext" : true
@@ -4020,7 +3225,7 @@
             "id" : "encoding",
             "name" : "Encoding",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.pulse.v1,'Pulse']/encoding",
             "inContext" : true
@@ -4028,7 +3233,7 @@
             "id" : "subject",
             "name" : "Subject",
             "rmType" : "PARTY_PROXY",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.pulse.v1,'Pulse']/subject",
             "inContext" : true
@@ -4106,7 +3311,7 @@
             "id" : "time",
             "name" : "Time",
             "rmType" : "DV_DATE_TIME",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.respiration.v1]/data[at0001]/events[at0002]/time",
             "inputs" : [ {
@@ -4117,7 +3322,7 @@
             "id" : "language",
             "name" : "Language",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.respiration.v1]/language",
             "inContext" : true
@@ -4125,7 +3330,7 @@
             "id" : "encoding",
             "name" : "Encoding",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.respiration.v1]/encoding",
             "inContext" : true
@@ -4133,7 +3338,7 @@
             "id" : "subject",
             "name" : "Subject",
             "rmType" : "PARTY_PROXY",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.respiration.v1]/subject",
             "inContext" : true
@@ -4225,7 +3430,7 @@
             "id" : "time",
             "name" : "Time",
             "rmType" : "DV_DATE_TIME",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.acvpu.v0]/data[at0001]/events[at0002]/time",
             "inputs" : [ {
@@ -4236,7 +3441,7 @@
             "id" : "language",
             "name" : "Language",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.acvpu.v0]/language",
             "inContext" : true
@@ -4244,7 +3449,7 @@
             "id" : "encoding",
             "name" : "Encoding",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.acvpu.v0]/encoding",
             "inContext" : true
@@ -4252,7 +3457,7 @@
             "id" : "subject",
             "name" : "Subject",
             "rmType" : "PARTY_PROXY",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.acvpu.v0]/subject",
             "inContext" : true
@@ -4405,7 +3610,7 @@
             "id" : "time",
             "name" : "Time",
             "rmType" : "DV_DATE_TIME",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.blood_pressure.v2]/data[at0001]/events[at0006]/time",
             "inputs" : [ {
@@ -4416,7 +3621,7 @@
             "id" : "language",
             "name" : "Language",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.blood_pressure.v2]/language",
             "inContext" : true
@@ -4424,7 +3629,7 @@
             "id" : "encoding",
             "name" : "Encoding",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.blood_pressure.v2]/encoding",
             "inContext" : true
@@ -4432,7 +3637,7 @@
             "id" : "subject",
             "name" : "Subject",
             "rmType" : "PARTY_PROXY",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.blood_pressure.v2]/subject",
             "inContext" : true
@@ -4590,98 +3795,6 @@
                   "en" : "The oxygen saturation level is greater than/equal to 96%."
                 },
                 "ordinal" : 0
-              } ]
-            } ]
-          }, {
-            "id" : "spo_scale_2",
-            "name" : "SpO₂ Scale 2",
-            "localizedName" : "SpO₂ Scale 2",
-            "rmType" : "DV_ORDINAL",
-            "nodeId" : "at0047",
-            "min" : 0,
-            "max" : 1,
-            "localizedNames" : {
-              "en" : "SpO₂ Scale 2"
-            },
-            "localizedDescriptions" : {
-              "en" : "Category for the oxygen saturation measurement in patients with a target oxygen saturation range of 88–92%."
-            },
-            "annotations" : {
-              "comment" : "'SpO₂ Scale 1' and 'SpO₂ Scale 2' are variations of the same physiological variable to be used in different clinical scenarios. Scale 2 will be used only in patients with an oxygen saturation target range of 88–92%, such as patients with hypercapnic respiratory failure. Otherwise use Scale 1."
-            },
-            "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.news2.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0047]/value",
-            "inputs" : [ {
-              "type" : "CODED_TEXT",
-              "list" : [ {
-                "value" : "at0061",
-                "label" : "≤83",
-                "localizedLabels" : {
-                  "en" : "≤83"
-                },
-                "localizedDescriptions" : {
-                  "en" : "The oxygen saturation level is less/equal to 83%."
-                },
-                "ordinal" : 3
-              }, {
-                "value" : "at0050",
-                "label" : "84-85",
-                "localizedLabels" : {
-                  "en" : "84-85"
-                },
-                "localizedDescriptions" : {
-                  "en" : "The oxygen saturation level is between 84% and 85%."
-                },
-                "ordinal" : 2
-              }, {
-                "value" : "at0049",
-                "label" : "86-87",
-                "localizedLabels" : {
-                  "en" : "86-87"
-                },
-                "localizedDescriptions" : {
-                  "en" : "The oxygen saturation level is between 86% and 87%."
-                },
-                "ordinal" : 1
-              }, {
-                "value" : "at0048",
-                "label" : "88-92 or ≥93 on air",
-                "localizedLabels" : {
-                  "en" : "88-92 or ≥93 on air"
-                },
-                "localizedDescriptions" : {
-                  "en" : "The oxygen saturation level is between 88% and 92% or greater than/equal to 93% on air."
-                },
-                "ordinal" : 0
-              }, {
-                "value" : "at0062",
-                "label" : "93-94 on oxygen",
-                "localizedLabels" : {
-                  "en" : "93-94 on oxygen"
-                },
-                "localizedDescriptions" : {
-                  "en" : "The oxygen saturation level is between 93% and 94% on supplemental oxygen."
-                },
-                "ordinal" : 1
-              }, {
-                "value" : "at0063",
-                "label" : "95-96 on oxygen",
-                "localizedLabels" : {
-                  "en" : "95-96 on oxygen"
-                },
-                "localizedDescriptions" : {
-                  "en" : "The oxygen saturation level is between 95% and 96% on supplemental oxygen."
-                },
-                "ordinal" : 2
-              }, {
-                "value" : "at0051",
-                "label" : "≥97 on oxygen",
-                "localizedLabels" : {
-                  "en" : "≥97 on oxygen"
-                },
-                "localizedDescriptions" : {
-                  "en" : "The oxygen saturation level is greater than/equal to 97% on supplemental oxygen."
-                },
-                "ordinal" : 3
               } ]
             } ]
           }, {
@@ -5068,7 +4181,7 @@
             "id" : "time",
             "name" : "Time",
             "rmType" : "DV_DATE_TIME",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.news2.v1]/data[at0001]/events[at0002]/time",
             "inputs" : [ {
@@ -5079,7 +4192,7 @@
             "id" : "language",
             "name" : "Language",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.news2.v1]/language",
             "inContext" : true
@@ -5087,7 +4200,7 @@
             "id" : "encoding",
             "name" : "Encoding",
             "rmType" : "CODE_PHRASE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.news2.v1]/encoding",
             "inContext" : true
@@ -5095,7 +4208,7 @@
             "id" : "subject",
             "name" : "Subject",
             "rmType" : "PARTY_PROXY",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Assessment']/items[openEHR-EHR-SECTION.adhoc.v1,'NEWS2']/items[openEHR-EHR-OBSERVATION.news2.v1]/subject",
             "inContext" : true
@@ -5180,7 +4293,7 @@
           "id" : "language",
           "name" : "Language",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Response']/items[openEHR-EHR-EVALUATION.recommendation.v1]/language",
           "inContext" : true
@@ -5188,7 +4301,7 @@
           "id" : "encoding",
           "name" : "Encoding",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Response']/items[openEHR-EHR-EVALUATION.recommendation.v1]/encoding",
           "inContext" : true
@@ -5196,7 +4309,7 @@
           "id" : "subject",
           "name" : "Subject",
           "rmType" : "PARTY_PROXY",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Response']/items[openEHR-EHR-EVALUATION.recommendation.v1]/subject",
           "inContext" : true
@@ -5390,7 +4503,7 @@
             "id" : "timing",
             "name" : "Timing",
             "rmType" : "DV_PARSABLE",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Response']/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/timing",
             "inputs" : [ {
@@ -5401,7 +4514,7 @@
             "id" : "action_archetype_id",
             "name" : "Action_archetype_id",
             "rmType" : "STRING",
-            "min" : 1,
+            "min" : 0,
             "max" : 1,
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Response']/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/action_archetype_id",
             "inputs" : [ {
@@ -5423,7 +4536,7 @@
           "id" : "narrative",
           "name" : "Narrative",
           "rmType" : "DV_TEXT",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Response']/items[openEHR-EHR-INSTRUCTION.service_request.v1]/narrative",
           "inputs" : [ {
@@ -5434,7 +4547,7 @@
           "id" : "language",
           "name" : "Language",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Response']/items[openEHR-EHR-INSTRUCTION.service_request.v1]/language",
           "inContext" : true
@@ -5442,7 +4555,7 @@
           "id" : "encoding",
           "name" : "Encoding",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Response']/items[openEHR-EHR-INSTRUCTION.service_request.v1]/encoding",
           "inContext" : true
@@ -5450,7 +4563,7 @@
           "id" : "subject",
           "name" : "Subject",
           "rmType" : "PARTY_PROXY",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Response']/items[openEHR-EHR-INSTRUCTION.service_request.v1]/subject",
           "inContext" : true
@@ -5474,7 +4587,7 @@
           "id" : "ism_transition",
           "name" : "Ism_transition",
           "rmType" : "ISM_TRANSITION",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Response']/items[openEHR-EHR-ACTION.service.v0]/ism_transition",
           "children" : [ {
@@ -5587,7 +4700,7 @@
           "id" : "time",
           "name" : "Time",
           "rmType" : "DV_DATE_TIME",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Response']/items[openEHR-EHR-ACTION.service.v0]/time",
           "inputs" : [ {
@@ -5598,7 +4711,7 @@
           "id" : "language",
           "name" : "Language",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Response']/items[openEHR-EHR-ACTION.service.v0]/language",
           "inContext" : true
@@ -5606,7 +4719,7 @@
           "id" : "encoding",
           "name" : "Encoding",
           "rmType" : "CODE_PHRASE",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Response']/items[openEHR-EHR-ACTION.service.v0]/encoding",
           "inContext" : true
@@ -5614,7 +4727,7 @@
           "id" : "subject",
           "name" : "Subject",
           "rmType" : "PARTY_PROXY",
-          "min" : 1,
+          "min" : 0,
           "max" : 1,
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Response']/items[openEHR-EHR-ACTION.service.v0]/subject",
           "inContext" : true
@@ -5643,7 +4756,7 @@
       "id" : "language",
       "name" : "Language",
       "rmType" : "CODE_PHRASE",
-      "min" : 1,
+      "min" : 0,
       "max" : 1,
       "aqlPath" : "/language",
       "inContext" : true
@@ -5651,7 +4764,7 @@
       "id" : "territory",
       "name" : "Territory",
       "rmType" : "CODE_PHRASE",
-      "min" : 1,
+      "min" : 0,
       "max" : 1,
       "aqlPath" : "/territory",
       "inContext" : true
@@ -5659,7 +4772,7 @@
       "id" : "composer",
       "name" : "Composer",
       "rmType" : "PARTY_PROXY",
-      "min" : 1,
+      "min" : 0,
       "max" : 1,
       "aqlPath" : "/composer",
       "inContext" : true
