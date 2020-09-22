@@ -1,4 +1,6 @@
 {
+    "ctx/language": "en",
+    "ctx/territory": "GB",
     "open_ereact-care": {
         "context": [
             {
@@ -550,6 +552,19 @@
                                         "|type": 2
                                     }
                                 ],
+                                "inspired_oxygen": [
+                                    {
+                                        "flow_rate": [
+                                            {
+                                                "|magnitude": 29.3,
+                                                "|unit": "l/min"
+                                            }
+                                        ],
+                                        "method_of_oxygen_delivery": [
+                                            "Mask"
+                                        ]
+                                    }
+                                ],
                                 "time": [
                                     "2020-09-14T20:30:35.079Z"
                                 ],
@@ -690,13 +705,6 @@
                                         "|ordinal": 0
                                     }
                                 ],
-                                "spo_scale_2": [
-                                    {
-                                        "|code": "at0063",
-                                        "|value": "95-96 on oxygen",
-                                        "|ordinal": 2
-                                    }
-                                ],
                                 "air_or_oxygen": [
                                     {
                                         "|code": "at0037",
@@ -746,19 +754,6 @@
                                 ],
                                 "time": [
                                     "2020-09-14T20:30:35.080Z"
-                                ],
-                                "inspired_oxygen": [
-                                    {
-                                        "flow_rate": [
-                                            {
-                                                "|magnitude": 23.5,
-                                                "|unit": "l/min"
-                                            }
-                                        ],
-                                        "method_of_oxygen_delivery": [
-                                            "Room air"
-                                        ]
-                                    }
                                 ],
                                 "language": [
                                     {

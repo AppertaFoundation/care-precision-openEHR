@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <composition xmlns="http://schemas.openehr.org/v1" archetype_node_id="openEHR-EHR-COMPOSITION.encounter.v1">
-<!-- START Boilerplate-->
     <name>
         <value>open_eREACT-Care</value>
     </name>
+    <uid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OBJECT_VERSION_ID">
+        <value>58e35672-e17a-44e4-90c1-682637cd8e23::a81f47c6-a757-4e34-b644-3ccc62b4a01c::1</value>
+    </uid>
     <archetype_details>
         <archetype_id>
             <value>openEHR-EHR-COMPOSITION.encounter.v1</value>
@@ -34,18 +36,13 @@
             <code_string>433</code_string>
         </defining_code>
     </category>
-<!-- END Boilerplate-->
- 
-<composer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PARTY_IDENTIFIED">
-        <!-- composer/name-->
-        <name>Dr Joycce Brown</name>
+    <composer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PARTY_IDENTIFIED">
+        <name>dhi-scotland_a81f47c6-a757-4e34-b644-3ccc62b4a01c</name>
     </composer>
     <context>
-        <!-- start_time-->
         <start_time>
             <value>2020-09-14T20:30:35.058Z</value>
         </start_time>
-        <!-- setting-->
         <setting>
             <value>nursing home care</value>
             <defining_code>
@@ -94,7 +91,6 @@
                     <value>Event Series</value>
                 </name>
                 <origin>
-                    <!-- Default to start_time -->
                     <value>2020-09-14T20:30:35.058Z</value>
                 </origin>
                 <events xsi:type="POINT_EVENT" archetype_node_id="at0002">
@@ -102,7 +98,6 @@
                         <value>Any event</value>
                     </name>
                     <time>
-                        <!-- Default to start_time -->
                         <value>2020-09-14T20:30:35.058Z</value>
                     </time>
                     <data xsi:type="ITEM_TREE" archetype_node_id="at0003">
@@ -114,15 +109,7 @@
                                 <value>Soft signs</value>
                             </name>
                             <value xsi:type="DV_TEXT">
-                                <value>Loss of appetite</value>
-                            </value>
-                        </items>
-                        <items xsi:type="ELEMENT" archetype_node_id="at0004">
-                            <name>
-                                <value>Soft signs</value>
-                            </name>
-                            <value xsi:type="DV_TEXT">
-                                <value>Just not themselves</value>
+                                <value>Recently lost consciousness</value>
                             </value>
                         </items>
                         <items xsi:type="ELEMENT" archetype_node_id="at0004">
@@ -130,7 +117,7 @@
                                 <value>Notes</value>
                             </name>
                             <value xsi:type="DV_TEXT">
-                                <value>Has refused all meals today</value>
+                                <value>Notes 63</value>
                             </value>
                         </items>
                     </data>
@@ -175,7 +162,6 @@
                 <name>
                     <value>history</value>
                 </name>
-                <!-- Default to start_time -->
                 <origin>
                     <value>2020-09-14T20:30:35.064Z</value>
                 </origin>
@@ -183,7 +169,6 @@
                     <name>
                         <value>Any event</value>
                     </name>
-                    <!-- Default to start_time -->
                     <time>
                         <value>2020-09-14T20:30:35.064Z</value>
                     </time>
@@ -196,7 +181,7 @@
                                 <value>Height/Length</value>
                             </name>
                             <value xsi:type="DV_QUANTITY">
-                                <magnitude>170.3</magnitude>
+                                <magnitude>473.55</magnitude>
                                 <units>cm</units>
                             </value>
                         </items>
@@ -231,7 +216,6 @@
                 <name>
                     <value>history</value>
                 </name>
-                <!-- Default to start_time -->
                 <origin>
                     <value>2020-09-14T20:30:35.07Z</value>
                 </origin>
@@ -239,7 +223,6 @@
                     <name>
                         <value>Any event</value>
                     </name>
-                    <!-- Default to start_time -->
                     <time>
                         <value>2020-09-14T20:30:35.07Z</value>
                     </time>
@@ -252,7 +235,7 @@
                                 <value>Weight</value>
                             </name>
                             <value xsi:type="DV_QUANTITY">
-                                <magnitude>170.3</magnitude>
+                                <magnitude>828.86</magnitude>
                                 <units>kg</units>
                             </value>
                         </items>
@@ -287,7 +270,6 @@
                 <name>
                     <value>History</value>
                 </name>
-                <!-- Default to start_time -->
                 <origin>
                     <value>2020-09-14T20:30:35.07Z</value>
                 </origin>
@@ -295,7 +277,6 @@
                     <name>
                         <value>Any point in time event</value>
                     </name>
-                    <!-- Default to start_time -->
                     <time>
                         <value>2020-09-14T20:30:35.07Z</value>
                     </time>
@@ -310,12 +291,12 @@
                             <value xsi:type="DV_ORDINAL">
                                 <value>1</value>
                                 <symbol>
-                                    <value>Mildly frail</value>
+                                    <value>Very Fit</value>
                                     <defining_code>
                                         <terminology_id>
                                             <value>local</value>
                                         </terminology_id>
-                                        <code_string>at0098</code_string>
+                                        <code_string>at0005</code_string>
                                     </defining_code>
                                 </symbol>
                             </value>
@@ -356,7 +337,7 @@
                         <value>Synopsis</value>
                     </name>
                     <value xsi:type="DV_TEXT">
-                        <value>Angina and diabetes</value>
+                        <value>Synopsis 68</value>
                     </value>
                 </items>
             </data>
@@ -393,7 +374,7 @@
                         <value>Synopsis</value>
                     </name>
                     <value xsi:type="DV_TEXT">
-                        <value>Insulin</value>
+                        <value>Synopsis 97</value>
                     </value>
                 </items>
             </data>
@@ -430,7 +411,7 @@
                         <value>Synopsis</value>
                     </name>
                     <value xsi:type="DV_TEXT">
-                        <value>No known allergies</value>
+                        <value>Synopsis 89</value>
                     </value>
                 </items>
             </data>
@@ -1003,173 +984,46 @@
                             </name>
                             <items xsi:type="ELEMENT" archetype_node_id="at0029">
                                 <name>
-                                    <value>Date of first symptoms</value>
+                                    <value>Date of onset of first symptoms</value>
                                 </name>
                                 <value xsi:type="DV_DATE_TIME">
-                                    <value>2020-09-14T20:30:35.072Z</value>
+                                    <value>2020-09-21T15:53:38.15Z</value>
                                 </value>
                             </items>
                             <items xsi:type="CLUSTER" archetype_node_id="at0022">
                                 <name>
-                                    <value>Specific symptom</value>
+                                    <value>Specific symptom/sign</value>
                                 </name>
                                 <items xsi:type="ELEMENT" archetype_node_id="at0004">
                                     <name>
                                         <value>Symptom or sign name</value>
                                     </name>
                                     <value xsi:type="DV_CODED_TEXT">
-                                        <value>Anosmia (loss of taste/smell)</value>
+                                        <value>Fever</value>
                                         <defining_code>
                                             <terminology_id>
-                                                <value>SNOMED-CT</value>
+                                                <value>SNOMED CT</value>
                                             </terminology_id>
-                                            <code_string>272028008</code_string>
-                                        </defining_code>
-                                    </value>
-                                </items>
-                                <items xsi:type="ELEMENT" archetype_node_id="at0005">
-                                    <name>
-                                        <value>Presence?</value>
-                                    </name>
-                                    <value xsi:type="DV_CODED_TEXT">
-                                        <value>Present</value>
-                                        <defining_code>
-                                            <terminology_id>
-                                                <value>local</value>
-                                            </terminology_id>
-                                            <code_string>at0023</code_string>
+                                            <code_string>386661006</code_string>
                                         </defining_code>
                                     </value>
                                 </items>
                             </items>
                             <items xsi:type="CLUSTER" archetype_node_id="at0022">
                                 <name>
-                                    <value>Chest symptom</value>
+                                    <value>Specific symptom/sign #2</value>
                                 </name>
                                 <items xsi:type="ELEMENT" archetype_node_id="at0004">
                                     <name>
                                         <value>Symptom or sign name</value>
                                     </name>
                                     <value xsi:type="DV_CODED_TEXT">
-                                        <value>Shortness of breath</value>
+                                        <value>Diarrhea</value>
                                         <defining_code>
                                             <terminology_id>
-                                                <value>SNOMED-CT</value>
+                                                <value>SNOMED CT</value>
                                             </terminology_id>
-                                            <code_string>267036007</code_string>
-                                        </defining_code>
-                                    </value>
-                                </items>
-                                <items xsi:type="ELEMENT" archetype_node_id="at0005">
-                                    <name>
-                                        <value>Presence?</value>
-                                    </name>
-                                    <value xsi:type="DV_CODED_TEXT">
-                                        <value>Present</value>
-                                        <defining_code>
-                                            <terminology_id>
-                                                <value>local</value>
-                                            </terminology_id>
-                                            <code_string>at0023</code_string>
-                                        </defining_code>
-                                    </value>
-                                </items>
-                            </items>
-                            <items xsi:type="CLUSTER" archetype_node_id="at0022">
-                                <name>
-                                    <value>Abdominal symptom</value>
-                                </name>
-                                <items xsi:type="ELEMENT" archetype_node_id="at0004">
-                                    <name>
-                                        <value>Symptom or sign name</value>
-                                    </name>
-                                    <value xsi:type="DV_CODED_TEXT">
-                                        <value>D.91 description</value>
-                                        <defining_code>
-                                            <terminology_id>
-                                                <value>external_terminology</value>
-                                            </terminology_id>
-                                            <code_string>D.91</code_string>
-                                        </defining_code>
-                                    </value>
-                                </items>
-                                <items xsi:type="ELEMENT" archetype_node_id="at0005">
-                                    <name>
-                                        <value>Presence?</value>
-                                    </name>
-                                    <value xsi:type="DV_CODED_TEXT">
-                                        <value>Present</value>
-                                        <defining_code>
-                                            <terminology_id>
-                                                <value>local</value>
-                                            </terminology_id>
-                                            <code_string>at0023</code_string>
-                                        </defining_code>
-                                    </value>
-                                </items>
-                            </items>
-                            <items xsi:type="CLUSTER" archetype_node_id="at0022">
-                                <name>
-                                    <value>Neuro symptom</value>
-                                </name>
-                                <items xsi:type="ELEMENT" archetype_node_id="at0004">
-                                    <name>
-                                        <value>Symptom or sign name</value>
-                                    </name>
-                                    <value xsi:type="DV_CODED_TEXT">
-                                        <value>F.85 description</value>
-                                        <defining_code>
-                                            <terminology_id>
-                                                <value>external_terminology</value>
-                                            </terminology_id>
-                                            <code_string>F.85</code_string>
-                                        </defining_code>
-                                    </value>
-                                </items>
-                                <items xsi:type="ELEMENT" archetype_node_id="at0005">
-                                    <name>
-                                        <value>Presence?</value>
-                                    </name>
-                                    <value xsi:type="DV_CODED_TEXT">
-                                        <value>Present</value>
-                                        <defining_code>
-                                            <terminology_id>
-                                                <value>local</value>
-                                            </terminology_id>
-                                            <code_string>at0023</code_string>
-                                        </defining_code>
-                                    </value>
-                                </items>
-                            </items>
-                            <items xsi:type="CLUSTER" archetype_node_id="at0022">
-                                <name>
-                                    <value>Other symptom</value>
-                                </name>
-                                <items xsi:type="ELEMENT" archetype_node_id="at0004">
-                                    <name>
-                                        <value>Symptom or sign name</value>
-                                    </name>
-                                    <value xsi:type="DV_CODED_TEXT">
-                                        <value>Sore throat</value>
-                                        <defining_code>
-                                            <terminology_id>
-                                                <value>SNOMED-CT</value>
-                                            </terminology_id>
-                                            <code_string>162397003</code_string>
-                                        </defining_code>
-                                    </value>
-                                </items>
-                                <items xsi:type="ELEMENT" archetype_node_id="at0005">
-                                    <name>
-                                        <value>Presence?</value>
-                                    </name>
-                                    <value xsi:type="DV_CODED_TEXT">
-                                        <value>Present</value>
-                                        <defining_code>
-                                            <terminology_id>
-                                                <value>local</value>
-                                            </terminology_id>
-                                            <code_string>at0023</code_string>
+                                            <code_string>62315008</code_string>
                                         </defining_code>
                                     </value>
                                 </items>
@@ -1221,7 +1075,7 @@
                     </items>
                     <items xsi:type="CLUSTER" archetype_node_id="at0016">
                         <name>
-                            <value>Care home has suspected/confirmed Covid-19</value>
+                            <value>Care setting has confirmed Covid-19</value>
                         </name>
                         <items xsi:type="ELEMENT" archetype_node_id="at0013.1">
                             <name>
@@ -1237,24 +1091,10 @@
                                 </defining_code>
                             </value>
                         </items>
-                        <items xsi:type="ELEMENT" archetype_node_id="at0017.1">
-                            <name>
-                                <value>Presence</value>
-                            </name>
-                            <value xsi:type="DV_CODED_TEXT">
-                                <value>Unknown</value>
-                                <defining_code>
-                                    <terminology_id>
-                                        <value>local</value>
-                                    </terminology_id>
-                                    <code_string>at0.15</code_string>
-                                </defining_code>
-                            </value>
-                        </items>
                     </items>
                     <items xsi:type="CLUSTER" archetype_node_id="at0016">
                         <name>
-                            <value>Contact with confirmed case</value>
+                            <value>Contact with suspected/confirmed Covid-19</value>
                         </name>
                         <items xsi:type="ELEMENT" archetype_node_id="at0013.1">
                             <name>
@@ -1270,143 +1110,7 @@
                                 </defining_code>
                             </value>
                         </items>
-                        <items xsi:type="ELEMENT" archetype_node_id="at0017.1">
-                            <name>
-                                <value>Presence</value>
-                            </name>
-                            <value xsi:type="DV_CODED_TEXT">
-                                <value>Present</value>
-                                <defining_code>
-                                    <terminology_id>
-                                        <value>local</value>
-                                    </terminology_id>
-                                    <code_string>at0018</code_string>
-                                </defining_code>
-                            </value>
-                        </items>
                     </items>
-                    <items xsi:type="CLUSTER" archetype_node_id="at0016">
-                        <name>
-                            <value>Other residents/household members unwell</value>
-                        </name>
-                        <items xsi:type="ELEMENT" archetype_node_id="at0013.1">
-                            <name>
-                                <value>Risk factor</value>
-                            </name>
-                            <value xsi:type="DV_CODED_TEXT">
-                                <value>Other household members are ill</value>
-                                <defining_code>
-                                    <terminology_id>
-                                        <value>local</value>
-                                    </terminology_id>
-                                    <code_string>at0.19</code_string>
-                                </defining_code>
-                            </value>
-                        </items>
-                        <items xsi:type="ELEMENT" archetype_node_id="at0017.1">
-                            <name>
-                                <value>Presence</value>
-                            </name>
-                            <value xsi:type="DV_CODED_TEXT">
-                                <value>Unknown</value>
-                                <defining_code>
-                                    <terminology_id>
-                                        <value>local</value>
-                                    </terminology_id>
-                                    <code_string>at0.15</code_string>
-                                </defining_code>
-                            </value>
-                        </items>
-                    </items>
-                    <items xsi:type="ELEMENT" archetype_node_id="at0003.1">
-                        <name>
-                            <value>Risk assessment</value>
-                        </name>
-                        <value xsi:type="DV_CODED_TEXT">
-                            <value>High risk</value>
-                            <defining_code>
-                                <terminology_id>
-                                    <value>local</value>
-                                </terminology_id>
-                                <code_string>at0.17</code_string>
-                            </defining_code>
-                        </value>
-                    </items>
-                </data>
-            </items>
-            <items xsi:type="OBSERVATION" archetype_node_id="openEHR-EHR-OBSERVATION.laboratory_test_result.v1">
-                <name>
-                    <value>Latest Covid-19 test</value>
-                </name>
-                <archetype_details>
-                    <archetype_id>
-                        <value>openEHR-EHR-OBSERVATION.laboratory_test_result.v1</value>
-                    </archetype_id>
-                    <rm_version>1.0.4</rm_version>
-                </archetype_details>
-                <language>
-                    <terminology_id>
-                        <value>ISO_639-1</value>
-                    </terminology_id>
-                    <code_string>en</code_string>
-                </language>
-                <encoding>
-                    <terminology_id>
-                        <value>IANA_character-sets</value>
-                    </terminology_id>
-                    <code_string>UTF-8</code_string>
-                </encoding>
-                <subject xsi:type="PARTY_SELF"/>
-                <data archetype_node_id="at0001">
-                    <name>
-                        <value>Event Series</value>
-                    </name>
-                    <origin>
-                        <value>2020-09-14T20:30:35.076Z</value>
-                    </origin>
-                    <events xsi:type="POINT_EVENT" archetype_node_id="at0002">
-                        <name>
-                            <value>Any event</value>
-                        </name>
-                        <time>
-                            <value>2020-09-14T20:30:35.076Z</value>
-                        </time>
-                        <data xsi:type="ITEM_TREE" archetype_node_id="at0003">
-                            <name>
-                                <value>Tree</value>
-                            </name>
-                            <items xsi:type="ELEMENT" archetype_node_id="at0005">
-                                <name>
-                                    <value>Test name</value>
-                                </name>
-                                <value xsi:type="DV_TEXT">
-                                    <value>Covid-19 test</value>
-                                </value>
-                            </items>
-                            <items xsi:type="ELEMENT" archetype_node_id="at0073">
-                                <name>
-                                    <value>Overall test status</value>
-                                </name>
-                                <value xsi:type="DV_CODED_TEXT">
-                                    <value>Final</value>
-                                    <defining_code>
-                                        <terminology_id>
-                                            <value>local</value>
-                                        </terminology_id>
-                                        <code_string>at0038</code_string>
-                                    </defining_code>
-                                </value>
-                            </items>
-                            <items xsi:type="ELEMENT" archetype_node_id="at0098">
-                                <name>
-                                    <value>Test diagnosis</value>
-                                </name>
-                                <value xsi:type="DV_TEXT">
-                                    <value>Positive</value>
-                                </value>
-                            </items>
-                        </data>
-                    </events>
                 </data>
             </items>
             <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.clinical_synopsis.v1">
@@ -1441,7 +1145,7 @@
                             <value>Synopsis</value>
                         </name>
                         <value xsi:type="DV_TEXT">
-                            <value>Synopsis 85</value>
+                            <value>Visiting son tested positie</value>
                         </value>
                     </items>
                 </data>
@@ -1564,6 +1268,40 @@
                                 </value>
                             </items>
                         </data>
+                        <state xsi:type="ITEM_TREE" archetype_node_id="at0014">
+                            <name>
+                                <value>Tree</value>
+                            </name>
+                            <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.inspired_oxygen.v1">
+                                <name>
+                                    <value>Inspired oxygen</value>
+                                </name>
+                                <archetype_details>
+                                    <archetype_id>
+                                        <value>openEHR-EHR-CLUSTER.inspired_oxygen.v1</value>
+                                    </archetype_id>
+                                    <rm_version>1.0.4</rm_version>
+                                </archetype_details>
+                                <items xsi:type="ELEMENT" archetype_node_id="at0051">
+                                    <name>
+                                        <value>Flow rate</value>
+                                    </name>
+                                    <value xsi:type="DV_QUANTITY">
+                                        <magnitude>29.3</magnitude>
+                                        <units>l/min</units>
+                                        <precision>2</precision>
+                                    </value>
+                                </items>
+                                <items xsi:type="ELEMENT" archetype_node_id="at0054">
+                                    <name>
+                                        <value>Method of oxygen delivery</value>
+                                    </name>
+                                    <value xsi:type="DV_TEXT">
+                                        <value>Mask</value>
+                                    </value>
+                                </items>
+                            </items>
+                        </state>
                     </events>
                 </data>
             </items>
@@ -1882,23 +1620,6 @@
                                     </symbol>
                                 </value>
                             </items>
-                            <items xsi:type="ELEMENT" archetype_node_id="at0047">
-                                <name>
-                                    <value>SpO₂ Scale 2</value>
-                                </name>
-                                <value xsi:type="DV_ORDINAL">
-                                    <value>2</value>
-                                    <symbol>
-                                        <value>95-96 on oxygen</value>
-                                        <defining_code>
-                                            <terminology_id>
-                                                <value>local</value>
-                                            </terminology_id>
-                                            <code_string>at0063</code_string>
-                                        </defining_code>
-                                    </symbol>
-                                </value>
-                            </items>
                             <items xsi:type="ELEMENT" archetype_node_id="at0034">
                                 <name>
                                     <value>Air or oxygen?</value>
@@ -2064,7 +1785,7 @@
                 <value>Service request</value>
             </name>
             <uid xsi:type="HIER_OBJECT_ID">
-                <value>3c65bbc4-59bc-42e2-9dcb-f1543a761c25</value>
+                <value>27e76182-1298-433b-a3fb-5c9f8d4e8d06</value>
             </uid>
             <archetype_details>
                 <archetype_id>

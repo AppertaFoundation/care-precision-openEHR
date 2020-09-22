@@ -565,6 +565,40 @@
                                 </value>
                             </items>
                         </data>
+                        <state xsi:type="ITEM_TREE" archetype_node_id="at0014">
+                            <name>
+                                <value>Tree</value>
+                            </name>
+                            <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.inspired_oxygen.v1">
+                                <name>
+                                    <value>Inspired oxygen</value>
+                                </name>
+                                <archetype_details>
+                                    <archetype_id>
+                                        <value>openEHR-EHR-CLUSTER.inspired_oxygen.v1</value>
+                                    </archetype_id>
+                                    <rm_version>1.0.4</rm_version>
+                                </archetype_details>
+                                <items xsi:type="ELEMENT" archetype_node_id="at0051">
+                                    <name>
+                                        <value>Flow rate</value>
+                                    </name>
+                                    <value xsi:type="DV_QUANTITY">
+                                        <magnitude>29.3</magnitude>
+                                        <units>l/min</units>
+                                        <precision>2</precision>
+                                    </value>
+                                </items>
+                                <items xsi:type="ELEMENT" archetype_node_id="at0054">
+                                    <name>
+                                        <value>Method of oxygen delivery</value>
+                                    </name>
+                                    <value xsi:type="DV_TEXT">
+                                        <value>Mask</value>
+                                    </value>
+                                </items>
+                            </items>
+                        </state>
                     </events>
                 </data>
             </items>
