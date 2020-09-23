@@ -255,6 +255,9 @@
             "diastolic": 58,
 
 ```
+##### NEWS2 Score
+
+These are calculated values that are returned by the middleware, then submitted as part of the composition commit.
 
 ```json
 
@@ -268,11 +271,6 @@
                     "|code": "at0031",
                     "|value": "94-95",
                     "|ordinal": 1
-                },
-                "spo_scale_2": {
-                    "|code": "at0050",
-                    "|value": "84-85",
-                    "|ordinal": 2
                 },
                 "air_or_oxygen": {
                     "|code": "at0036",
