@@ -917,23 +917,6 @@
                                     </symbol>
                                 </value>
                             </items>
-                            <items xsi:type="ELEMENT" archetype_node_id="at0047">
-                                <name>
-                                    <value>SpO₂ Scale 2</value>
-                                </name>
-                                <value xsi:type="DV_ORDINAL">
-                                    <value>2</value>
-                                    <symbol>
-                                        <value>95-96 on oxygen</value>
-                                        <defining_code>
-                                            <terminology_id>
-                                                <value>local</value>
-                                            </terminology_id>
-                                            <code_string>at0063</code_string>
-                                        </defining_code>
-                                    </symbol>
-                                </value>
-                            </items>
                             <items xsi:type="ELEMENT" archetype_node_id="at0034">
                                 <name>
                                     <value>Air or oxygen?</value>
