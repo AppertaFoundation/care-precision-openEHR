@@ -3,22 +3,80 @@
 ### Header
 
 ```json
-    "template_id": "open_eREACT-Care", //Fixed
+    "template_id": "EREACT - Covid Lab Testing.v0",
     "start_time": "2020-09-07T21:04:10.789Z", //ISO DateTime
     "setting": "other care", //Fixed
-    "healthcare_facility": "Glen Carse Care Home", // Institution name
+    "healthcare_facility": {  //Identifier of the facility - could be handled server-side
+        "name": "Glen Carse Care Home",
+        "id": {
+            "type": "CQC", // CQC number
+            "id": "12342341", 
+            "namespace": "uk.org.cqc" 
+        }
+    },
     "composer": {  //Clinical author of the document
         "name": "RN Joyce Brown",
         "id": {
-            "type": "NMC", // From Demographics
-            "id": "12342341", //From demographics
-            "namespace": "uk.org.nmc" //from demographics
+            "type": "NMC", // From practitioner Demographics
+            "id": "12342341", //From practitioner demographics
+            "namespace": "uk.org.nmc" //from practitioner demographics
         }
     },
+
 ```
 ### Situation
 
+```
+{
 
+    "covid_test_request": {
+        "service_name": 
+            {
+                "|code": "1240471000000102",
+                "|value": "Measurement of severe acute respiratory syndrome coronavirus 2 antigen",
+                "|terminology": "SNOMED-CT"
+            },
+    
+        "reason_for_request": "Routine Test"
+    },
+
+    "covid_test_tracking": {
+        "current_state": {
+            "|code": "532",
+            "|value": "completed",
+            "|terminology": "openehr"
+        },
+        "careflow_step": {
+            "|code": "at0026",
+            "|value": "Service request sent",
+            "|terminology": "local"
+        },
+        "service_name": {
+            "|code": "1240471000000102",
+            "|value": "Measurement of severe acute respiratory syndrome coronavirus 2 antigen",
+            "|terminology": "SNOMED-CT"
+        },
+        "time": "2020-10-28T13:39:53.007Z"
+    },
+
+    "covid_test_result": {
+        "test_name": 
+            {
+                "|code": "1240471000000102",
+                "|value": "Measurement of severe acute respiratory syndrome coronavirus 2 antigen",
+                "|terminology": "SNOMED-CT"
+            },
+        "test_result": 
+            {
+                "|code": "1300721000000109",
+                "|value": "COVID-19 confirmed by laboratory test",
+                "|terminology": "SNOMED-CT"
+            },
+        "time":  "2020-10-28T13:39:53.007Z"
+    }
+    
+}
+```
 ```json
     "situation": {
         "soft_signs": [ //Multiple signs

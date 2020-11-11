@@ -1,0 +1,157 @@
+{
+    "covid_status_monitoring": {
+        "context": [
+            {
+                "report_id": [
+                    "Report ID 31"
+                ],
+                "status": [
+                    "Status 81"
+                ],
+                "start_time": [
+                    "2020-11-10T22:39:31.825Z"
+                ],
+                "setting": [
+                    {
+                        "|code": "238",
+                        "|value": "other care",
+                        "|terminology": "openehr"
+                    }
+                ]
+            }
+        ],
+        "current_covid_status": [
+            {
+                "problem_diagnosis_name": [
+                    {
+                        "|code": "1240761000000102",
+                        "|value": "Suspected Covid-19",
+                        "|terminology": "SNOMED-CT"
+                    }
+                ],
+                "diagnostic_certainty": [
+                    "Negative (Tested Negative)"
+                ],
+                "last_updated": [
+                    "2020-11-10T22:39:31.825Z"
+                ],
+                "language": [
+                    {
+                        "|code": "en",
+                        "|terminology": "ISO_639-1"
+                    }
+                ],
+                "encoding": [
+                    {
+                        "|code": "UTF-8",
+                        "|terminology": "IANA_character-sets"
+                    }
+                ]
+            }
+        ],
+        "isolation_status": [
+            {
+                "current_activity": [
+                    {
+                        "service_name": [
+                            {
+                                "|code": "170499009",
+                                "|value": "Isolation of infection contact",
+                                "|terminology": "SNOMED-CT"
+                            }
+                        ],
+                        "reason_for_request": [
+                            {
+                                "|code": "840539006",
+                                "|value": "Disease caused by 2019-nCoV",
+                                "|terminology": "SNOMED-CT"
+                            }
+                        ],
+                        "reason_for_isolation": [
+                            "Tested positive (10 days)"
+                        ],
+                        "service_direction": [
+                            {
+                                "direction_duration": [
+                                    "P3D"
+                                ]
+                            }
+                        ],
+                        "date_isolation_due_to_start": [
+                            "2020-11-10T22:39:31.826Z"
+                        ],
+                        "date_isolation_due_to_end": [
+                            "2020-11-10T22:39:31.826Z"
+                        ],
+                        "timing": [
+                            {
+                                "|value": "R1/2020-11-10T22:00:00Z/P1M",
+                                "|formalism": "timing"
+                            }
+                        ]
+                    }
+                ],
+                "narrative": [
+                    "Human readable instruction narrative"
+                ],
+                "language": [
+                    {
+                        "|code": "en",
+                        "|terminology": "ISO_639-1"
+                    }
+                ],
+                "encoding": [
+                    {
+                        "|code": "UTF-8",
+                        "|terminology": "IANA_character-sets"
+                    }
+                ]
+            }
+        ],
+        "health_risk_assessment": [
+            {
+                "health_risk": [
+                    {
+                        "|code": "1240761000000102",
+                        "|value": "Suspected Covid-19",
+                        "|terminology": "SNOMED-CT"
+                    }
+                ],
+                "rationale": [
+                    "Negative (Tested Negative)"
+                ],
+                "language": [
+                    {
+                        "|code": "en",
+                        "|terminology": "ISO_639-1"
+                    }
+                ],
+                "encoding": [
+                    {
+                        "|code": "UTF-8",
+                        "|terminology": "IANA_character-sets"
+                    }
+                ]
+            }
+        ],
+        "category": [
+            {
+                "|code": "433",
+                "|value": "event",
+                "|terminology": "openehr"
+            }
+        ],
+        "language": [
+            {
+                "|code": "en",
+                "|terminology": "ISO_639-1"
+            }
+        ],
+        "territory": [
+            {
+                "|code": "US",
+                "|terminology": "ISO_3166-1"
+            }
+        ]
+    }
+}
