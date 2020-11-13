@@ -1,0 +1,278 @@
+{
+    "covid_status_monitoring": {
+        "_uid": [
+            "1ebb17d2-c19f-43b7-b3f0-276587723fed::example::1"
+        ],
+        "context": [
+            {
+                "report_id": [
+                    "Report ID 11"
+                ],
+                "start_time": [
+                    "2020-11-13T15:42:24.328Z"
+                ],
+                "setting": [
+                    {
+                        "|code": "238",
+                        "|value": "other care",
+                        "|terminology": "openehr"
+                    }
+                ]
+            }
+        ],
+        "suspected_covid": [
+            {
+                "_uid": [
+                    "1c18e311-3ed7-406a-adf5-47c7ba3a0eb0"
+                ],
+                "health_risk": [
+                    {
+                        "|code": "1240761000000102",
+                        "|value": "Suspected Covid-19",
+                        "|terminology": "SNOMED-CT"
+                    }
+                ],
+                "covid_status": [
+                    "Suspected Symptoms (Assessed but no test)"
+                ],
+                "language": [
+                    {
+                        "|code": "en",
+                        "|terminology": "ISO_639-1"
+                    }
+                ],
+                "encoding": [
+                    {
+                        "|code": "UTF-8",
+                        "|terminology": "IANA_character-sets"
+                    }
+                ]
+            }
+        ],
+        "isolation": [
+            {
+                "_uid": [
+                    "6349c1fd-90aa-49ef-9f3c-45789fdbc62b"
+                ],
+                "_other_participation": [
+                    {
+                        "|function": "performer",
+                        "|mode": "not specified",
+                        "|name": "Nurse Bailey"
+                    },
+                    {
+                        "|function": "requester",
+                        "|mode": "not specified",
+                        "|name": "Dr. Stiles"
+                    }
+                ],
+                "current_activity": [
+                    {
+                        "service_name": [
+                            {
+                                "|code": "170499009",
+                                "|value": "Isolation of infection contact",
+                                "|terminology": "SNOMED-CT"
+                            }
+                        ],
+                        "reason_for_request": [
+                            {
+                                "|code": "840539006",
+                                "|value": "Disease caused by 2019-nCoV",
+                                "|terminology": "SNOMED-CT"
+                            }
+                        ],
+                        "reason_for_isolation": [
+                            "Reason for isolation 14"
+                        ],
+                        "service_direction_2": [
+                            {
+                                "direction_duration": [
+                                    "P1D"
+                                ]
+                            }
+                        ],
+                        "date_isolation_due_to_start": [
+                            "2020-11-13T15:42:24.328Z"
+                        ],
+                        "date_isolation_due_to_end": [
+                            "2020-11-13T15:42:24.329Z"
+                        ],
+                        "timing": [
+                            {
+                                "|value": "R2/2020-11-13T15:00:00Z/P2M",
+                                "|formalism": "timing"
+                            }
+                        ]
+                    }
+                ],
+                "narrative": [
+                    "Human readable instruction narrative"
+                ],
+                "language": [
+                    {
+                        "|code": "en",
+                        "|terminology": "ISO_639-1"
+                    }
+                ],
+                "encoding": [
+                    {
+                        "|code": "UTF-8",
+                        "|terminology": "IANA_character-sets"
+                    }
+                ]
+            }
+        ],
+        "lab_testing": [
+            {
+                "_uid": [
+                    "483e76c5-126d-46bc-a494-ffa00c58ac82"
+                ],
+                "covid_test_request": [
+                    {
+                        "_uid": [
+                            "10d444d0-d5ba-411e-82b1-1f3af115e2a6"
+                        ],
+                        "current_activity": [
+                            {
+                                "service_name": [
+                                    {
+                                        "|code": "1240471000000102",
+                                        "|value": "Measurement of severe acute respiratory syndrome coronavirus 2 antigen",
+                                        "|terminology": "SNOMED-CT"
+                                    }
+                                ],
+                                "reason_for_request": [
+                                    "Recovery Check"
+                                ],
+                                "timing": [
+                                    {
+                                        "|value": "R5/2020-11-13T15:00:00Z/P2M",
+                                        "|formalism": "timing"
+                                    }
+                                ]
+                            }
+                        ],
+                        "narrative": [
+                            "Human readable instruction narrative"
+                        ],
+                        "language": [
+                            {
+                                "|code": "en",
+                                "|terminology": "ISO_639-1"
+                            }
+                        ],
+                        "encoding": [
+                            {
+                                "|code": "UTF-8",
+                                "|terminology": "IANA_character-sets"
+                            }
+                        ]
+                    }
+                ],
+                "covid_test_tracking": [
+                    {
+                        "_uid": [
+                            "502a4763-4e57-49f0-80d7-90b3d2fe8ac7"
+                        ],
+                        "ism_transition": [
+                            {
+                                "current_state": [
+                                    {
+                                        "|code": "532",
+                                        "|value": "completed",
+                                        "|terminology": "openehr"
+                                    }
+                                ],
+                                "careflow_step": [
+                                    {
+                                        "|code": "at0005",
+                                        "|value": "Service activity complete",
+                                        "|terminology": "local"
+                                    }
+                                ]
+                            }
+                        ],
+                        "service_name": [
+                            {
+                                "|code": "1240471000000102",
+                                "|value": "Measurement of severe acute respiratory syndrome coronavirus 2 antigen",
+                                "|terminology": "SNOMED-CT"
+                            }
+                        ],
+                        "time": [
+                            "2020-11-13T15:42:24.329Z"
+                        ],
+                        "language": [
+                            {
+                                "|code": "en",
+                                "|terminology": "ISO_639-1"
+                            }
+                        ],
+                        "encoding": [
+                            {
+                                "|code": "UTF-8",
+                                "|terminology": "IANA_character-sets"
+                            }
+                        ]
+                    }
+                ],
+                "covid_test_result": [
+                    {
+                        "_uid": [
+                            "1ab19e14-b338-4936-8e85-581fd7968238"
+                        ],
+                        "test_name": [
+                            {
+                                "|code": "1240471000000102",
+                                "|value": "Measurement of severe acute respiratory syndrome coronavirus 2 antigen",
+                                "|terminology": "SNOMED-CT"
+                            }
+                        ],
+                        "test_result": [
+                            {
+                                "|code": "1300721000000109",
+                                "|value": "COVID-19 confirmed by laboratory test",
+                                "|terminology": "SNOMED-CT"
+                            }
+                        ],
+                        "time": [
+                            "2020-11-13T15:42:24.329Z"
+                        ],
+                        "language": [
+                            {
+                                "|code": "en",
+                                "|terminology": "ISO_639-1"
+                            }
+                        ],
+                        "encoding": [
+                            {
+                                "|code": "UTF-8",
+                                "|terminology": "IANA_character-sets"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "category": [
+            {
+                "|code": "433",
+                "|value": "event",
+                "|terminology": "openehr"
+            }
+        ],
+        "language": [
+            {
+                "|code": "en",
+                "|terminology": "ISO_639-1"
+            }
+        ],
+        "territory": [
+            {
+                "|code": "GB",
+                "|terminology": "ISO_3166-1"
+            }
+        ]
+    }
+}
