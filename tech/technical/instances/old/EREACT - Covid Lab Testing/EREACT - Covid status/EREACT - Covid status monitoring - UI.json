@@ -1,0 +1,99 @@
+{
+    "template_id": "EREACT - COVID management.v0",
+    "start_time": "2020-09-07T21:04:10.789Z",
+    "healthcare_facility": "Glen Carse Care Home", //Fixed
+    "setting": "other care", //Fixed
+    "composer": {  //Clinical author of the document
+        "name": "RN Joyce Brown",
+        "id": {
+            "id": "12342341", //From demographics
+            "namespace": "https://fhir.hl7.org.uk/Id/nmc-number" //from demographics
+        }
+    },
+
+    "suspected_covid": [
+        {
+            "health_risk": //FIXED
+                {
+                    "|code": "1240761000000102", //FIXED
+                    "|value": "Suspected Covid-19", //FIXED
+                    "|terminology": "SNOMED-CT" //FIXED
+                }
+            ,
+            "covid_status": "Negative (Tested Negative)"     
+        }
+    ],
+   
+    "isolation_request":
+         {
+            "service_name": { //FIXED
+                "|code": "170499009", //FIXED
+                "|value": "Isolation of infection contact", //FIXED
+                "|terminology": "SNOMED-CT" //FIXED
+            },
+        "reason_for_request": {
+            "|code": "840539006",
+            "|value": "Disease caused by 2019-nCoV",
+            "|terminology": "SNOMED-CT"
+        },
+        "reason_for_isolation": "Tested positive (10 days)",
+        "isolation_duration" : "P20D", //ISO format for duration - 20 days is example here P is s standard prefix D=days
+        "date_isolation_due_to_start": "2020-11-10T22:39:31.826Z",
+        "date_isolation_due_to_end": "2020-11-10T22:39:31.826Z"
+    },
+    "lab_testing": 
+        {
+            "covid_test_request": 
+                {
+                    "service_name": 
+                        {
+                            "|code": "1240471000000102",
+                            "|value": "Measurement of severe acute respiratory syndrome coronavirus 2 antigen",
+                            "|terminology": "SNOMED-CT"
+                        },
+                    "reason_for_request": ["Recovery Check"]     
+                },
+            "covid_test_tracking":
+                {
+                    "current_state": 
+                        {
+                            "|code": "526",
+                            "|value": "planned",
+                            "|terminology": "openehr"
+                        },
+                    "careflow_step": 
+                        {
+                            "|code": "at0026",
+                            "|value": "Service request sent",
+                            "|terminology": "local"
+                        },
+
+                        "service_name": 
+                        {
+                            "|code": "1240471000000102",
+                            "|value": "Measurement of severe acute respiratory syndrome coronavirus 2 antigen",
+                            "|terminology": "SNOMED-CT"
+                        },
+                    "time": "2020-11-13T16:57:22.995Z"
+                },
+            "covid_test_result": 
+                {              
+                    "test_name": 
+                        {
+                            "|code": "1240471000000102",
+                            "|value": "Measurement of severe acute respiratory syndrome coronavirus 2 antigen",
+                            "|terminology": "SNOMED-CT"
+                        },
+                    "test_result":
+                        {
+                            "|code": "1321111000000101",
+                            "|value": "COVID-19 excluded by laboratory test",
+                            "|terminology": "SNOMED-CT"
+                        }
+                    ,
+                    "time": "2020-11-13T16:57:22.995Z"               
+                }
+        
+        }
+    
+}
