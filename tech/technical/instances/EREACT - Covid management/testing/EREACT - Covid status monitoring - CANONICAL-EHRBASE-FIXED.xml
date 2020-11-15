@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<composition xmlns="http://schemas.openehr.org/v1" archetype_node_id="openEHR-EHR-COMPOSITION.report.v1">
+    <name>
+        <value>COVID status monitoring</value>
+    </name>
+    <archetype_details>
+        <archetype_id>
+            <value>openEHR-EHR-COMPOSITION.report.v1</value>
+        </archetype_id>
+        <template_id>
+            <value>EREACT - COVID management.v0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+    </archetype_details>
+    <language>
+        <terminology_id>
+            <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>en</code_string>
+    </language>
+    <territory>
+        <terminology_id>
+            <value>ISO_3166-1</value>
+        </terminology_id>
+        <code_string>GB</code_string>
+    </territory>
+    <category>
+        <value>event</value>
+        <defining_code>
+            <terminology_id>
+                <value>openehr</value>
+            </terminology_id>
+            <code_string>433</code_string>
+        </defining_code>
+    </category>
+    <composer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PARTY_IDENTIFIED">
+        <name>dhi-scotland_a81f47c6-a757-4e34-b644-3ccc62b4a01c</name>
+    </composer>
+    <context>
+        <start_time>
+            <value>2020-11-13T16:57:22.994Z</value>
+        </start_time>
+        <setting>
+            <value>other care</value>
+            <defining_code>
+                <terminology_id>
+                    <value>openehr</value>
+                </terminology_id>
+                <code_string>238</code_string>
+            </defining_code>
+        </setting>
+        <other_context xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ITEM_TREE" archetype_node_id="at0001">
+            <name>
+                <value>Tree</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0002">
+                <name>
+                    <value>Report ID</value>
+                </name>
+                <value xsi:type="DV_TEXT">
+                    <value>Report ID 84</value>
+                </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0005">
+                <name>
+                    <value>Status</value>
+                </name>
+                <value xsi:type="DV_TEXT">
+                    <value>Status 33</value>
+                </value>
+            </items>
+        </other_context>
+    </context>
+    <content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.health_risk.v1">
+        <name>
+            <value>Suspected Covid</value>
+        </name>
+        <uid xsi:type="HIER_OBJECT_ID">
+            <value>69ae4dd0-3b1e-45e3-8a4c-d7f5909741e2</value>
+        </uid>
+        <archetype_details>
+            <archetype_id>
+                <value>openEHR-EHR-EVALUATION.health_risk.v1</value>
+            </archetype_id>
+            <rm_version>1.0.4</rm_version>
+        </archetype_details>
+        <language>
+            <terminology_id>
+                <value>ISO_639-1</value>
+            </terminology_id>
+            <code_string>en</code_string>
+        </language>
+        <encoding>
+            <terminology_id>
+                <value>IANA_character-sets</value>
+            </terminology_id>
+            <code_string>UTF-8</code_string>
+        </encoding>
+        <subject xsi:type="PARTY_SELF"/>
+        <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+            <name>
+                <value>structure</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0002">
+                <name>
+                    <value>Health risk</value>
+                </name>
+                <value xsi:type="DV_CODED_TEXT">
+                    <value>Suspected Covid-19</value>
+                    <defining_code>
+                        <terminology_id>
+                            <value>SNOMED-CT</value>
+                        </terminology_id>
+                        <code_string>1240761000000102</code_string>
+                    </defining_code>
+                </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0003">
+                <name>
+                    <value>Covid status</value>
+                </name>
+                <value xsi:type="DV_TEXT">
+                    <value>Negative (Tested Negative)</value>
+                </value>
+            </items>
+        </data>
+    </content>
+    <content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="INSTRUCTION" archetype_node_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+        <name>
+            <value>Isolation request</value>
+        </name>
+        <uid xsi:type="HIER_OBJECT_ID">
+            <value>9f1244d2-5b1b-461d-bac1-98ccb828d7c0</value>
+        </uid>
+        <archetype_details>
+            <archetype_id>
+                <value>openEHR-EHR-INSTRUCTION.service_request.v1</value>
+            </archetype_id>
+            <rm_version>1.0.4</rm_version>
+        </archetype_details>   
+        <language>
+            <terminology_id>
+                <value>ISO_639-1</value>
+            </terminology_id>
+            <code_string>en</code_string>
+        </language>
+        <encoding>
+            <terminology_id>
+                <value>IANA_character-sets</value>
+            </terminology_id>
+            <code_string>UTF-8</code_string>
+        </encoding>
+        <subject xsi:type="PARTY_SELF"/>
+        <narrative>
+            <value>Human readable instruction narrative</value>
+        </narrative>
+        <activities archetype_node_id="at0001">
+            <name>
+                <value>Current Activity</value>
+            </name>
+            <description xsi:type="ITEM_TREE" archetype_node_id="at0009">
+                <name>
+                    <value>Tree</value>
+				</name>
+			    <items xsi:type="ELEMENT" archetype_node_id="at0121">
+                    <name>
+                        <value>Service name</value>
+                    </name>
+                    <value xsi:type="DV_CODED_TEXT">
+                        <value>Isolation of infection contact</value>
+                        <defining_code>
+                            <terminology_id>
+                                <value>SNOMED-CT</value>
+                            </terminology_id>
+                            <code_string>170499009</code_string>
+                        </defining_code>
+                    </value>
+                </items>
+                <items xsi:type="ELEMENT" archetype_node_id="at0062">
+                    <name>
+                        <value>Reason for request</value>
+                    </name>
+                    <value xsi:type="DV_CODED_TEXT">
+                        <value>Exposure to 2019 novel coronavirus</value>
+                        <defining_code>
+                            <terminology_id>
+                                <value>SNOMED-CT</value>
+                            </terminology_id>
+                            <code_string>840546002</code_string>
+                        </defining_code>
+                    </value>
+                </items>
+                <items xsi:type="ELEMENT" archetype_node_id="at0064">
+                    <name>
+                        <value>Reason for isolation</value>
+                    </name>
+                    <value xsi:type="DV_TEXT">
+                        <value>Reason for isolation 57</value>
+                    </value>
+                </items>
+                <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.service_direction.v1">
+                    <name>
+                        <value>Isolation timing</value>
+					</name>
+					<archetype_details>
+                        <archetype_id>
+                            <value>openEHR-EHR-CLUSTER.service_direction.v1</value>
+                        </archetype_id>
+                        <rm_version>1.0.4</rm_version>
+					</archetype_details>
+					<items xsi:type="ELEMENT" archetype_node_id="at0007">
+                        <name>
+                            <value>Isolation duration</value>
+                        </name>
+                        <value xsi:type="DV_DURATION">
+                            <value>P12D</value>
+                        </value>
+                    </items>
+                </items>         
+                <items xsi:type="ELEMENT" archetype_node_id="at0145">
+                    <name>
+                        <value>Date isolation due to start</value>
+                    </name>
+                    <value xsi:type="DV_DATE_TIME">
+                        <value>2020-11-13T16:57:22.994Z</value>
+                    </value>
+                </items>
+                <items xsi:type="ELEMENT" archetype_node_id="at0144">
+                    <name>
+                        <value>Date isolation due to end</value>
+                    </name>
+                    <value xsi:type="DV_DATE_TIME">
+                        <value>2020-11-13T16:57:22.994Z</value>
+                    </value>
+                </items>
+            </description>
+            <timing>
+                <value>R3/2020-11-13T16:00:00Z/P2M</value>
+                <formalism>timing</formalism>
+            </timing>
+            <action_archetype_id>/.*/</action_archetype_id>
+        </activities>
+    </content>
+    <content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.adhoc.v1">
+        <name>
+            <value>Lab testing</value>
+		</name>
+		<uid xsi:type="HIER_OBJECT_ID">
+            <value>342736e7-a6cd-4a5d-b002-0f214d73db3c</value>
+        </uid>
+        <archetype_details>
+            <archetype_id>
+                <value>openEHR-EHR-SECTION.adhoc.v1</value>
+            </archetype_id>
+            <rm_version>1.0.4</rm_version>
+        </archetype_details>
+        <items xsi:type="INSTRUCTION" archetype_node_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+            <name>
+                <value>Covid test request</value>
+            </name>
+            <uid xsi:type="HIER_OBJECT_ID">
+                <value>a043da4d-1079-454d-a429-b4166e6be22e</value>
+            </uid>
+            <archetype_details>
+                <archetype_id>
+                    <value>openEHR-EHR-INSTRUCTION.service_request.v1</value>
+                </archetype_id>
+                <rm_version>1.0.4</rm_version>
+            </archetype_details>
+            <language>
+                <terminology_id>
+                    <value>ISO_639-1</value>
+                </terminology_id>
+                <code_string>en</code_string>
+            </language>
+            <encoding>
+                <terminology_id>
+                    <value>IANA_character-sets</value>
+                </terminology_id>
+                <code_string>UTF-8</code_string>
+            </encoding>
+            <subject xsi:type="PARTY_SELF"/>
+            <narrative>
+                <value>Human readable instruction narrative</value>
+            </narrative>
+            <activities archetype_node_id="at0001">
+                <name>
+                    <value>Current Activity</value>
+                </name>
+                <description xsi:type="ITEM_TREE" archetype_node_id="at0009">
+                    <name>
+                        <value>Tree</value>
+                    </name>
+                    <items xsi:type="ELEMENT" archetype_node_id="at0121">
+                        <name>
+                            <value>Service name</value>
+                        </name>
+                        <value xsi:type="DV_CODED_TEXT">
+                            <value>Measurement of severe acute respiratory syndrome coronavirus 2 antigen</value>
+                            <defining_code>
+                                <terminology_id>
+                                    <value>SNOMED-CT</value>
+                                </terminology_id>
+                                <code_string>1240471000000102</code_string>
+                            </defining_code>
+                        </value>
+					</items>
+					<items xsi:type="ELEMENT" archetype_node_id="at0062">
+                        <name>
+                            <value>Reason for request</value>
+                        </name>
+                        <value xsi:type="DV_TEXT">
+                            <value>Recovery Check</value>
+                        </value>
+                    </items>
+                </description>
+                <timing>
+                    <value>R1/2020-11-13T16:00:00Z/P3M</value>
+                    <formalism>timing</formalism>
+                </timing>
+                <action_archetype_id>/.*/</action_archetype_id>
+            </activities>
+        </items>
+        <items xsi:type="ACTION" archetype_node_id="openEHR-EHR-ACTION.service.v0">
+            <name>
+                <value>Covid test tracking</value>
+            </name>
+            <uid xsi:type="HIER_OBJECT_ID">
+                <value>57620989-eeba-4055-94af-018acd4ee77d</value>
+            </uid>
+            <archetype_details>
+                <archetype_id>
+                    <value>openEHR-EHR-ACTION.service.v0</value>
+                </archetype_id>
+                <rm_version>1.0.4</rm_version>
+            </archetype_details>
+            <language>
+                <terminology_id>
+                    <value>ISO_639-1</value>
+                </terminology_id>
+                <code_string>en</code_string>
+            </language>
+            <encoding>
+                <terminology_id>
+                    <value>IANA_character-sets</value>
+                </terminology_id>
+                <code_string>UTF-8</code_string>
+            </encoding>
+            <subject xsi:type="PARTY_SELF"/>
+            <time>
+                <value>2020-11-13T16:57:22.995Z</value>
+            </time>
+            <description xsi:type="ITEM_TREE" archetype_node_id="at0001">
+                <name>
+                    <value>Tree</value>
+                </name>
+                <items xsi:type="ELEMENT" archetype_node_id="at0011">
+                    <name>
+                        <value>Service name</value>
+                    </name>
+                    <value xsi:type="DV_CODED_TEXT">
+                        <value>Measurement of severe acute respiratory syndrome coronavirus 2 antigen</value>
+                        <defining_code>
+                            <terminology_id>
+                                <value>SNOMED-CT</value>
+                            </terminology_id>
+                            <code_string>1240471000000102</code_string>
+                        </defining_code>
+                    </value>
+                </items>
+            </description>
+            <ism_transition>
+                <current_state>
+                    <value>planned</value>
+                    <defining_code>
+                        <terminology_id>
+                            <value>openehr</value>
+                        </terminology_id>
+                        <code_string>526</code_string>
+                    </defining_code>
+                </current_state>
+                <careflow_step>
+                    <value>Service request sent</value>
+                    <defining_code>
+                        <terminology_id>
+                            <value>local</value>
+                        </terminology_id>
+                        <code_string>at0026</code_string>
+                    </defining_code>
+                </careflow_step>
+            </ism_transition>
+        </items>
+        <items xsi:type="OBSERVATION" archetype_node_id="openEHR-EHR-OBSERVATION.laboratory_test_result.v1">
+            <name>
+                <value>Covid test result</value>
+            </name>
+            <uid xsi:type="HIER_OBJECT_ID">
+                <value>863af218-200a-4fc3-828f-74e9e4fbbb5e</value>
+            </uid>
+			<archetype_details>
+                <archetype_id>
+                    <value>openEHR-EHR-OBSERVATION.laboratory_test_result.v1</value>
+                </archetype_id>
+                <rm_version>1.0.4</rm_version>
+            </archetype_details>
+            <language>
+                <terminology_id>
+                    <value>ISO_639-1</value>
+                </terminology_id>
+                <code_string>en</code_string>
+            </language>
+            <encoding>
+                <terminology_id>
+                    <value>IANA_character-sets</value>
+                </terminology_id>
+                <code_string>UTF-8</code_string>
+            </encoding>
+            <subject xsi:type="PARTY_SELF"/>
+            <data archetype_node_id="at0001">
+                <name>
+                    <value>Event Series</value>
+                </name>
+                <origin>
+                    <value>2020-11-13T16:57:22.995Z</value>
+                </origin>
+                <events xsi:type="POINT_EVENT" archetype_node_id="at0002">
+                    <name>
+                        <value>Any event</value>
+                    </name>
+                    <time>
+                        <value>2020-11-13T16:57:22.995Z</value>
+                    </time>
+                    <data xsi:type="ITEM_TREE" archetype_node_id="at0003">
+                        <name>
+                            <value>Tree</value>
+                        </name>
+                        <items xsi:type="ELEMENT" archetype_node_id="at0005">
+                            <name>
+                                <value>Test name</value>
+                            </name>
+                            <value xsi:type="DV_CODED_TEXT">
+                                <value>Measurement of severe acute respiratory syndrome coronavirus 2 antigen</value>
+                                <defining_code>
+                                    <terminology_id>
+                                        <value>SNOMED-CT</value>
+                                    </terminology_id>
+                                    <code_string>1240471000000102</code_string>
+                                </defining_code>
+                            </value>
+                        </items>
+                        <items xsi:type="ELEMENT" archetype_node_id="at0098">
+                            <name>
+                                <value>Test result</value>
+                            </name>
+                            <value xsi:type="DV_CODED_TEXT">
+                                <value>COVID-19 excluded by laboratory test</value>
+                                <defining_code>
+                                    <terminology_id>
+                                        <value>SNOMED-CT</value>
+                                    </terminology_id>
+                                    <code_string>1321111000000101</code_string>
+                                </defining_code>
+                            </value>
+                        </items>
+                    </data>
+                </events>
+            </data>
+        </items>
+    </content>
+</composition>

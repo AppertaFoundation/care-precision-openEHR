@@ -1,0 +1,7 @@
+docker run -e DB_URL=jdbc:postgresql://ehrdb:5432/ehrbase \
+           -e DB_USER=foouser \
+           -e DB_PASS=foopass \
+           -e SYSTEM_NAME=what.ever.org \
+           -p 8080:8080 \
+		   -network
+           ehrbaseorg/ehrbase
