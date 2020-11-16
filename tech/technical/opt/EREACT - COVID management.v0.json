@@ -281,7 +281,21 @@
           },
           "aqlPath" : "/content[openEHR-EHR-INSTRUCTION.service_request.v1,'Isolation request']/activities[at0001]/description[at0009]/items[at0064,'Reason for isolation']/value",
           "inputs" : [ {
-            "type" : "TEXT"
+            "type" : "TEXT",
+            "list" : [ {
+              "value" : "Symptoms (10 days duration)",
+              "label" : "Symptoms (10 days duration)"
+            }, {
+              "value" : "Tested Positive (10 days duration)",
+              "label" : "Tested Positive (10 days duration)"
+            }, {
+              "value" : "Contact with Symptoms or Positive Case (14 days duration)",
+              "label" : "Contact with Symptoms or Positive Case (14 days duration)"
+            }, {
+              "value" : "Following discharge (14 days duration)",
+              "label" : "Following discharge (14 days duration)"
+            } ],
+            "listOpen" : false
           } ]
         }, {
           "id" : "isolation_timing",

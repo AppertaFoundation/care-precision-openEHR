@@ -16,10 +16,15 @@
         "id_namespace": "uk.org.cqc" //from demographics
     }
  ```
+#### `setting` valueset
+
+home
+nursing home care
+other care
 
 ### Suspected covid
 ```json
-     "suspected_covid": "Negative (Tested Negative)",
+     "suspected_covid_status": "Suspected Symptoms (Assessed but no test)",
 ```    
 #### `suspected_covid` valueset
    
@@ -48,6 +53,8 @@
 ```
 #### `reason_for_request` Valueset
 
+See mappings below for setting these items from the 'reason_for_isolation' selection
+
 ```json
   "list" : [ {
               "|code" : "840544004",
@@ -65,7 +72,38 @@
               "|terminology" : "SNOMED-CT"
             } ],
 ```
+
+#### `reason_for_isolation` Valueset
+
+Symptoms (10 days duration)
+Tested Positive (10 days duration)
+Contact with Symptoms or Positive Case (14 days duration)
+Following discharge (14 days duration)
    
+#### `reason_for_isolation` mappings to `reason_for_request`
+
+Symptoms (10 days duration) => 
+ {
+              "|code" : "840544004",
+              "|value" : "Suspected disease caused by 2019 novel coronavirus",
+               "|terminology" : "SNOMED-CT"
+            },
+
+Tested Positive (10 days duration) =>
+  {
+              "|code" : "840539006",
+              "|value" : "Disease caused by 2019-nCoV",
+              "|terminology" : "SNOMED-CT"
+            } ],
+
+Contact with Symptoms or Positive Case (14 days duration)
+Following discharge (14 days duration) =>
+  {
+              "|code" : "840546002",
+              "|value" : "Exposure to 2019 novel coronavirus",
+              "|terminology" : "SNOMED-CT"
+            },
+
 ### Covid test request
 ```json
 

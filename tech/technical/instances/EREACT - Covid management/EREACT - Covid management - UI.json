@@ -13,7 +13,7 @@
         "|id": "44832", //From demographics
         "id_namespace": "uk.org.cqc" //from demographics
     },
-    "suspected_covid": "Negative (Tested Negative)",
+    "suspected_covid_status": "Suspected Symptoms (Assessed but no test)",
     "isolation_request": {
         "reason_for_request": {
             "|code": "840539006",
@@ -25,6 +25,7 @@
         "date_isolation_due_to_start": "2020-11-10T22:39:31.826Z",
         "date_isolation_due_to_end": "2020-11-10T22:39:31.826Z"
     },
+    
     "covid_test_request": {
         "reason_for_request": "Recovery Check",
         "status": {
