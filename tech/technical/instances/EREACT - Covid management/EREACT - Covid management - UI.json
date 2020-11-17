@@ -20,12 +20,12 @@
             "|value": "Disease caused by 2019-nCoV",
             "|terminology": "SNOMED-CT"
         },
-        "reason_for_isolation": "Tested positive (10 days)",
-        "isolation duration": "P3D",
+        "reason_for_isolation": "Te sted positive (10 days)",
+       "isolation duration": "P3D",
         "date_isolation_due_to_start": "2020-11-10T22:39:31.826Z",
         "date_isolation_due_to_end": "2020-11-10T22:39:31.826Z"
     },
-    
+
     "covid_test_request": {
         "reason_for_request": "Recovery Check",
         "status": {
