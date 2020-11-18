@@ -1,0 +1,1128 @@
+{
+    "_type": "COMPOSITION",
+    "name": {
+        "_type": "DV_TEXT",
+        "value": "Deterioration assessment"
+    },
+    "archetype_details": {
+        "archetype_id": {
+            "value": "openEHR-EHR-COMPOSITION.encounter.v1"
+        },
+        "template_id": {
+            "value": "EREACT - Deterioriation assessment.v0"
+        },
+        "rm_version": "1.0.4"
+    },
+    "language": {
+        "terminology_id": {
+            "value": "ISO_639-1"
+        },
+        "code_string": "en"
+    },
+    "territory": {
+        "terminology_id": {
+            "value": "ISO_3166-1"
+        },
+        "code_string": "GB"
+    },
+    "category": {
+        "_type": "DV_CODED_TEXT",
+        "value": "event",
+        "defining_code": {
+            "terminology_id": {
+                "value": "openehr"
+            },
+            "code_string": "433"
+        }
+    },
+    "composer": {
+        "_type": "PARTY_IDENTIFIED",
+        "name": "RN Joyce Brown"
+    },
+    "context": {
+        "_type": "EVENT_CONTEXT",
+        "start_time": {
+            "_type": "DV_DATE_TIME",
+            "value": "2020-11-17T16:34:03,864Z"
+        },
+        "setting": {
+            "_type": "DV_CODED_TEXT",
+            "value": "nursing home care",
+            "defining_code": {
+                "terminology_id": {
+                    "value": "openehr"
+                },
+                "code_string": "237"
+            }
+        }
+    },
+    "content": [
+        {
+            "_type": "SECTION",
+            "name": {
+                "_type": "DV_TEXT",
+                "value": "Background"
+            },
+            "items": [
+                {
+                    "_type": "OBSERVATION",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Height"
+                    },
+                    "language": {
+                        "terminology_id": {
+                            "value": "ISO_639-1"
+                        },
+                        "code_string": "en"
+                    },
+                    "encoding": {
+                        "terminology_id": {
+                            "value": "IANA_character-sets"
+                        },
+                        "code_string": "UTF-8"
+                    },
+                    "subject": {
+                        "_type": "PARTY_SELF"
+                    },
+                    "data": {
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "history"
+                        },
+                        "origin": {
+                            "_type": "DV_DATE_TIME",
+                            "value": "2020-11-17T16:34:03,868Z"
+                        },
+                        "events": [
+                            {
+                                "_type": "POINT_EVENT",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Any event"
+                                },
+                                "time": {
+                                    "_type": "DV_DATE_TIME",
+                                    "value": "2020-11-17T16:34:03,868Z"
+                                },
+                                "data": {
+                                    "_type": "ITEM_TREE",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Simple"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Height/Length"
+                                            },
+                                            "value": {
+                                                "_type": "DV_QUANTITY",
+                                                "units": "cm",
+                                                "magnitude": 347.07
+                                            },
+                                            "archetype_node_id": "at0004"
+                                        }
+                                    ],
+                                    "archetype_node_id": "at0003"
+                                },
+                                "archetype_node_id": "at0002"
+                            }
+                        ],
+                        "archetype_node_id": "at0001"
+                    },
+                    "archetype_node_id": "openEHR-EHR-OBSERVATION.height.v2"
+                },
+                {
+                    "_type": "OBSERVATION",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Weight"
+                    },
+                    "language": {
+                        "terminology_id": {
+                            "value": "ISO_639-1"
+                        },
+                        "code_string": "en"
+                    },
+                    "encoding": {
+                        "terminology_id": {
+                            "value": "IANA_character-sets"
+                        },
+                        "code_string": "UTF-8"
+                    },
+                    "subject": {
+                        "_type": "PARTY_SELF"
+                    },
+                    "data": {
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "history"
+                        },
+                        "origin": {
+                            "_type": "DV_DATE_TIME",
+                            "value": "2020-11-17T16:34:03,868Z"
+                        },
+                        "events": [
+                            {
+                                "_type": "POINT_EVENT",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Any event"
+                                },
+                                "time": {
+                                    "_type": "DV_DATE_TIME",
+                                    "value": "2020-11-17T16:34:03,868Z"
+                                },
+                                "data": {
+                                    "_type": "ITEM_TREE",
+                                    "name": {
+                                        "_type": "DV_TEXT",
+                                        "value": "Simple"
+                                    },
+                                    "items": [
+                                        {
+                                            "_type": "ELEMENT",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Weight"
+                                            },
+                                            "value": {
+                                                "_type": "DV_QUANTITY",
+                                                "units": "kg",
+                                                "magnitude": 630.52
+                                            },
+                                            "archetype_node_id": "at0004"
+                                        }
+                                    ],
+                                    "archetype_node_id": "at0001"
+                                },
+                                "archetype_node_id": "at0003"
+                            }
+                        ],
+                        "archetype_node_id": "at0002"
+                    },
+                    "archetype_node_id": "openEHR-EHR-OBSERVATION.body_weight.v2"
+                },
+                {
+                    "_type": "EVALUATION",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Past history"
+                    },
+                    "language": {
+                        "terminology_id": {
+                            "value": "ISO_639-1"
+                        },
+                        "code_string": "en"
+                    },
+                    "encoding": {
+                        "terminology_id": {
+                            "value": "IANA_character-sets"
+                        },
+                        "code_string": "UTF-8"
+                    },
+                    "subject": {
+                        "_type": "PARTY_SELF"
+                    },
+                    "data": {
+                        "_type": "ITEM_TREE",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "List"
+                        },
+                        "items": [
+                            {
+                                "_type": "ELEMENT",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Synopsis"
+                                },
+                                "value": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Angina and diabetes"
+                                },
+                                "archetype_node_id": "at0002"
+                            }
+                        ],
+                        "archetype_node_id": "at0001"
+                    },
+                    "archetype_node_id": "openEHR-EHR-EVALUATION.clinical_synopsis.v1"
+                },
+                {
+                    "_type": "EVALUATION",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Medication"
+                    },
+                    "language": {
+                        "terminology_id": {
+                            "value": "ISO_639-1"
+                        },
+                        "code_string": "en"
+                    },
+                    "encoding": {
+                        "terminology_id": {
+                            "value": "IANA_character-sets"
+                        },
+                        "code_string": "UTF-8"
+                    },
+                    "subject": {
+                        "_type": "PARTY_SELF"
+                    },
+                    "data": {
+                        "_type": "ITEM_TREE",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "List"
+                        },
+                        "items": [
+                            {
+                                "_type": "ELEMENT",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Synopsis"
+                                },
+                                "value": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Atenolol, Aspirin and Insulin"
+                                },
+                                "archetype_node_id": "at0002"
+                            }
+                        ],
+                        "archetype_node_id": "at0001"
+                    },
+                    "archetype_node_id": "openEHR-EHR-EVALUATION.clinical_synopsis.v1"
+                },
+                {
+                    "_type": "EVALUATION",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Allergies"
+                    },
+                    "language": {
+                        "terminology_id": {
+                            "value": "ISO_639-1"
+                        },
+                        "code_string": "en"
+                    },
+                    "encoding": {
+                        "terminology_id": {
+                            "value": "IANA_character-sets"
+                        },
+                        "code_string": "UTF-8"
+                    },
+                    "subject": {
+                        "_type": "PARTY_SELF"
+                    },
+                    "data": {
+                        "_type": "ITEM_TREE",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "List"
+                        },
+                        "items": [
+                            {
+                                "_type": "ELEMENT",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Synopsis"
+                                },
+                                "value": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Synopsis 29"
+                                },
+                                "archetype_node_id": "at0002"
+                            }
+                        ],
+                        "archetype_node_id": "at0001"
+                    },
+                    "archetype_node_id": "openEHR-EHR-EVALUATION.clinical_synopsis.v1"
+                }
+            ],
+            "archetype_node_id": "openEHR-EHR-SECTION.adhoc.v1"
+        },
+        {
+            "_type": "SECTION",
+            "name": {
+                "_type": "DV_TEXT",
+                "value": "Assessment"
+            },
+            "items": [
+                {
+                    "_type": "SECTION",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Sepsis screening"
+                    },
+                    "items": [
+                        {
+                            "_type": "OBSERVATION",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Sepsis clinical screening age 12 plus"
+                            },
+                            "language": {
+                                "terminology_id": {
+                                    "value": "ISO_639-1"
+                                },
+                                "code_string": "en"
+                            },
+                            "encoding": {
+                                "terminology_id": {
+                                    "value": "IANA_character-sets"
+                                },
+                                "code_string": "UTF-8"
+                            },
+                            "subject": {
+                                "_type": "PARTY_SELF"
+                            },
+                            "data": {
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "History"
+                                },
+                                "origin": {
+                                    "_type": "DV_DATE_TIME",
+                                    "value": "2020-11-17T16:34:03,871Z"
+                                },
+                                "events": [
+                                    {
+                                        "_type": "POINT_EVENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Single point in time"
+                                        },
+                                        "time": {
+                                            "_type": "DV_DATE_TIME",
+                                            "value": "2020-11-17T16:34:03,871Z"
+                                        },
+                                        "data": {
+                                            "_type": "ITEM_TREE",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Tree"
+                                            },
+                                            "items": [
+                                                {
+                                                    "_type": "CLUSTER",
+                                                    "name": {
+                                                        "_type": "DV_TEXT",
+                                                        "value": "Sepsis clinical red flags (age 12 plus)"
+                                                    },
+                                                    "items": [
+                                                        {
+                                                            "_type": "ELEMENT",
+                                                            "name": {
+                                                                "_type": "DV_TEXT",
+                                                                "value": "Red flags"
+                                                            },
+                                                            "value": {
+                                                                "_type": "DV_CODED_TEXT",
+                                                                "value": "Non-blanching rash / mottled / ashen / cyanotic",
+                                                                "defining_code": {
+                                                                    "terminology_id": {
+                                                                        "value": "local"
+                                                                    },
+                                                                    "code_string": "at0008"
+                                                                }
+                                                            },
+                                                            "archetype_node_id": "at0001"
+                                                        }
+                                                    ],
+                                                    "archetype_node_id": "openEHR-EHR-CLUSTER.sepsis_clinical_red_flags.v0"
+                                                },
+                                                {
+                                                    "_type": "CLUSTER",
+                                                    "name": {
+                                                        "_type": "DV_TEXT",
+                                                        "value": "Sepsis clinical amber flags (age 12 plus)"
+                                                    },
+                                                    "items": [
+                                                        {
+                                                            "_type": "ELEMENT",
+                                                            "name": {
+                                                                "_type": "DV_TEXT",
+                                                                "value": "Amber flags"
+                                                            },
+                                                            "value": {
+                                                                "_type": "DV_CODED_TEXT",
+                                                                "value": "Clinical signs of wound infection",
+                                                                "defining_code": {
+                                                                    "terminology_id": {
+                                                                        "value": "local"
+                                                                    },
+                                                                    "code_string": "at0011"
+                                                                }
+                                                            },
+                                                            "archetype_node_id": "at0001"
+                                                        }
+                                                    ],
+                                                    "archetype_node_id": "openEHR-EHR-CLUSTER.sepsis_clinical_amber_flags.v0"
+                                                },
+                                                {
+                                                    "_type": "CLUSTER",
+                                                    "name": {
+                                                        "_type": "DV_TEXT",
+                                                        "value": "Sepsis infection source (age 12 plus)"
+                                                    },
+                                                    "items": [
+                                                        {
+                                                            "_type": "ELEMENT",
+                                                            "name": {
+                                                                "_type": "DV_TEXT",
+                                                                "value": "Likely source of infection"
+                                                            },
+                                                            "value": {
+                                                                "_type": "DV_CODED_TEXT",
+                                                                "value": "Respiratory",
+                                                                "defining_code": {
+                                                                    "terminology_id": {
+                                                                        "value": "local"
+                                                                    },
+                                                                    "code_string": "at0002"
+                                                                }
+                                                            },
+                                                            "archetype_node_id": "at0001"
+                                                        }
+                                                    ],
+                                                    "archetype_node_id": "openEHR-EHR-CLUSTER.sepsis_clinical_infection_source.v0"
+                                                },
+                                                {
+                                                    "_type": "CLUSTER",
+                                                    "name": {
+                                                        "_type": "DV_TEXT",
+                                                        "value": "Sepsis clinical 999 flag (age 12 plus)"
+                                                    },
+                                                    "items": [
+                                                        {
+                                                            "_type": "ELEMENT",
+                                                            "name": {
+                                                                "_type": "DV_TEXT",
+                                                                "value": "999 Flag"
+                                                            },
+                                                            "value": {
+                                                                "_type": "DV_CODED_TEXT",
+                                                                "value": "Slurred speech or confusion",
+                                                                "defining_code": {
+                                                                    "terminology_id": {
+                                                                        "value": "local"
+                                                                    },
+                                                                    "code_string": "at0002"
+                                                                }
+                                                            },
+                                                            "archetype_node_id": "at0001"
+                                                        }
+                                                    ],
+                                                    "archetype_node_id": "openEHR-EHR-CLUSTER.sepsis_clinical_999_flag_age_12_plus.v0"
+                                                },
+                                                {
+                                                    "_type": "CLUSTER",
+                                                    "name": {
+                                                        "_type": "DV_TEXT",
+                                                        "value": "Sepsis risk factors (age 12 plus)"
+                                                    },
+                                                    "items": [
+                                                        {
+                                                            "_type": "ELEMENT",
+                                                            "name": {
+                                                                "_type": "DV_TEXT",
+                                                                "value": "Risk factors"
+                                                            },
+                                                            "value": {
+                                                                "_type": "DV_CODED_TEXT",
+                                                                "value": "Indwelling lines / IVDU / broken skin",
+                                                                "defining_code": {
+                                                                    "terminology_id": {
+                                                                        "value": "local"
+                                                                    },
+                                                                    "code_string": "at0005"
+                                                                }
+                                                            },
+                                                            "archetype_node_id": "at0001"
+                                                        }
+                                                    ],
+                                                    "archetype_node_id": "openEHR-EHR-CLUSTER.sepsis_clinical_risk_factors_age_12_plus.v0"
+                                                }
+                                            ],
+                                            "archetype_node_id": "at0003"
+                                        },
+                                        "archetype_node_id": "at0002"
+                                    }
+                                ],
+                                "archetype_node_id": "at0001"
+                            },
+                            "archetype_node_id": "openEHR-EHR-OBSERVATION.sepsis_clinical_screening_age_12_plus.v0"
+                        },
+                        {
+                            "_type": "OBSERVATION",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Sepsis non clinical screening age 12 plus"
+                            },
+                            "language": {
+                                "terminology_id": {
+                                    "value": "ISO_639-1"
+                                },
+                                "code_string": "en"
+                            },
+                            "encoding": {
+                                "terminology_id": {
+                                    "value": "IANA_character-sets"
+                                },
+                                "code_string": "UTF-8"
+                            },
+                            "subject": {
+                                "_type": "PARTY_SELF"
+                            },
+                            "data": {
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "History"
+                                },
+                                "origin": {
+                                    "_type": "DV_DATE_TIME",
+                                    "value": "2020-11-17T16:34:03,871Z"
+                                },
+                                "events": [
+                                    {
+                                        "_type": "POINT_EVENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Single point in time"
+                                        },
+                                        "time": {
+                                            "_type": "DV_DATE_TIME",
+                                            "value": "2020-11-17T16:34:03,871Z"
+                                        },
+                                        "data": {
+                                            "_type": "ITEM_TREE",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Tree"
+                                            },
+                                            "items": [
+                                                {
+                                                    "_type": "CLUSTER",
+                                                    "name": {
+                                                        "_type": "DV_TEXT",
+                                                        "value": "Sepsis non clinical red flags (age 12 plus)"
+                                                    },
+                                                    "items": [
+                                                        {
+                                                            "_type": "ELEMENT",
+                                                            "name": {
+                                                                "_type": "DV_TEXT",
+                                                                "value": "Red flags"
+                                                            },
+                                                            "value": {
+                                                                "_type": "DV_CODED_TEXT",
+                                                                "value": "Under 17 and immunity impaired",
+                                                                "defining_code": {
+                                                                    "terminology_id": {
+                                                                        "value": "local"
+                                                                    },
+                                                                    "code_string": "at0019"
+                                                                }
+                                                            },
+                                                            "archetype_node_id": "at0001"
+                                                        }
+                                                    ],
+                                                    "archetype_node_id": "openEHR-EHR-CLUSTER.sepsis_non_clinical_red_flags.v0"
+                                                },
+                                                {
+                                                    "_type": "CLUSTER",
+                                                    "name": {
+                                                        "_type": "DV_TEXT",
+                                                        "value": "Sepsis non clinical amber flags (aged 12 plus)"
+                                                    },
+                                                    "items": [
+                                                        {
+                                                            "_type": "ELEMENT",
+                                                            "name": {
+                                                                "_type": "DV_TEXT",
+                                                                "value": "Amber flags"
+                                                            },
+                                                            "value": {
+                                                                "_type": "DV_CODED_TEXT",
+                                                                "value": "Immunosuppressed",
+                                                                "defining_code": {
+                                                                    "terminology_id": {
+                                                                        "value": "local"
+                                                                    },
+                                                                    "code_string": "at0014"
+                                                                }
+                                                            },
+                                                            "archetype_node_id": "at0001"
+                                                        }
+                                                    ],
+                                                    "archetype_node_id": "openEHR-EHR-CLUSTER.sepsis_non_clinical_amber_flags.v0"
+                                                },
+                                                {
+                                                    "_type": "CLUSTER",
+                                                    "name": {
+                                                        "_type": "DV_TEXT",
+                                                        "value": "Sepsis infection source (age 12 plus)"
+                                                    },
+                                                    "items": [
+                                                        {
+                                                            "_type": "ELEMENT",
+                                                            "name": {
+                                                                "_type": "DV_TEXT",
+                                                                "value": "Likely source of infection"
+                                                            },
+                                                            "value": {
+                                                                "_type": "DV_CODED_TEXT",
+                                                                "value": "Breast abscess",
+                                                                "defining_code": {
+                                                                    "terminology_id": {
+                                                                        "value": "local"
+                                                                    },
+                                                                    "code_string": "at0008"
+                                                                }
+                                                            },
+                                                            "archetype_node_id": "at0001"
+                                                        }
+                                                    ],
+                                                    "archetype_node_id": "openEHR-EHR-CLUSTER.sepsis_clinical_infection_source.v0"
+                                                },
+                                                {
+                                                    "_type": "CLUSTER",
+                                                    "name": {
+                                                        "_type": "DV_TEXT",
+                                                        "value": "Sepsis clinical 999 flag (age 12 plus)"
+                                                    },
+                                                    "items": [
+                                                        {
+                                                            "_type": "ELEMENT",
+                                                            "name": {
+                                                                "_type": "DV_TEXT",
+                                                                "value": "999 Flag"
+                                                            },
+                                                            "value": {
+                                                                "_type": "DV_CODED_TEXT",
+                                                                "value": "‘I feel I might die’",
+                                                                "defining_code": {
+                                                                    "terminology_id": {
+                                                                        "value": "local"
+                                                                    },
+                                                                    "code_string": "at0006"
+                                                                }
+                                                            },
+                                                            "archetype_node_id": "at0001"
+                                                        }
+                                                    ],
+                                                    "archetype_node_id": "openEHR-EHR-CLUSTER.sepsis_clinical_999_flag_age_12_plus.v0"
+                                                },
+                                                {
+                                                    "_type": "CLUSTER",
+                                                    "name": {
+                                                        "_type": "DV_TEXT",
+                                                        "value": "Sepsis risk factors (age 12 plus)"
+                                                    },
+                                                    "items": [
+                                                        {
+                                                            "_type": "ELEMENT",
+                                                            "name": {
+                                                                "_type": "DV_TEXT",
+                                                                "value": "Risk factors"
+                                                            },
+                                                            "value": {
+                                                                "_type": "DV_CODED_TEXT",
+                                                                "value": "Age over 75",
+                                                                "defining_code": {
+                                                                    "terminology_id": {
+                                                                        "value": "local"
+                                                                    },
+                                                                    "code_string": "at0002"
+                                                                }
+                                                            },
+                                                            "archetype_node_id": "at0001"
+                                                        }
+                                                    ],
+                                                    "archetype_node_id": "openEHR-EHR-CLUSTER.sepsis_clinical_risk_factors_age_12_plus.v0"
+                                                }
+                                            ],
+                                            "archetype_node_id": "at0003"
+                                        },
+                                        "archetype_node_id": "at0002"
+                                    }
+                                ],
+                                "archetype_node_id": "at0001"
+                            },
+                            "archetype_node_id": "openEHR-EHR-OBSERVATION.sepsis_non_clinical_screening_age_12_plus.v0"
+                        }
+                    ],
+                    "archetype_node_id": "openEHR-EHR-SECTION.adhoc.v1"
+                },
+                {
+                    "_type": "SECTION",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Covid"
+                    },
+                    "items": [
+                        {
+                            "_type": "EVALUATION",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Covid notes"
+                            },
+                            "language": {
+                                "terminology_id": {
+                                    "value": "ISO_639-1"
+                                },
+                                "code_string": "en"
+                            },
+                            "encoding": {
+                                "terminology_id": {
+                                    "value": "IANA_character-sets"
+                                },
+                                "code_string": "UTF-8"
+                            },
+                            "subject": {
+                                "_type": "PARTY_SELF"
+                            },
+                            "data": {
+                                "_type": "ITEM_TREE",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "List"
+                                },
+                                "items": [
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Synopsis"
+                                        },
+                                        "value": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Not very well"
+                                        },
+                                        "archetype_node_id": "at0002"
+                                    }
+                                ],
+                                "archetype_node_id": "at0001"
+                            },
+                            "archetype_node_id": "openEHR-EHR-EVALUATION.clinical_synopsis.v1"
+                        },
+                        {
+                            "_type": "EVALUATION",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Covid-19 exposure"
+                            },
+                            "language": {
+                                "terminology_id": {
+                                    "value": "ISO_639-1"
+                                },
+                                "code_string": "en"
+                            },
+                            "encoding": {
+                                "terminology_id": {
+                                    "value": "IANA_character-sets"
+                                },
+                                "code_string": "UTF-8"
+                            },
+                            "subject": {
+                                "_type": "PARTY_SELF"
+                            },
+                            "data": {
+                                "_type": "ITEM_TREE",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "structure"
+                                },
+                                "items": [
+                                    {
+                                        "_type": "CLUSTER",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Care setting has confirmed Covid-19"
+                                        },
+                                        "items": [
+                                            {
+                                                "_type": "ELEMENT",
+                                                "name": {
+                                                    "_type": "DV_TEXT",
+                                                    "value": "Risk factor"
+                                                },
+                                                "value": {
+                                                    "_type": "DV_CODED_TEXT",
+                                                    "value": "Contact with confirmed Covid-19 case",
+                                                    "defining_code": {
+                                                        "terminology_id": {
+                                                            "value": "local"
+                                                        },
+                                                        "code_string": "at0.9"
+                                                    }
+                                                },
+                                                "archetype_node_id": "at0013.1"
+                                            }
+                                        ],
+                                        "archetype_node_id": "at0016"
+                                    },
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Health risk"
+                                        },
+                                        "value": {
+                                            "_type": "DV_CODED_TEXT",
+                                            "value": "COVID-19 Risk assessment",
+                                            "defining_code": {
+                                                "terminology_id": {
+                                                    "value": "local"
+                                                },
+                                                "code_string": "at0.1"
+                                            }
+                                        },
+                                        "archetype_node_id": "at0002.1"
+                                    }
+                                ],
+                                "archetype_node_id": "at0001"
+                            },
+                            "archetype_node_id": "openEHR-EHR-EVALUATION.health_risk-covid.v0"
+                        },
+                        {
+                            "_type": "OBSERVATION",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Covid symptoms"
+                            },
+                            "language": {
+                                "terminology_id": {
+                                    "value": "ISO_639-1"
+                                },
+                                "code_string": "en"
+                            },
+                            "encoding": {
+                                "terminology_id": {
+                                    "value": "IANA_character-sets"
+                                },
+                                "code_string": "UTF-8"
+                            },
+                            "subject": {
+                                "_type": "PARTY_SELF"
+                            },
+                            "data": {
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "History"
+                                },
+                                "origin": {
+                                    "_type": "DV_DATE_TIME",
+                                    "value": "2020-11-17T16:34:03,871Z"
+                                },
+                                "events": [
+                                    {
+                                        "_type": "POINT_EVENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Any event"
+                                        },
+                                        "time": {
+                                            "_type": "DV_DATE_TIME",
+                                            "value": "2020-11-17T16:34:03,871Z"
+                                        },
+                                        "data": {
+                                            "_type": "ITEM_TREE",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Tree"
+                                            },
+                                            "items": [
+                                                {
+                                                    "_type": "CLUSTER",
+                                                    "name": {
+                                                        "_type": "DV_TEXT",
+                                                        "value": "Specific symptom/sign"
+                                                    },
+                                                    "items": [
+                                                        {
+                                                            "_type": "ELEMENT",
+                                                            "name": {
+                                                                "_type": "DV_TEXT",
+                                                                "value": "Symptom or sign name"
+                                                            },
+                                                            "value": {
+                                                                "_type": "DV_CODED_TEXT",
+                                                                "value": "Altered consciousness",
+                                                                "defining_code": {
+                                                                    "terminology_id": {
+                                                                        "value": "SNOMED CT"
+                                                                    },
+                                                                    "code_string": "3006004"
+                                                                }
+                                                            },
+                                                            "archetype_node_id": "at0004"
+                                                        }
+                                                    ],
+                                                    "archetype_node_id": "at0022"
+                                                },
+                                                {
+                                                    "_type": "ELEMENT",
+                                                    "name": {
+                                                        "_type": "DV_TEXT",
+                                                        "value": "Date of onset of first symptoms"
+                                                    },
+                                                    "value": {
+                                                        "_type": "DV_DATE_TIME",
+                                                        "value": "2020-11-17T16:34:03,871Z"
+                                                    },
+                                                    "archetype_node_id": "at0029"
+                                                }
+                                            ],
+                                            "archetype_node_id": "at0003"
+                                        },
+                                        "archetype_node_id": "at0002"
+                                    }
+                                ],
+                                "archetype_node_id": "at0001"
+                            },
+                            "archetype_node_id": "openEHR-EHR-OBSERVATION.symptom_sign_screening.v0"
+                        }
+                    ],
+                    "archetype_node_id": "openEHR-EHR-SECTION.adhoc.v1"
+                },
+                {
+                    "_type": "SECTION",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "NEWS2"
+                    },
+                    "items": [
+                        {
+                            "_type": "OBSERVATION",
+                            "name": {
+                                "_type": "DV_TEXT",
+                                "value": "Pulse oximetry"
+                            },
+                            "language": {
+                                "terminology_id": {
+                                    "value": "ISO_639-1"
+                                },
+                                "code_string": "en"
+                            },
+                            "encoding": {
+                                "terminology_id": {
+                                    "value": "IANA_character-sets"
+                                },
+                                "code_string": "UTF-8"
+                            },
+                            "subject": {
+                                "_type": "PARTY_SELF"
+                            },
+                            "data": {
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Event Series"
+                                },
+                                "origin": {
+                                    "_type": "DV_DATE_TIME",
+                                    "value": "2020-11-17T16:34:03,874Z"
+                                },
+                                "events": [
+                                    {
+                                        "_type": "POINT_EVENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Any event"
+                                        },
+                                        "time": {
+                                            "_type": "DV_DATE_TIME",
+                                            "value": "2020-11-17T16:34:03,874Z"
+                                        },
+                                        "state": {
+                                            "_type": "ITEM_TREE",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Tree"
+                                            },
+                                            "items": [
+                                                {
+                                                    "_type": "CLUSTER",
+                                                    "name": {
+                                                        "_type": "DV_TEXT",
+                                                        "value": "Inspired oxygen"
+                                                    },
+                                                    "items": [
+                                                        {
+                                                            "_type": "ELEMENT",
+                                                            "name": {
+                                                                "_type": "DV_TEXT",
+                                                                "value": "Flow rate"
+                                                            },
+                                                            "value": {
+                                                                "_type": "DV_QUANTITY",
+                                                                "units": "l/min",
+                                                                "magnitude": 49.77
+                                                            },
+                                                            "archetype_node_id": "at0051"
+                                                        },
+                                                        {
+                                                            "_type": "ELEMENT",
+                                                            "name": {
+                                                                "_type": "DV_TEXT",
+                                                                "value": "Method of oxygen delivery"
+                                                            },
+                                                            "value": {
+                                                                "_type": "DV_TEXT",
+                                                                "value": "Room air"
+                                                            },
+                                                            "archetype_node_id": "at0054"
+                                                        }
+                                                    ],
+                                                    "archetype_node_id": "openEHR-EHR-CLUSTER.inspired_oxygen.v1"
+                                                }
+                                            ],
+                                            "archetype_node_id": "at0014"
+                                        },
+                                        "data": {
+                                            "_type": "ITEM_TREE",
+                                            "name": {
+                                                "_type": "DV_TEXT",
+                                                "value": "Tree"
+                                            },
+                                            "items": [
+                                                {
+                                                    "_type": "ELEMENT",
+                                                    "name": {
+                                                        "_type": "DV_TEXT",
+                                                        "value": "SpO₂"
+                                                    },
+                                                    "value": {
+                                                        "_type": "DV_PROPORTION",
+                                                        "numerator": 80.0,
+                                                        "denominator": 100.0,
+                                                        "type": 2
+                                                    },
+                                                    "archetype_node_id": "at0006"
+                                                }
+                                            ],
+                                            "archetype_node_id": "at0003"
+                                        },
+                                        "archetype_node_id": "at0002"
+                                    }
+                                ],
+                                "archetype_node_id": "at0001"
+                            },
+                            "archetype_node_id": "openEHR-EHR-OBSERVATION.pulse_oximetry.v1"
+                        }
+                    ],
+                    "archetype_node_id": "openEHR-EHR-SECTION.adhoc.v1"
+                }
+            ],
+            "archetype_node_id": "openEHR-EHR-SECTION.adhoc.v1"
+        }
+    ],
+    "archetype_node_id": "openEHR-EHR-COMPOSITION.encounter.v1",
+    "uid": {
+        "_type": "OBJECT_VERSION_ID",
+        "value": "659893c1-ec27-4137-a90f-39aa95633d60::local.ehrbase.org::1"
+    }
+}
