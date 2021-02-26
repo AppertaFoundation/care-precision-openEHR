@@ -32,7 +32,8 @@
         "frailty": [
             {
                 "code": "at0098",
-                "value": "Mildly frail"
+                "value": "Mildly frail",
+                "ordinal": 5
             }
         ],
         "past_history": "Angina and Diabetes",
@@ -305,45 +306,6 @@
         }
     },
     "response": {
-        "recommendation": "Suspected Covid-19 - needs to be isolated, contact public health",
-        "service_request": [
-            {
-                "service_name": {
-                    "code": "170499009",
-                    "value": "Isolation of infection contact",
-                    "terminology": "SNOMED-CT"
-                },
-                "reason_for_request": {
-                    "code": "840546002",
-                    "value": "Exposure to 2019 novel coronavirus",
-                    "terminology": "SNOMED-CT"
-                },
-                "reason_for_isolation": "Contact",
-                "date_isolation_due_to_start": "2020-08-25T13:19:30.700Z",
-                "date_isolation_due_to_end": "2020-09-14T13:19:30.700Z"
-            }
-        ],
-        "narrative": "Isolation of infection contact"
-    },
-    "service": [
-        {
-            "ism_transition": {
-                "current_state": {
-                    "code": "526",
-                    "value": "planned",
-                    "terminology": "openehr"
-                },
-                "careflow_step": {
-                    "code": "at0002",
-                    "value": "Service planned",
-                    "terminology": "local"
-                }
-            },
-            "service_name": {
-                "code": "170499009",
-                "value": "Isolation of infection contact",
-                "terminology": "SNOMED-CT"
-            }
-        }
-    ]
-}
+        "recommendation": "Suspected Covid-19 - needs to be isolated, contact public health"
+    }
+ }

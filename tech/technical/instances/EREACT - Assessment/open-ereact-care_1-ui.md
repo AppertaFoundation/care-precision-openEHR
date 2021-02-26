@@ -306,6 +306,43 @@ These are calculated values that are returned by the middleware, then submitted 
         }
     },
 ```
+###### Covid
+```json
+    "covid_symptoms":
+        {
+            "date_of_onset_of_first_symptoms": "2020-09-21T15:53:38.150Z",
+            "specific_symptom_sign": [
+                {
+                    "|code": "386661006",
+                    "|value": "Fever",
+                    "|terminology": "SNOMED CT"
+                },
+                {
+                    "|code": "62315008",
+                    "|value": "Diarrhea",
+                    "|terminology": "SNOMED CT"
+                }
+            ],
+        },
+    "covid-19_exposure": [
+            {
+            "|code": "at0.14",
+            "|value": "Potential contact exposure based on location",
+            "|terminology": "local"
+        },
+        {
+            "|code": "at0.9",
+            "|value": "Contact with confirmed Covid-19 case",
+            "|terminology": "local"
+        }
+    ],
+    "covid_notes":
+        {
+            "synopsis": "Visiting son tested positive"
+        }
+
+```
+
 ##### Response
 ```json
 
