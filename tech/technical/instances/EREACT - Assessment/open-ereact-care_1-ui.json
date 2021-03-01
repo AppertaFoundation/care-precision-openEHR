@@ -201,14 +201,14 @@
             "covid_symptoms": {
                 "date_of_onset_of_first_symptoms": "2020-09-21T15:53:38.150Z",
                 "specific_symptom_sign": [{
-                            "|code": "386661006",
+                        "|code": "386661006",
                         "|value": "Fever",
-                        "|terminology": "SNOMED CT"                         
+                        "|terminology": "SNOMED-CT"                         
                     },
                     { 
                         "|code": "62315008",
                         "|value": "Diarrhea",
-                        "|terminology": "SNOMED CT"
+                        "|terminology": "SNOMED-CT"
                     }
                 ]
             },
