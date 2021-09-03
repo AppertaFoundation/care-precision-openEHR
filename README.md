@@ -1,2 +1,2 @@
-# care-protect-openEHR
-Open eReact - Care Protect Clinical Models
+# care-precision-openEHR
+Open eReact - Care Precision Clinical Models
